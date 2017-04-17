@@ -1,0 +1,26 @@
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.frmMain.resources
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.Properties.Resources.resources
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.csproj.GenerateResource.Cache
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.frmConfig.resources
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\bin\Debug\MySql.Data.dll
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\bin\Debug\MySql.Data.xml
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.csproj.ResolveComReference.cache
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\bin\Debug\MySql.Data.dll
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\bin\Debug\MySql.Data.xml
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.csproj.ResolveComReference.cache
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.frmConfig.resources
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.frmMain.resources
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.Properties.Resources.resources
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.csproj.GenerateResource.Cache
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\obj\Debug\AutoCRM.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\bin\Debug\CRM Integrado.exe.config
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\bin\Debug\CRM Integrado.exe
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\bin\Debug\CRM Integrado.pdb
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\obj\Debug\CRM Integrado.exe
+C:\Users\Lucas\Dropbox\AutoCRM\AutoCRM\obj\Debug\CRM Integrado.pdb
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\bin\Debug\CRM Integrado.exe.config
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\bin\Debug\CRM Integrado.exe
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\bin\Debug\CRM Integrado.pdb
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\obj\Debug\CRM Integrado.exe
+C:\Users\Lucas - Teste\Dropbox\AutoCRM\AutoCRM\obj\Debug\CRM Integrado.pdb
