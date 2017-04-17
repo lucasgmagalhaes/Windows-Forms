@@ -1,0 +1,35 @@
+C:\Users\Lucas\Dropbox\PUC\2º Período\Microondas\Microondas\bin\Debug\Microondas.exe.config
+C:\Users\Lucas\Dropbox\PUC\2º Período\Microondas\Microondas\bin\Debug\Microondas.exe
+C:\Users\Lucas\Dropbox\PUC\2º Período\Microondas\Microondas\bin\Debug\Microondas.pdb
+C:\Users\Lucas\Dropbox\PUC\2º Período\Microondas\Microondas\obj\Debug\Microondas.Form1.resources
+C:\Users\Lucas\Dropbox\PUC\2º Período\Microondas\Microondas\obj\Debug\Microondas.Properties.Resources.resources
+C:\Users\Lucas\Dropbox\PUC\2º Período\Microondas\Microondas\obj\Debug\Microondas.csproj.GenerateResource.Cache
+C:\Users\Lucas\Dropbox\PUC\2º Período\Microondas\Microondas\obj\Debug\Microondas.exe
+C:\Users\Lucas\Dropbox\PUC\2º Período\Microondas\Microondas\obj\Debug\Microondas.pdb
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\bin\Debug\Microondas.exe.config
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\obj\Debug\Microondas.exe
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\obj\Debug\Microondas.pdb
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\bin\Debug\Microondas.exe
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\bin\Debug\Microondas.pdb
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\obj\Debug\Microondas.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\obj\Debug\Microondas.Form1.resources
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\obj\Debug\Microondas.csproj.GenerateResource.Cache
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Microondas\Microondas\obj\Debug\Microondas.Properties.Resources.resources
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\bin\Debug\Microondas.exe.config
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\bin\Debug\Microondas.exe
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\bin\Debug\Microondas.pdb
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\obj\Debug\Microondas.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\obj\Debug\Microondas.Form1.resources
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\obj\Debug\Microondas.Properties.Resources.resources
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\obj\Debug\Microondas.csproj.GenerateResource.Cache
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\obj\Debug\Microondas.exe
+C:\Users\Lucas\Dropbox\PUC\2º Período\POO teórica\Exercícios Feitos\Microondas\Microondas\obj\Debug\Microondas.pdb
+C:\Users\1047825\Desktop\Microondas\Microondas\bin\Debug\Microondas.exe.config
+C:\Users\1047825\Desktop\Microondas\Microondas\obj\Debug\Microondas.exe
+C:\Users\1047825\Desktop\Microondas\Microondas\obj\Debug\Microondas.pdb
+C:\Users\1047825\Desktop\Microondas\Microondas\bin\Debug\Microondas.exe
+C:\Users\1047825\Desktop\Microondas\Microondas\bin\Debug\Microondas.pdb
+C:\Users\1047825\Desktop\Microondas\Microondas\obj\Debug\Microondas.csprojResolveAssemblyReference.cache
+C:\Users\1047825\Desktop\Microondas\Microondas\obj\Debug\Microondas.Form1.resources
+C:\Users\1047825\Desktop\Microondas\Microondas\obj\Debug\Microondas.Properties.Resources.resources
+C:\Users\1047825\Desktop\Microondas\Microondas\obj\Debug\Microondas.csproj.GenerateResource.Cache
