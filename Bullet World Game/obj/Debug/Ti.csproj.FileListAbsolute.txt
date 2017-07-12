@@ -1,0 +1,152 @@
+C:\Users\1047825\Desktop\Ti\Ti\bin\Debug\Ti.exe.config
+C:\Users\1047825\Desktop\Ti\Ti\bin\Debug\Ti.exe
+C:\Users\1047825\Desktop\Ti\Ti\bin\Debug\Ti.pdb
+C:\Users\1047825\Desktop\Ti\Ti\obj\Debug\Ti.csprojResolveAssemblyReference.cache
+C:\Users\1047825\Desktop\Ti\Ti\obj\Debug\Ti.frmFirstMgsHS.resources
+C:\Users\1047825\Desktop\Ti\Ti\obj\Debug\Ti.frmMain.resources
+C:\Users\1047825\Desktop\Ti\Ti\obj\Debug\Ti.Properties.Resources.resources
+C:\Users\1047825\Desktop\Ti\Ti\obj\Debug\Ti.csproj.GenerateResource.Cache
+C:\Users\1047825\Desktop\Ti\Ti\obj\Debug\Ti.exe
+C:\Users\1047825\Desktop\Ti\Ti\obj\Debug\Ti.pdb
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.frmFirstMgsHS.resources
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.frmMain.resources
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.csproj.GenerateResource.Cache
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.frmFirstMgsHS.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.frmMain.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.csproj.GenerateResource.Cache
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.frmCompanyMgs.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.frmMenu.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.Properties.Resources.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\bin\Debug\BulletWorld.exe.config
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\bin\Debug\BulletWorld.exe
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\bin\Debug\BulletWorld.pdb
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.exe
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.pdb
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\bin\Debug\BulletWorld.exe.config
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\bin\Debug\BulletWorld.exe
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\bin\Debug\BulletWorld.pdb
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.frmCompanyMgs.resources
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\Ti.frmMenu.resources
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.Properties.Resources.resources
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.exe
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.pdb
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.frmTrophy.resources
+C:\Users\Lucas\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.frmHelpcs.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\bin\Debug\Data.xml
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.frmHelpcs.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.frmTrophy.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.frmQuit.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.frmSelectPlayer.resources
+C:\Users\Lucas - Teste\Google Drive\Ti\Ti\Ti\obj\Debug\BulletWorld.frmNewPlayer.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.frmCompanyMgs.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.frmFirstMgsHS.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmHelpcs.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.frmMain.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.frmMenu.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmNewPlayer.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmQuit.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmSelectPlayer.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmTrophy.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.Properties.Resources.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.csproj.GenerateResource.Cache
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.exe
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.pdb
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.exe.config
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.exe
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.pdb
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\bin\Debug\Font\computer_pixel-7.ttf
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\bin\Debug\Data.xml
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\bin\Debug\Font\computer_pixel-7.ttf
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.exe.config
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.exe
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.pdb
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.frmCompanyMgs.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.frmFirstMgsHS.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmHelpcs.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.frmMain.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.frmMenu.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmNewPlayer.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmQuit.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmSelectPlayer.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmTrophy.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.Properties.Resources.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\Ti.csproj.GenerateResource.Cache
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.exe
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.pdb
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmBulletWorld.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmChoice.resources
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\bin\Debug\ComeBullet.dll
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\bin\Debug\ComeBullet.dll
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmBulletWorld.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmChoice.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\bin\Debug\Font\computer_pixel-7.ttf
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\bin\Debug\BulletWorld.exe.config
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\bin\Debug\BulletWorld.exe
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\bin\Debug\BulletWorld.pdb
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\bin\Debug\ComeBullet.dll
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\Ti.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.frmBulletWorld.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.frmChoice.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\Ti.frmCompanyMgs.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\Ti.frmFirstMgsHS.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.frmHelpcs.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\Ti.frmMain.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\Ti.frmMenu.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.frmNewPlayer.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.frmQuit.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.frmSelectPlayer.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.frmTrophy.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.Properties.Resources.resources
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\Ti.csproj.GenerateResource.Cache
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.exe
+C:\Users\Lucas - Teste\Desktop\Ti\Ti\obj\Debug\BulletWorld.pdb
+C:\Users\Lucas - Teste\Google Drive\Ti POO\Ti\Ti\bin\Debug\Data.xml
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\bin\Debug\Data.xml
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\bin\Debug\Font\computer_pixel-7.ttf
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\bin\Debug\BulletWorld.exe.config
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\bin\Debug\BulletWorld.exe
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\bin\Debug\BulletWorld.pdb
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\bin\Debug\ComeBullet.dll
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\Ti.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.frmBulletWorld.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.frmChoice.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\Ti.frmCompanyMgs.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\Ti.frmFirstMgsHS.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.frmHelpcs.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\Ti.frmMain.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\Ti.frmMenu.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.frmNewPlayer.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.frmQuit.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.frmSelectPlayer.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.frmTrophy.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.Properties.Resources.resources
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\Ti.csproj.GenerateResource.Cache
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.exe
+C:\Users\Lucas\Google Drive\Ti POO\Ti (1)\Ti\obj\Debug\BulletWorld.pdb
+D:\GoogleDrive\Ti POO\Ti\Ti\bin\Debug\Data.xml
+D:\GoogleDrive\Ti POO\Ti\Ti\bin\Debug\Font\computer_pixel-7.ttf
+D:\GoogleDrive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.exe.config
+D:\GoogleDrive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.exe
+D:\GoogleDrive\Ti POO\Ti\Ti\bin\Debug\BulletWorld.pdb
+D:\GoogleDrive\Ti POO\Ti\Ti\bin\Debug\ComeBullet.dll
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\Ti.csprojResolveAssemblyReference.cache
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmBulletWorld.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmChoice.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\Ti.frmCompanyMgs.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\Ti.frmFirstMgsHS.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmHelpcs.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\Ti.frmMain.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\Ti.frmMenu.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmNewPlayer.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmQuit.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmSelectPlayer.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmTrophy.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.Properties.Resources.resources
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\Ti.csproj.GenerateResource.Cache
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.exe
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.pdb
+D:\GoogleDrive\Ti POO\Ti\Ti\obj\Debug\BulletWorld.frmEndGameResult.resources

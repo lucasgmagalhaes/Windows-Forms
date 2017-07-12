@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28EBE313-63E2-4523-9241-53DF3361E8CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BulletWorld</RootNamespace>
+    <AssemblyName>BulletWorld</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComeBullet">
+      <HintPath>..\ComeBullet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Bullets\BulletAmarelo.cs" />
+    <Compile Include="Class\Bullets\BulletAzul.cs" />
+    <Compile Include="Class\Bullets\BulletPurpura.cs" />
+    <Compile Include="Class\Bullets\BulletVerde.cs" />
+    <Compile Include="Class\Bullets\BulletVermelho.cs" />
+    <Compile Include="Class\Chars\BulletBirl.cs" />
+    <Compile Include="Class\Chars\Wario.cs" />
+    <Compile Include="Class\Chars\Wizard.cs" />
+    <Compile Include="Class\Universe\BulletWorld.cs" />
+    <Compile Include="Class\Chars\BulletBill.cs" />
+    <Compile Include="Class\Chars\CheepCheep.cs" />
+    <Compile Include="Class\Chars\CrazyBlooper.cs" />
+    <Compile Include="Class\Chars\LeftMario.cs" />
+    <Compile Include="Class\Chars\Personagem.cs" />
+    <Compile Include="Class\Universe\Choice.cs" />
+    <Compile Include="Class\Universe\Evento.cs" />
+    <Compile Include="Class\Universe\GerenciadorDeEventos.cs" />
+    <Compile Include="Class\Data Export_Import\Player.cs" />
+    <Compile Include="Class\Data Export_Import\Ranking.cs" />
+    <Compile Include="Class\Data Export_Import\DataBase.cs" />
+    <Compile Include="frmBulletWorld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBulletWorld.Designer.cs">
+      <DependentUpon>frmBulletWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChoice.Designer.cs">
+      <DependentUpon>frmChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompanyMgs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompanyMgs.Designer.cs">
+      <DependentUpon>frmCompanyMgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndGameResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEndGameResult.Designer.cs">
+      <DependentUpon>frmEndGameResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFirstMgsHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirstMgsHS.Designer.cs">
+      <DependentUpon>frmFirstMgsHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelpcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelpcs.Designer.cs">
+      <DependentUpon>frmHelpcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewPlayer.Designer.cs">
+      <DependentUpon>frmNewPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuit.Designer.cs">
+      <DependentUpon>frmQuit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPlayer.Designer.cs">
+      <DependentUpon>frmSelectPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrophy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrophy.Designer.cs">
+      <DependentUpon>frmTrophy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBulletWorld.resx">
+      <DependentUpon>frmBulletWorld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChoice.resx">
+      <DependentUpon>frmChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompanyMgs.resx">
+      <DependentUpon>frmCompanyMgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndGameResult.resx">
+      <DependentUpon>frmEndGameResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirstMgsHS.resx">
+      <DependentUpon>frmFirstMgsHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelpcs.resx">
+      <DependentUpon>frmHelpcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewPlayer.resx">
+      <DependentUpon>frmNewPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuit.resx">
+      <DependentUpon>frmQuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPlayer.resx">
+      <DependentUpon>frmSelectPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrophy.resx">
+      <DependentUpon>frmTrophy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Font\computer_pixel-7.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Headphones_64.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Wizard4.png" />
+    <None Include="Resources\Wizard3.png" />
+    <None Include="Resources\Wizard2.png" />
+    <None Include="Resources\Wizard1.png" />
+    <None Include="Resources\Wario4.png" />
+    <None Include="Resources\Wario3.png" />
+    <None Include="Resources\Wario2.png" />
+    <None Include="Resources\Wario1.png" />
+    <None Include="Resources\BulletBirl4.png" />
+    <None Include="Resources\BulletBirl3.png" />
+    <None Include="Resources\BulletBirl2.png" />
+    <None Include="Resources\BulletBirl1.png" />
+    <None Include="Resources\Headphones_641.png" />
+    <None Include="Resources\BackgroundMain.png" />
+    <None Include="Resources\yellowBullet.png" />
+    <None Include="Resources\redBullet.png" />
+    <None Include="Resources\purpleBullet.png" />
+    <None Include="Resources\Leftmario4.png" />
+    <None Include="Resources\Leftmario3.png" />
+    <None Include="Resources\Leftmario2.png" />
+    <None Include="Resources\Leftmario1.png" />
+    <None Include="Resources\greenBullet.png" />
+    <None Include="Resources\cheepcheep4.png" />
+    <None Include="Resources\cheepcheep3.png" />
+    <None Include="Resources\cheepcheep2.png" />
+    <None Include="Resources\cheepcheep1.png" />
+    <None Include="Resources\BulletBill4.png" />
+    <None Include="Resources\BulletBill3.png" />
+    <None Include="Resources\BulletBill2.png" />
+    <None Include="Resources\BulletBill1.png" />
+    <None Include="Resources\blueBullet.png" />
+    <None Include="Resources\blooper4.png" />
+    <None Include="Resources\blooper3.png" />
+    <None Include="Resources\blooper2.png" />
+    <None Include="Resources\blooper1.png" />
+    <None Include="Resources\Trofeu.png" />
+    <None Include="Resources\Terceiro.png" />
+    <None Include="Resources\Segundo.png" />
+    <None Include="Resources\Primeiro.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

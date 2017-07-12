@@ -1,0 +1,25 @@
+Abertura
+
+Intro Logo x
+Shooting Stars 8 bit x
+
+Menu
+
+Movimento cursor x
+Seleciona opção x
+Voltar x
+
+In Game
+
+- Personagem
+
+Colisão parede (Cheep Cheep x, Bullet Bill x, CrazyBlooper x, Left Mario x)
+
+- Bullets
+
+Captura (verde - normal x, vermelho - speed up x, amarelo - speed down x, azul - teleporte x, purpura - embaralha x)
+
+- Pause
+
+Entrada x
+Saída x

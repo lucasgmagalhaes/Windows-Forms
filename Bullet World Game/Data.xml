@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<World>
+  <!--CADASTRO DOS JOGADORES E REGISTRO DE PONTUAÇÃO-->
+  <!--Cada player tem um nome e uma pontuação.-->
+  <!--O personagem com quem esse player jogou não é relevante nessa Coluna-->
+  <users>
+    <PlayerInfo name ="Guest" points="0"/>
+  </users>
+  <!--RANKING DEFINIDO POR CADA PERSONAGEM-->
+  <!--Assim que cada personagem for jogado por um player, seu nome será salvo junto com a sua pontuação-->
+  <!--na Coluna referente ao personagem-->
+  <Characters>
+    <BulletBill>
+      <player  name ="" points =" "/>
+    </BulletBill>
+    <CheepCheep>
+      <player  name ="" points =" "/>
+    </CheepCheep>
+    <CrazyBlooper>
+      <player  name ="" points =" "/>
+    </CrazyBlooper>
+    <LeftMario>
+      <player  name ="" points =" "/>
+    </LeftMario>
+  </Characters>
+</World>
