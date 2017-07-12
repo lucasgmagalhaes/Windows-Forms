@@ -1,0 +1,49 @@
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\bin\Debug\TI_FSI.exe.config
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csprojResolveAssemblyReference.cache
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Form1.resources
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Properties.Resources.resources
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csproj.GenerateResource.Cache
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\bin\Debug\TI_FSI.exe
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\bin\Debug\TI_FSI.pdb
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\obj\Debug\TI_FSI.exe
+c:\users\henri\onedrive\matemática discreta\visual studio 2015\Projects\TI_FSI\TI_FSI\obj\Debug\TI_FSI.pdb
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Form1.resources
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Properties.Resources.resources
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csproj.GenerateResource.Cache
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.exe
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.pdb
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\TI_FSI.exe.config
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\TI_FSI.exe
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\TI_FSI.pdb
+C:\Users\Lucas\Google Drive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csprojResolveAssemblyReference.cache
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Form1.resources
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Properties.Resources.resources
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csproj.GenerateResource.Cache
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\TI_FSI.exe.config
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\TI_FSI.exe
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\TI_FSI.pdb
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csprojResolveAssemblyReference.cache
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Form1.resources
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Properties.Resources.resources
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csproj.GenerateResource.Cache
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.exe
+C:\Users\Arthur\Desktop\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.pdb
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Meu Estoque.exe.config
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Meu Estoque.exe
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Meu Estoque.pdb
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\Meu Estoque.exe
+D:\GoogleDrive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\Meu Estoque.pdb
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Meu Estoque.exe.config
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Meu Estoque.exe
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\bin\Debug\Meu Estoque.pdb
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Form1.resources
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.Properties.Resources.resources
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\TI_FSI.csproj.GenerateResource.Cache
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\Meu Estoque.exe
+C:\Users\Lucas - Mafra\Google Drive\Ti_FSI\TI_FSI\TI_FSI\obj\Debug\Meu Estoque.pdb
