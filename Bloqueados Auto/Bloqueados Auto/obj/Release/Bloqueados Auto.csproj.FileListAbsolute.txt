@@ -1,0 +1,11 @@
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Release\Bloqueados Auto.exe.config
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Release\Bloqueados Auto.exe
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Release\Bloqueados Auto.pdb
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Release\itextsharp.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Release\itextsharp.pdfa.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Release\itextsharp.xtra.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Release\itextsharp.xml
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\obj\Release\Bloqueados Auto.exe
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\obj\Release\Bloqueados Auto.pdb
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Release\MySql.Data.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\obj\Release\Bloqueados Auto.csprojResolveAssemblyReference.cache

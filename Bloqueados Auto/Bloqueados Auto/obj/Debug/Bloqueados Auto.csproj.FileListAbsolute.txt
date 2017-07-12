@@ -1,0 +1,10 @@
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Debug\Bloqueados Auto.exe
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Debug\Bloqueados Auto.pdb
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\obj\Debug\Bloqueados Auto.exe
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\obj\Debug\Bloqueados Auto.pdb
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Debug\itextsharp.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Debug\itextsharp.pdfa.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Debug\itextsharp.xtra.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Debug\itextsharp.xml
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\bin\Debug\Bloqueados Auto.exe.config
+C:\Users\Lucas - Mafra\Dropbox\Mafra\Bloqueados Auto\Bloqueados Auto\obj\Debug\Bloqueados Auto.csprojResolveAssemblyReference.cache
