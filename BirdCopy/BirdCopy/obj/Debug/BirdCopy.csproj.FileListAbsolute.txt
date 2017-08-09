@@ -1,0 +1,8 @@
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Debug\BirdCopy.exe
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Debug\BirdCopy.pdb
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Debug\FirebirdSql.Data.UnitTests.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Debug\FirebirdSql.Data.UnitTests.dll.config
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\obj\Debug\BirdCopy.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\obj\Debug\BirdCopy.exe
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\obj\Debug\BirdCopy.pdb
