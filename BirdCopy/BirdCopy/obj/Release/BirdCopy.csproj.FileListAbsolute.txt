@@ -1,0 +1,7 @@
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Release\BirdCopy.exe
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Release\BirdCopy.pdb
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Release\FirebirdSql.Data.UnitTests.dll
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\bin\Release\FirebirdSql.Data.UnitTests.dll.config
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\obj\Release\BirdCopy.exe
+C:\Users\Lucas - Mafra\Dropbox\Mafra\DeskTop\BirdCopy\BirdCopy\obj\Release\BirdCopy.pdb
