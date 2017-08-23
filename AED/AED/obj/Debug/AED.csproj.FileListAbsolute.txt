@@ -1,9 +1,0 @@
-C:\Users\1047825\Desktop\AED\AED\bin\Debug\AED.exe.config
-C:\Users\1047825\Desktop\AED\AED\bin\Debug\AED.exe
-C:\Users\1047825\Desktop\AED\AED\bin\Debug\AED.pdb
-C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.csprojResolveAssemblyReference.cache
-C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.Properties.Resources.resources
-C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.csproj.GenerateResource.Cache
-C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.exe
-C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.pdb
-C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.frmmain.resources
