@@ -106,6 +106,7 @@ namespace AED
         }
 
         #endregion
+
         public frmmain()
         {
             InitializeComponent();
