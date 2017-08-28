@@ -7,109 +7,76 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Threading;
 
 namespace AED
 {
     public partial class frmmain : Form
     {
-        #region FATORIAL
-        static List<int> fatorialVALS = new List<int>();
-        //Fatorial iterativo
-        public static long FatorialIterativo(int val)
-        {
-            long result = 1;
-
-            for(int i = 0; i <= val; i++)
-            {
-                if(i == 0 || i == 1)
-                {
-                    result = 1;
-                }
-                else
-                {
-                    result *= i; 
-                }
-            }
-
-            return result;
-        }
-        
-        public static long FatorialRecursivo(long val)
-        {
-            if(val == 0 || val == 1)
-            {
-                return 1;
-            }
-            else
-            {
-                return val *= FatorialRecursivo(val - 1);
-            }
-        }
-        #endregion
-
-        #region Fibonacci
-        public static long FibonacciIterativo(long val)
-        {
-            long n1 = 0, n2 = 0, n3 = 0;
-            for (int i = 0; i < val; i++){
-
-                if (val == 0 || val == 1)
-                {
-                    n1 =  n2 = n3 =1;
-                }
-                else
-                {
-                    n3 = n2 + n1;
-                    n1 = n2;
-                    n2 = n3;
-                }
-            }
-            return n3;
-        }
-
-        public static long FibonacciRecursivo(long val)
-        {
-            if(val == 0 || val == 1)
-            {
-                return 1;
-            }
-            else
-            {
-                return FibonacciRecursivo(val - 1) + FibonacciRecursivo(val - 2);
-            }
-        }
-
-        #endregion
-
-        #region PESQUISA
-
-        public static long PesquisaSequencial(long[] vetor, long achar)
-        {
-            for(int i = 0; i < vetor.Length; i++)
-            {
-                if(vetor[i] == achar)
-                {
-                    return i;
-                }
-            }
-            return -1;
-        }
-
-        public static long PesquisaBinaria(long[] vetor, long achar, int inc, int fim)
-        {
-            int meio = (inc + fim) / 2;
-
-            if (inc > fim) return -1;
-            else if (meio == achar) return vetor[meio];
-            else if (meio > achar) PesquisaBinaria(vetor, achar, ++meio, fim);
-            else PesquisaBinaria(vetor, achar, --meio, inc);
-        }
-
-        #endregion
-
         public frmmain()
         {
             InitializeComponent();
+        }
+        /// <summary>
+        /// Todos os metódos, quando finalizados, são salvos em uma variável de log, que será carregada no frmRelatorio
+        /// </summary>
+        /// <param name="tipo"></param>
+        /// <param name="val"></param>
+        /// <param name="result"></param>
+        public static void SavarNoLog(string classe, string tipo, string val, string result)
+        {
+            frmmain.log.Add(classe + ":" + tipo + ">" + result);
+        }
+        /// <summary>
+        /// A variável de log consiste em: NOMEDACLASS:TIPO_DO_MÉTODO_DA_CLASSE->TEMPO_DE_EXECUÇÃO
+        /// </summary>
+        public static List<string> log = new List<string>();
+        private static long teste;
+
+        private void frmmain_Load(object sender, EventArgs e)
+        {
+            Stack<int>[] all = new Stack<int>[3];
+            all[0] = new Stack<int>(3);
+            all[1] = new Stack<int>(3);
+            all[2] = new Stack<int>(3);
+            all[0].Push(3);
+            all[0].Push(2);
+            all[0].Push(1);
+            //BuildHanoi(all, 0, 2, 1, 3);
+        }
+
+        private void btnfatorialexecutar_Click(object sender, EventArgs e)
+        {
+            ulong teste = Convert.ToUInt64(txtfatorialintvalor.Text);
+            Fatorial.FatorialRecursivo(teste);
+            Fatorial.FatorialIterativo(teste);
+            frmRelatorio open = new frmRelatorio(log);
+            open.ShowDialog();
+        }
+
+        private void btnautofatorialReg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnfibonacciexecute_Click(object sender, EventArgs e)
+        {
+            LoadPanel.Visible = true;
+            Backgrounduuh.RunWorkerAsync();
+            teste = Convert.ToInt64(txtfibonaccivalor.Text);
+            frmRelatorio open = new frmRelatorio(log);
+            open.ShowDialog();
+        }
+        private void Backgrounduuh_DoWork(object sender, DoWorkEventArgs e)
+        {
+            Fibonacci.FibonacciIterativo(teste);
+            Thread nova = new Thread(testes);
+            nova.Start();
+        }
+        private void testes()
+        {
+            Fibonacci.FibonacciRecursivo(teste);
         }
 
         private void btnfatorialInt_Click(object sender, EventArgs e)
@@ -117,19 +84,24 @@ namespace AED
             int num = 1;
             try
             {
-               num =  Convert.ToInt32(txtfatorialintvalor.Text);
+                num = Convert.ToInt32(txtfatorialintvalor.Text);
             }
             catch
             {
                 MessageBox.Show("O valor informado no campo de registro de valor do Fatorial não é válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            fatorialVALS.Add(num);
+            Fatorial.VALS.Add(num);
             cmbfatorial.Items.Add(num);
         }
 
-        private void btnfatorialexecutar_Click(object sender, EventArgs e)
+        private void btnpesquisaexecutar_Click(object sender, EventArgs e)
         {
-           
+            long[] send = new long[Convert.ToUInt64(txtpesquisavetortamanho.Text)];
+            long val = Convert.ToInt64(txtpesquisapesquisarpor.Text);
+            Pesquisa.PesquisaBinaria(send, val, 0, send.Length -1);
+            Pesquisa.PesquisaSequencial(send, val);
+            frmRelatorio open = new frmRelatorio(log);
+            open.ShowDialog();
         }
     }
 }
