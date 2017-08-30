@@ -1,0 +1,34 @@
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.exe.config
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Trabalho Pratico.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmmain.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.Properties.Resources.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Trabalho Pratico.csproj.GenerateResource.Cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Trabalho Pratico.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmRelatorio.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmLOAD.resources
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.exe.config
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.exe
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.pdb
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Trabalho Pratico.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmmain.resources
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmLOAD.resources
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmRelatorio.resources
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.Properties.Resources.resources
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Trabalho Pratico.csproj.GenerateResource.Cache
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.exe
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.pdb
+C:\Users\1047825\Desktop\AED\AED\bin\Debug\AED.exe.config
+C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.exe
+C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.pdb
+C:\Users\1047825\Desktop\AED\AED\bin\Debug\AED.exe
+C:\Users\1047825\Desktop\AED\AED\bin\Debug\AED.pdb
+C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED - Trabalho Pratico.csprojResolveAssemblyReference.cache
+C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.frmmain.resources
+C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.frmLOAD.resources
+C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.frmRelatorio.resources
+C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.Properties.Resources.resources
+C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED - Trabalho Pratico.csproj.GenerateResource.Cache
