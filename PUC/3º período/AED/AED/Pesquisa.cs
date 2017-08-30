@@ -8,6 +8,9 @@ namespace AED
 {
     class Pesquisa
     {
+        public int val;
+        public double binaria_resul;
+        public double sequencial_resul;
 
         public static Dictionary<int, int> VAL = new Dictionary<int, int>();
         public static int[] AUTOVALS = new int[] { 10000, 20000, 100000};
@@ -33,28 +36,19 @@ namespace AED
             {
                 if (vetor[i] == achar)
                 {
-                    frmmain.SavarNoLog("PESQUISA", "SEQUENCIAL", "", Contador.Stop());
                     return i;
                 }
             }
-            frmmain.SavarNoLog("PESQUISA", "SEQUENCIAL", "", Contador.Stop());
             return -1;
         }
-        private static long MaskBinaria(long[] vetor, long achar, int inc, int fim)
+        public static long PesquisaBinaria(long[] vetor, long achar, int inc, int fim)
         {
             int meio = (inc + fim) / 2;
 
             if (inc > fim) return -1;
             else if (meio == achar) return vetor[meio];
-            else if (meio > achar) return PesquisaBinaria(vetor, achar, meio +1, fim);
+            else if (meio > achar) return PesquisaBinaria(vetor, achar, meio + 1, fim);
             else return PesquisaBinaria(vetor, achar, meio - 1, inc);
-        }
-        public static long PesquisaBinaria(long[] vetor, long achar, int inc, int fim)
-        {
-            Contador.Start();
-            long result = MaskBinaria(vetor, achar, inc, fim);
-            frmmain.SavarNoLog("PESQUISA", "RECURSIVO", result.ToString(), Contador.Stop());
-            return result;
         }
     }
 }

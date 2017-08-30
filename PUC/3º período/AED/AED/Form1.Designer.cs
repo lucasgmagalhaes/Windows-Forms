@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnfatorialCLEAR = new System.Windows.Forms.Button();
             this.btnfatorialREMOVE = new System.Windows.Forms.Button();
-            this.btnrunREGISTER = new System.Windows.Forms.Button();
+            this.btnfatorialRUNREGISTER = new System.Windows.Forms.Button();
             this.btnautofatorialAUTOREG = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbfatorial = new System.Windows.Forms.ComboBox();
@@ -45,7 +45,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnhanoiCLEAR = new System.Windows.Forms.Button();
             this.btnhanoiREMOVE = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnhanoiRUNREGISTER = new System.Windows.Forms.Button();
             this.btnhanoiAUTOREG = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbhanoi = new System.Windows.Forms.ComboBox();
@@ -57,7 +57,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnfibonacciCLEAR = new System.Windows.Forms.Button();
             this.btnfibonacciREMOVE = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnfibonacciRUNREGISTER = new System.Windows.Forms.Button();
             this.btnfibonacciAUTOREG = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbfibonacci = new System.Windows.Forms.ComboBox();
@@ -71,7 +71,7 @@
             this.txtpesquisapesquisarpor = new System.Windows.Forms.TextBox();
             this.btnpesquisaREMOVE = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnpesquisaRUNREGISTER = new System.Windows.Forms.Button();
             this.btnpesquisaAUTOREG = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.cmbpesquisa = new System.Windows.Forms.ComboBox();
@@ -105,7 +105,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnfatorialCLEAR);
             this.groupBox1.Controls.Add(this.btnfatorialREMOVE);
-            this.groupBox1.Controls.Add(this.btnrunREGISTER);
+            this.groupBox1.Controls.Add(this.btnfatorialRUNREGISTER);
             this.groupBox1.Controls.Add(this.btnautofatorialAUTOREG);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cmbfatorial);
@@ -116,7 +116,7 @@
             this.groupBox1.Controls.Add(this.lbfirsttest);
             this.groupBox1.Location = new System.Drawing.Point(24, 71);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(496, 132);
+            this.groupBox1.Size = new System.Drawing.Size(496, 144);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -140,15 +140,15 @@
             this.btnfatorialREMOVE.UseVisualStyleBackColor = true;
             this.btnfatorialREMOVE.Click += new System.EventHandler(this.btnfatorialREMOVE_Click);
             // 
-            // btnrunREGISTER
+            // btnfatorialRUNREGISTER
             // 
-            this.btnrunREGISTER.Location = new System.Drawing.Point(267, 16);
-            this.btnrunREGISTER.Name = "btnrunREGISTER";
-            this.btnrunREGISTER.Size = new System.Drawing.Size(111, 23);
-            this.btnrunREGISTER.TabIndex = 8;
-            this.btnrunREGISTER.Text = "Executar registro";
-            this.btnrunREGISTER.UseVisualStyleBackColor = true;
-            this.btnrunREGISTER.Click += new System.EventHandler(this.btnrunREGISTER_Click);
+            this.btnfatorialRUNREGISTER.Location = new System.Drawing.Point(267, 16);
+            this.btnfatorialRUNREGISTER.Name = "btnfatorialRUNREGISTER";
+            this.btnfatorialRUNREGISTER.Size = new System.Drawing.Size(111, 23);
+            this.btnfatorialRUNREGISTER.TabIndex = 8;
+            this.btnfatorialRUNREGISTER.Text = "Executar registro";
+            this.btnfatorialRUNREGISTER.UseVisualStyleBackColor = true;
+            this.btnfatorialRUNREGISTER.Click += new System.EventHandler(this.btnfatorialRUNREGISTER_Click);
             // 
             // btnautofatorialAUTOREG
             // 
@@ -240,7 +240,7 @@
             // 
             this.groupBox5.Controls.Add(this.btnhanoiCLEAR);
             this.groupBox5.Controls.Add(this.btnhanoiREMOVE);
-            this.groupBox5.Controls.Add(this.button11);
+            this.groupBox5.Controls.Add(this.btnhanoiRUNREGISTER);
             this.groupBox5.Controls.Add(this.btnhanoiAUTOREG);
             this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Controls.Add(this.cmbhanoi);
@@ -249,7 +249,7 @@
             this.groupBox5.Controls.Add(this.txthanoivalor);
             this.groupBox5.Controls.Add(this.label10);
             this.groupBox5.Controls.Add(this.label14);
-            this.groupBox5.Location = new System.Drawing.Point(526, 209);
+            this.groupBox5.Location = new System.Drawing.Point(526, 233);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(506, 162);
             this.groupBox5.TabIndex = 10;
@@ -275,14 +275,15 @@
             this.btnhanoiREMOVE.UseVisualStyleBackColor = true;
             this.btnhanoiREMOVE.Click += new System.EventHandler(this.btnhanoiREMOVE_Click);
             // 
-            // button11
+            // btnhanoiRUNREGISTER
             // 
-            this.button11.Location = new System.Drawing.Point(267, 24);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(111, 23);
-            this.button11.TabIndex = 16;
-            this.button11.Text = "Executar registro";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnhanoiRUNREGISTER.Location = new System.Drawing.Point(267, 24);
+            this.btnhanoiRUNREGISTER.Name = "btnhanoiRUNREGISTER";
+            this.btnhanoiRUNREGISTER.Size = new System.Drawing.Size(111, 23);
+            this.btnhanoiRUNREGISTER.TabIndex = 16;
+            this.btnhanoiRUNREGISTER.Text = "Executar registro";
+            this.btnhanoiRUNREGISTER.UseVisualStyleBackColor = true;
+            this.btnhanoiRUNREGISTER.Click += new System.EventHandler(this.btnhanoiRUNREGISTER_Click);
             // 
             // btnhanoiAUTOREG
             // 
@@ -364,7 +365,7 @@
             // 
             this.groupBox2.Controls.Add(this.btnfibonacciCLEAR);
             this.groupBox2.Controls.Add(this.btnfibonacciREMOVE);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.btnfibonacciRUNREGISTER);
             this.groupBox2.Controls.Add(this.btnfibonacciAUTOREG);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.cmbfibonacci);
@@ -375,7 +376,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(526, 71);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(506, 132);
+            this.groupBox2.Size = new System.Drawing.Size(506, 144);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
@@ -399,14 +400,15 @@
             this.btnfibonacciREMOVE.UseVisualStyleBackColor = true;
             this.btnfibonacciREMOVE.Click += new System.EventHandler(this.btnfibonacciREMOVE_Click);
             // 
-            // button2
+            // btnfibonacciRUNREGISTER
             // 
-            this.button2.Location = new System.Drawing.Point(269, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Executar registro";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnfibonacciRUNREGISTER.Location = new System.Drawing.Point(269, 16);
+            this.btnfibonacciRUNREGISTER.Name = "btnfibonacciRUNREGISTER";
+            this.btnfibonacciRUNREGISTER.Size = new System.Drawing.Size(111, 23);
+            this.btnfibonacciRUNREGISTER.TabIndex = 8;
+            this.btnfibonacciRUNREGISTER.Text = "Executar registro";
+            this.btnfibonacciRUNREGISTER.UseVisualStyleBackColor = true;
+            this.btnfibonacciRUNREGISTER.Click += new System.EventHandler(this.btnfibonacciRUNREGISTER_Click);
             // 
             // btnfibonacciAUTOREG
             // 
@@ -490,7 +492,7 @@
             this.groupBox3.Controls.Add(this.txtpesquisapesquisarpor);
             this.groupBox3.Controls.Add(this.btnpesquisaREMOVE);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.btnpesquisaRUNREGISTER);
             this.groupBox3.Controls.Add(this.btnpesquisaAUTOREG);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.cmbpesquisa);
@@ -499,7 +501,7 @@
             this.groupBox3.Controls.Add(this.txtpesquisavetortamanho);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(24, 209);
+            this.groupBox3.Location = new System.Drawing.Point(24, 233);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(496, 162);
             this.groupBox3.TabIndex = 12;
@@ -542,14 +544,15 @@
             this.label11.TabIndex = 11;
             this.label11.Text = "Procurar por:";
             // 
-            // button6
+            // btnpesquisaRUNREGISTER
             // 
-            this.button6.Location = new System.Drawing.Point(267, 19);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 23);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Executar registro";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnpesquisaRUNREGISTER.Location = new System.Drawing.Point(267, 19);
+            this.btnpesquisaRUNREGISTER.Name = "btnpesquisaRUNREGISTER";
+            this.btnpesquisaRUNREGISTER.Size = new System.Drawing.Size(111, 23);
+            this.btnpesquisaRUNREGISTER.TabIndex = 8;
+            this.btnpesquisaRUNREGISTER.Text = "Executar registro";
+            this.btnpesquisaRUNREGISTER.UseVisualStyleBackColor = true;
+            this.btnpesquisaRUNREGISTER.Click += new System.EventHandler(this.btnpesquisaRUNREGISTER_Click);
             // 
             // btnpesquisaAUTOREG
             // 
@@ -661,7 +664,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 412);
+            this.ClientSize = new System.Drawing.Size(1039, 428);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -703,8 +706,8 @@
         private System.Windows.Forms.Button btnallregister;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button btnrunREGISTER;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnfatorialRUNREGISTER;
+        private System.Windows.Forms.Button btnhanoiRUNREGISTER;
         private System.Windows.Forms.Button btnhanoiAUTOREG;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbhanoi;
@@ -713,7 +716,7 @@
         private System.Windows.Forms.TextBox txthanoivalor;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnfibonacciRUNREGISTER;
         private System.Windows.Forms.Button btnfibonacciAUTOREG;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbfibonacci;
@@ -723,7 +726,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnpesquisaRUNREGISTER;
         private System.Windows.Forms.Button btnpesquisaAUTOREG;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbpesquisa;

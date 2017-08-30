@@ -8,13 +8,16 @@ namespace AED
 {
     class Fatorial
     {
+        public int val;
+        public double iterativo_resul;
+        public double recursivo_resul;       
+
         public static List<int> VALS = new List<int>();
         public static int[] AUTOVALS = new int[] {5,10,20,40,50,100};
         //Fatorial iterativo
         public static ulong FatorialIterativo(ulong val)
         {
             ulong result = 1;
-            Contador.Start();
             for (uint i = 0; i <= val; i++)
             {
                 if (i == 0 || i == 1)
@@ -26,28 +29,8 @@ namespace AED
                     result *= i;
                 }
             }
-
-            frmmain.SavarNoLog("FATORIAL", "ITERATIVO", val.ToString(), Contador.Stop());
             return result;
         }
-
-        /// <summary>
-        /// Método oficial de recursividade no fatorial
-        /// </summary>
-        /// <param name="val"></param>
-        /// <returns></returns>
-        private static ulong MaskRecursivo(ulong val)
-        {
-            if (val == 0 || val == 1)
-            {
-                return 1;
-            }
-            else
-            {
-                return val *= MaskRecursivo(val - 1);
-            }
-        }
-
         /// <summary>
         /// Quando o método de fatorial recursivo for chamado, ele estará contido por outro método, para garantir 
         /// adequadamente o tempo de contagem
@@ -62,12 +45,8 @@ namespace AED
             }
             else
             {
-                return val *= MaskRecursivo(val - 1);
+                return val *= FatorialRecursivo(val - 1);
             }
-
-            ulong total = MaskRecursivo(val);
-            frmmain.SavarNoLog("FATORIAL","RECURSIVO", val.ToString(), Contador.Stop());
-            return total;
         }
     }
 }

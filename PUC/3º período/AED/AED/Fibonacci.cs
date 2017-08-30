@@ -9,12 +9,15 @@ namespace AED
 {
     class Fibonacci
     {
+        public int val;
+        public double iterativo_resul;
+        public double recursivo_resul;
+
         public static List<int> VALS = new List<int>();
         public static int[] AUTOVALS = new int[] { 5,10,20,40,50,53};
 
         public static long FibonacciIterativo(long val)
         {
-            Contador.Start();
             long n1 = 0, n2 = 0, n3 = 0;
             for (int i = 0; i < val; i++)
             {
@@ -29,7 +32,6 @@ namespace AED
                     n2 = n3;
                 }
             }
-            frmmain.SavarNoLog("FIBONACCI", "ITERATIVO", n3.ToString(), Contador.Stop());
             return n3;
         }
 

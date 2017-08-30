@@ -71,11 +71,11 @@
     <Compile Include="Pesquisa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>frmmain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmLOAD.resx">
       <DependentUpon>frmLOAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRelatorio.resx">
       <DependentUpon>frmRelatorio.cs</DependentUpon>
