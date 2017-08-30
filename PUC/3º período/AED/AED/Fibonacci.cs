@@ -9,6 +9,9 @@ namespace AED
 {
     class Fibonacci
     {
+        public static List<int> VALS = new List<int>();
+        public static int[] AUTOVALS = new int[] { 5,10,20,40,50,53};
+
         public static long FibonacciIterativo(long val)
         {
             Contador.Start();
@@ -30,7 +33,7 @@ namespace AED
             return n3;
         }
 
-        private static long MaskFibonacciRecursivo(long val)
+        public static long FibonacciRecursivo(long val)
         {
             if (val == 0 || val == 1)
             {
@@ -40,14 +43,6 @@ namespace AED
             {
                 return FibonacciRecursivo(val - 1) + FibonacciRecursivo(val - 2);
             }
-        }
-
-        public static long FibonacciRecursivo(long val)
-        {
-            Contador.Start();
-            long result = MaskFibonacciRecursivo(val);
-            frmmain.SavarNoLog("FIBONACCI", "RECURSIVO", result.ToString(), Contador.Stop());
-            return result;
         }
     }
 }
