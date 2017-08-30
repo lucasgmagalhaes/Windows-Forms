@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmmain));
             this.lbfirsttest = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.btnfatorialCLEAR = new System.Windows.Forms.Button();
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             this.btnfatorialREMOVE = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnautofatorialAUTOREG = new System.Windows.Forms.Button();
@@ -43,7 +47,10 @@
             this.btnallrun = new System.Windows.Forms.Button();
             this.btnallregister = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.btnhanoiCLEAR = new System.Windows.Forms.Button();
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             this.btnhanoiREMOVE = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btnhanoiAUTOREG = new System.Windows.Forms.Button();
@@ -55,7 +62,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.btnfibonacciCLEAR = new System.Windows.Forms.Button();
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             this.btnfibonacciREMOVE = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnfibonacciAUTOREG = new System.Windows.Forms.Button();
@@ -67,7 +77,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.btnpesquisaCLEAR = new System.Windows.Forms.Button();
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             this.txtpesquisapesquisarpor = new System.Windows.Forms.TextBox();
             this.btnpesquisaREMOVE = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -80,15 +93,28 @@
             this.txtpesquisavetortamanho = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.btnresults = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnresults = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnfatorialCLEAR = new System.Windows.Forms.Button();
+            this.btnfibonacciCLEAR = new System.Windows.Forms.Button();
+            this.btnpesquisaCLEAR = new System.Windows.Forms.Button();
+            this.btnhanoiCLEAR = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+<<<<<<< HEAD
             this.groupBox4.SuspendLayout();
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbfirsttest
@@ -120,6 +146,7 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+<<<<<<< HEAD
             // btnfatorialCLEAR
             // 
             this.btnfatorialCLEAR.Location = new System.Drawing.Point(387, 95);
@@ -132,6 +159,10 @@
             // 
             // btnfatorialREMOVE
             // 
+=======
+            // btnfatorialREMOVE
+            // 
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             this.btnfatorialREMOVE.Location = new System.Drawing.Point(304, 95);
             this.btnfatorialREMOVE.Name = "btnfatorialREMOVE";
             this.btnfatorialREMOVE.Size = new System.Drawing.Size(82, 23);
@@ -254,6 +285,7 @@
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
             // 
+<<<<<<< HEAD
             // btnhanoiCLEAR
             // 
             this.btnhanoiCLEAR.Location = new System.Drawing.Point(394, 100);
@@ -266,6 +298,10 @@
             // 
             // btnhanoiREMOVE
             // 
+=======
+            // btnhanoiREMOVE
+            // 
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             this.btnhanoiREMOVE.Location = new System.Drawing.Point(306, 100);
             this.btnhanoiREMOVE.Name = "btnhanoiREMOVE";
             this.btnhanoiREMOVE.Size = new System.Drawing.Size(82, 23);
@@ -378,6 +414,7 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
+<<<<<<< HEAD
             // btnfibonacciCLEAR
             // 
             this.btnfibonacciCLEAR.Location = new System.Drawing.Point(389, 96);
@@ -388,6 +425,8 @@
             this.btnfibonacciCLEAR.UseVisualStyleBackColor = true;
             this.btnfibonacciCLEAR.Click += new System.EventHandler(this.btnfibonacciCLEAR_Click);
             // 
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             // btnfibonacciREMOVE
             // 
             this.btnfibonacciREMOVE.Location = new System.Drawing.Point(306, 96);
@@ -504,6 +543,7 @@
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             // 
+<<<<<<< HEAD
             // btnpesquisaCLEAR
             // 
             this.btnpesquisaCLEAR.Location = new System.Drawing.Point(387, 124);
@@ -521,6 +561,15 @@
             this.txtpesquisapesquisarpor.Size = new System.Drawing.Size(157, 20);
             this.txtpesquisapesquisarpor.TabIndex = 12;
             // 
+=======
+            // txtpesquisapesquisarpor
+            // 
+            this.txtpesquisapesquisarpor.Location = new System.Drawing.Point(141, 91);
+            this.txtpesquisapesquisarpor.Name = "txtpesquisapesquisarpor";
+            this.txtpesquisapesquisarpor.Size = new System.Drawing.Size(157, 20);
+            this.txtpesquisapesquisarpor.TabIndex = 12;
+            // 
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             // btnpesquisaREMOVE
             // 
             this.btnpesquisaREMOVE.Location = new System.Drawing.Point(304, 124);
@@ -626,6 +675,7 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "III) Pesquisa";
             // 
+<<<<<<< HEAD
             // btnresults
             // 
             this.btnresults.Location = new System.Drawing.Point(249, 19);
@@ -646,6 +696,8 @@
             this.groupBox4.TabIndex = 19;
             this.groupBox4.TabStop = false;
             // 
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AED.Properties.Resources.ExecutingLoadingGIF;
@@ -655,6 +707,66 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnresults
+            // 
+            this.btnresults.Location = new System.Drawing.Point(249, 19);
+            this.btnresults.Name = "btnresults";
+            this.btnresults.Size = new System.Drawing.Size(102, 28);
+            this.btnresults.TabIndex = 18;
+            this.btnresults.Text = "Exibir Resultados";
+            this.btnresults.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnallrun);
+            this.groupBox4.Controls.Add(this.btnresults);
+            this.groupBox4.Controls.Add(this.btnallregister);
+            this.groupBox4.Location = new System.Drawing.Point(24, 9);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(378, 58);
+            this.groupBox4.TabIndex = 19;
+            this.groupBox4.TabStop = false;
+            // 
+            // btnfatorialCLEAR
+            // 
+            this.btnfatorialCLEAR.Location = new System.Drawing.Point(387, 95);
+            this.btnfatorialCLEAR.Name = "btnfatorialCLEAR";
+            this.btnfatorialCLEAR.Size = new System.Drawing.Size(103, 23);
+            this.btnfatorialCLEAR.TabIndex = 10;
+            this.btnfatorialCLEAR.Text = "Limpar Registro";
+            this.btnfatorialCLEAR.UseVisualStyleBackColor = true;
+            this.btnfatorialCLEAR.Click += new System.EventHandler(this.btnfatorialCLEAR_Click);
+            // 
+            // btnfibonacciCLEAR
+            // 
+            this.btnfibonacciCLEAR.Location = new System.Drawing.Point(389, 96);
+            this.btnfibonacciCLEAR.Name = "btnfibonacciCLEAR";
+            this.btnfibonacciCLEAR.Size = new System.Drawing.Size(103, 23);
+            this.btnfibonacciCLEAR.TabIndex = 11;
+            this.btnfibonacciCLEAR.Text = "Limpar Registro";
+            this.btnfibonacciCLEAR.UseVisualStyleBackColor = true;
+            this.btnfibonacciCLEAR.Click += new System.EventHandler(this.btnfibonacciCLEAR_Click);
+            // 
+            // btnpesquisaCLEAR
+            // 
+            this.btnpesquisaCLEAR.Location = new System.Drawing.Point(387, 124);
+            this.btnpesquisaCLEAR.Name = "btnpesquisaCLEAR";
+            this.btnpesquisaCLEAR.Size = new System.Drawing.Size(103, 23);
+            this.btnpesquisaCLEAR.TabIndex = 11;
+            this.btnpesquisaCLEAR.Text = "Limpar Registro";
+            this.btnpesquisaCLEAR.UseVisualStyleBackColor = true;
+            this.btnpesquisaCLEAR.Click += new System.EventHandler(this.btnpesquisaCLEAR_Click);
+            // 
+            // btnhanoiCLEAR
+            // 
+            this.btnhanoiCLEAR.Location = new System.Drawing.Point(394, 100);
+            this.btnhanoiCLEAR.Name = "btnhanoiCLEAR";
+            this.btnhanoiCLEAR.Size = new System.Drawing.Size(103, 23);
+            this.btnhanoiCLEAR.TabIndex = 13;
+            this.btnhanoiCLEAR.Text = "Limpar Registro";
+            this.btnhanoiCLEAR.UseVisualStyleBackColor = true;
+            this.btnhanoiCLEAR.Click += new System.EventHandler(this.btnhanoiCLEAR_Click);
             // 
             // frmmain
             // 
@@ -668,6 +780,10 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+<<<<<<< HEAD
+=======
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             this.MaximizeBox = false;
             this.Name = "frmmain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -681,8 +797,12 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+<<<<<<< HEAD
             this.groupBox4.ResumeLayout(false);
+=======
+>>>>>>> 0b2b8156b866368c5db1800b4719734c3d261e46
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
