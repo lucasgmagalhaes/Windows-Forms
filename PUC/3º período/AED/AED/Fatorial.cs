@@ -9,7 +9,7 @@ namespace AED
     class Fatorial
     {
         public static List<int> VALS = new List<int>();
-
+        public static int[] AUTOVALS = new int[] {5,10,20,40,50,100};
         //Fatorial iterativo
         public static ulong FatorialIterativo(ulong val)
         {

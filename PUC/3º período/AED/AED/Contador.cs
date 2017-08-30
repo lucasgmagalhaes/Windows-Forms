@@ -15,10 +15,12 @@ namespace AED
             count.Start();
         }
 
-        public static string Stop()
+        public static double Stop()
         {
             count.Stop();
-            return count.Elapsed.TotalMilliseconds.ToString();
+            double get = count.Elapsed.TotalMilliseconds;
+            count.Reset();
+            return get;
         }
     }
 }

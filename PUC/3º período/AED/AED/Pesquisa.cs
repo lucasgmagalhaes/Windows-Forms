@@ -8,6 +8,9 @@ namespace AED
 {
     class Pesquisa
     {
+
+        public static Dictionary<int, int> VAL = new Dictionary<int, int>();
+        public static int[] AUTOVALS = new int[] { 10000, 20000, 100000};
         /// <summary>
         /// Preenche um vetor ordenado
         /// </summary>
@@ -43,8 +46,8 @@ namespace AED
 
             if (inc > fim) return -1;
             else if (meio == achar) return vetor[meio];
-            else if (meio > achar) return PesquisaBinaria(vetor, achar, ++meio, fim);
-            else return PesquisaBinaria(vetor, achar, --meio, inc);
+            else if (meio > achar) return PesquisaBinaria(vetor, achar, meio +1, fim);
+            else return PesquisaBinaria(vetor, achar, meio - 1, inc);
         }
         public static long PesquisaBinaria(long[] vetor, long achar, int inc, int fim)
         {
