@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnfatorialCLEAR = new System.Windows.Forms.Button();
             this.btnfatorialREMOVE = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnrunREGISTER = new System.Windows.Forms.Button();
             this.btnautofatorialAUTOREG = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbfatorial = new System.Windows.Forms.ComboBox();
@@ -105,7 +105,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnfatorialCLEAR);
             this.groupBox1.Controls.Add(this.btnfatorialREMOVE);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnrunREGISTER);
             this.groupBox1.Controls.Add(this.btnautofatorialAUTOREG);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cmbfatorial);
@@ -140,14 +140,15 @@
             this.btnfatorialREMOVE.UseVisualStyleBackColor = true;
             this.btnfatorialREMOVE.Click += new System.EventHandler(this.btnfatorialREMOVE_Click);
             // 
-            // button1
+            // btnrunREGISTER
             // 
-            this.button1.Location = new System.Drawing.Point(267, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Executar registro";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnrunREGISTER.Location = new System.Drawing.Point(267, 16);
+            this.btnrunREGISTER.Name = "btnrunREGISTER";
+            this.btnrunREGISTER.Size = new System.Drawing.Size(111, 23);
+            this.btnrunREGISTER.TabIndex = 8;
+            this.btnrunREGISTER.Text = "Executar registro";
+            this.btnrunREGISTER.UseVisualStyleBackColor = true;
+            this.btnrunREGISTER.Click += new System.EventHandler(this.btnrunREGISTER_Click);
             // 
             // btnautofatorialAUTOREG
             // 
@@ -649,7 +650,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AED.Properties.Resources.ExecutingLoadingGIF;
-            this.pictureBox1.Location = new System.Drawing.Point(997, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(1006, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(26, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -702,7 +703,7 @@
         private System.Windows.Forms.Button btnallregister;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnrunREGISTER;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button btnhanoiAUTOREG;
         private System.Windows.Forms.Label label9;

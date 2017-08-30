@@ -56,7 +56,15 @@ namespace AED
         /// <returns></returns>
         public static ulong FatorialRecursivo(ulong val)
         {
-            Contador.Start();
+            if (val == 0 || val == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return val *= MaskRecursivo(val - 1);
+            }
+
             ulong total = MaskRecursivo(val);
             frmmain.SavarNoLog("FATORIAL","RECURSIVO", val.ToString(), Contador.Stop());
             return total;

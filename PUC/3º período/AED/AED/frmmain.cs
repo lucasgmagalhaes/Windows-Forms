@@ -98,6 +98,7 @@ namespace AED
         }
         private void btnfatorialexecutar_Click(object sender, EventArgs e)
         {
+            Contador.Start();
             FatorialRun();
             frmRelatorio open = new frmRelatorio(log);
             open.ShowDialog();
@@ -314,6 +315,14 @@ namespace AED
         private void btnhanoiCLEAR_Click(object sender, EventArgs e)
         {
             cmbhanoi.Items.Clear();
+        }
+
+        private void btnrunREGISTER_Click(object sender, EventArgs e)
+        {
+            foreach(int val in cmbfatorial.Items)
+            {
+                int tteste = val;
+            }
         }
     }
 }
