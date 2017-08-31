@@ -10,8 +10,8 @@ namespace AED
     class Fibonacci
     {
         public int val;
-        public double iterativo_resul;
-        public double recursivo_resul;
+        public string iterativo_resul;
+        public string recursivo_resul;
 
         public static List<int> VALS = new List<int>();
         public static int[] AUTOVALS = new int[] { 5,10,20,40,50,53};

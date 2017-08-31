@@ -10,9 +10,8 @@ namespace AED
     {
         public int discos;
         public int moves;
-        public double tempo;
+        public string tempo;
 
-        private static string display = "";
         private static int icount = 0;
         public static List<int> VAL = new List<int>();
         public static int[] AUTOVALS = new int[] { 2,4,8,16,24,32 };
@@ -35,7 +34,8 @@ namespace AED
                 all[dest].Push(all[orig].Pop());
                 icount++;
                 BuildHanoi(all, aux, orig, dest, disk - 1);
-            }          
+            }
+
         }
     }
 }

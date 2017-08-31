@@ -32,3 +32,4 @@ C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.frmLOAD.resources
 C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.frmRelatorio.resources
 C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED.Properties.Resources.resources
 C:\Users\1047825\Desktop\AED\AED\obj\Debug\AED - Trabalho Pratico.csproj.GenerateResource.Cache
+C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Trabalho Pratico.csproj.CoreCompileInputs.cache

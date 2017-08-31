@@ -9,10 +9,10 @@ namespace AED
     class Pesquisa
     {
         public int val;
-        public double binaria_resul;
-        public double sequencial_resul;
+        public string binaria_resul;
+        public string sequencial_resul;
 
-        public static Dictionary<int, int> VAL = new Dictionary<int, int>();
+        public static List<int> VAL = new List<int>();
         public static int[] AUTOVALS = new int[] { 10000, 20000, 100000};
         /// <summary>
         /// Preenche um vetor ordenado
@@ -31,7 +31,6 @@ namespace AED
         public static long PesquisaSequencial(long[] vetor, long achar)
         {
             vetor = PreencherVetor(vetor);
-            Contador.Start();
             for (int i = 0; i < vetor.Length; i++)
             {
                 if (vetor[i] == achar)
@@ -46,9 +45,9 @@ namespace AED
             int meio = (inc + fim) / 2;
 
             if (inc > fim) return -1;
-            else if (meio == achar) return vetor[meio];
-            else if (meio > achar) return PesquisaBinaria(vetor, achar, meio + 1, fim);
-            else return PesquisaBinaria(vetor, achar, meio - 1, inc);
+            else if (vetor[meio] == achar) return vetor[meio];
+            else if (vetor[meio] > achar) return PesquisaBinaria(vetor, achar, inc, meio -1);
+            else return PesquisaBinaria(vetor, achar, meio + 1, fim);
         }
     }
 }
