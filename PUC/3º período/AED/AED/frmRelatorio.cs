@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace AED
 {
     public partial class frmRelatorio : Form
@@ -166,11 +165,11 @@ namespace AED
                 {
                     if (splitval[0] == "FATORIAL:ITERATIVO")
                     {
-                        txtfactorialrecursivo.Text = splitval[1];
+                        txtfatorialiterativo.Text = splitval[1];
                     }
                     else
                     {
-                        txtfatorialiterativo.Text = splitval[1];
+                        txtfactorialrecursivo.Text = splitval[1];
                     }
                 }
                 else if (splitnome[0] == "FIBONACCI")
@@ -242,11 +241,9 @@ namespace AED
                 txthanoitempo.Text = HanoiInfos[0].tempo;
             }
         }
-
         private void frmRelatorio_Load(object sender, EventArgs e)
         {
-            lblfulltime.Text += frmmain.ALLCOUNT.Elapsed;
-            cmbformatresult.Text = cmbformatresult.Items[0].ToString();
+            lblfulltime.Text += "  " + frmmain.ALLCOUNT.Elapsed;
             if (cmbfatorial.Items.Count > 0 && cmbfibonacci.Items.Count > 0 && cmbpesquisa.Items.Count > 0 && cmbhanoi.Items.Count > 0)
             {
                 ListLog();
@@ -261,12 +258,11 @@ namespace AED
                     HanoiLog();
                 }
             }
-            frmmain.ClearStorage();
         }
 
         private void cmbformatresult_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+        
         }
 
         private void cmbfatorial_SelectedIndexChanged(object sender, EventArgs e)

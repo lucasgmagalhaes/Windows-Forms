@@ -58,12 +58,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>frmmain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLOAD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLOAD.Designer.cs">
-      <DependentUpon>frmLOAD.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmRelatorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,9 +68,6 @@
     <Compile Include="Pesquisa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmLOAD.resx">
-      <DependentUpon>frmLOAD.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmmain.resx">
       <DependentUpon>frmmain.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyIcon.ico" />
+    <None Include="Resources\snowflake-1-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

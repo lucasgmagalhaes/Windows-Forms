@@ -15,7 +15,6 @@ C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.pdb
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Trabalho Pratico.csprojResolveAssemblyReference.cache
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmmain.resources
-C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmLOAD.resources
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmRelatorio.resources
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.Properties.Resources.resources
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Trabalho Pratico.csproj.GenerateResource.Cache

@@ -58,8 +58,6 @@
             this.txthanoioperacoes = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.cmbformatresult = new System.Windows.Forms.ComboBox();
-            this.lblformat = new System.Windows.Forms.Label();
             this.lblfulltime = new System.Windows.Forms.Label();
             this.groupfatorial.SuspendLayout();
             this.groupfibonacci.SuspendLayout();
@@ -379,32 +377,6 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Tempo de execução";
             // 
-            // cmbformatresult
-            // 
-            this.cmbformatresult.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbformatresult.FormattingEnabled = true;
-            this.cmbformatresult.Items.AddRange(new object[] {
-            "Milisegundos(ms)",
-            "Segundos(seg)",
-            "Minutos(min)",
-            "Horas(H)",
-            "Dias"});
-            this.cmbformatresult.Location = new System.Drawing.Point(369, 9);
-            this.cmbformatresult.Name = "cmbformatresult";
-            this.cmbformatresult.Size = new System.Drawing.Size(121, 21);
-            this.cmbformatresult.TabIndex = 10;
-            this.cmbformatresult.SelectedIndexChanged += new System.EventHandler(this.cmbformatresult_SelectedIndexChanged);
-            // 
-            // lblformat
-            // 
-            this.lblformat.AutoSize = true;
-            this.lblformat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblformat.Location = new System.Drawing.Point(281, 11);
-            this.lblformat.Name = "lblformat";
-            this.lblformat.Size = new System.Drawing.Size(82, 16);
-            this.lblformat.TabIndex = 5;
-            this.lblformat.Text = "Formato em:";
-            // 
             // lblfulltime
             // 
             this.lblfulltime.AutoSize = true;
@@ -421,13 +393,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 570);
             this.Controls.Add(this.lblfulltime);
-            this.Controls.Add(this.lblformat);
-            this.Controls.Add(this.cmbformatresult);
             this.Controls.Add(this.grouphanoi);
             this.Controls.Add(this.grouppesquisa);
             this.Controls.Add(this.groupfibonacci);
             this.Controls.Add(this.groupfatorial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "frmRelatorio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRelatorio";
@@ -469,8 +440,6 @@
         private System.Windows.Forms.TextBox txthanoitamanho;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txthanoioperacoes;
-        private System.Windows.Forms.ComboBox cmbformatresult;
-        private System.Windows.Forms.Label lblformat;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmbfatorial;
         private System.Windows.Forms.Label label12;

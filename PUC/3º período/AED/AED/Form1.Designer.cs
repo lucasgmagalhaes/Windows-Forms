@@ -81,20 +81,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnresults = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnrunVALS = new System.Windows.Forms.Button();
             this.btnlimparREGISTRO = new System.Windows.Forms.Button();
-            this.btnlimparTUDO = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbfirsttest
@@ -228,7 +224,7 @@
             this.btnrunREGISTRO.Name = "btnrunREGISTRO";
             this.btnrunREGISTRO.Size = new System.Drawing.Size(91, 28);
             this.btnrunREGISTRO.TabIndex = 8;
-            this.btnrunREGISTRO.Text = "Registros";
+            this.btnrunREGISTRO.Text = "Executar";
             this.btnrunREGISTRO.UseVisualStyleBackColor = true;
             this.btnrunREGISTRO.Click += new System.EventHandler(this.btnallrun_Click);
             // 
@@ -625,6 +621,7 @@
             this.btnresults.TabIndex = 18;
             this.btnresults.Text = "Exibir Resultados";
             this.btnresults.UseVisualStyleBackColor = true;
+            this.btnresults.Click += new System.EventHandler(this.btnresults_Click);
             // 
             // groupBox4
             // 
@@ -637,6 +634,27 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Geral";
             // 
+            // btnlimparREGISTRO
+            // 
+            this.btnlimparREGISTRO.Location = new System.Drawing.Point(6, 19);
+            this.btnlimparREGISTRO.Name = "btnlimparREGISTRO";
+            this.btnlimparREGISTRO.Size = new System.Drawing.Size(91, 28);
+            this.btnlimparREGISTRO.TabIndex = 20;
+            this.btnlimparREGISTRO.Text = "Limpar";
+            this.btnlimparREGISTRO.UseVisualStyleBackColor = true;
+            this.btnlimparREGISTRO.Click += new System.EventHandler(this.btnlimparREGISTRO_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.btnlimparREGISTRO);
+            this.groupBox7.Controls.Add(this.btnrunREGISTRO);
+            this.groupBox7.Location = new System.Drawing.Point(296, 9);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(202, 58);
+            this.groupBox7.TabIndex = 23;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Registros";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AED.Properties.Resources.ExecutingLoadingGIF;
@@ -647,65 +665,12 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // btnrunVALS
-            // 
-            this.btnrunVALS.Enabled = false;
-            this.btnrunVALS.Location = new System.Drawing.Point(6, 19);
-            this.btnrunVALS.Name = "btnrunVALS";
-            this.btnrunVALS.Size = new System.Drawing.Size(91, 28);
-            this.btnrunVALS.TabIndex = 19;
-            this.btnrunVALS.Text = "Valores";
-            this.btnrunVALS.UseVisualStyleBackColor = true;
-            // 
-            // btnlimparREGISTRO
-            // 
-            this.btnlimparREGISTRO.Enabled = false;
-            this.btnlimparREGISTRO.Location = new System.Drawing.Point(139, 19);
-            this.btnlimparREGISTRO.Name = "btnlimparREGISTRO";
-            this.btnlimparREGISTRO.Size = new System.Drawing.Size(102, 28);
-            this.btnlimparREGISTRO.TabIndex = 20;
-            this.btnlimparREGISTRO.Text = "Registros";
-            this.btnlimparREGISTRO.UseVisualStyleBackColor = true;
-            // 
-            // btnlimparTUDO
-            // 
-            this.btnlimparTUDO.Enabled = false;
-            this.btnlimparTUDO.Location = new System.Drawing.Point(30, 19);
-            this.btnlimparTUDO.Name = "btnlimparTUDO";
-            this.btnlimparTUDO.Size = new System.Drawing.Size(102, 28);
-            this.btnlimparTUDO.TabIndex = 21;
-            this.btnlimparTUDO.Text = "Tudo";
-            this.btnlimparTUDO.UseVisualStyleBackColor = true;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.btnlimparTUDO);
-            this.groupBox6.Controls.Add(this.btnlimparREGISTRO);
-            this.groupBox6.Location = new System.Drawing.Point(520, 9);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(266, 58);
-            this.groupBox6.TabIndex = 22;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Limpar campos dos:";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.btnrunREGISTRO);
-            this.groupBox7.Controls.Add(this.btnrunVALS);
-            this.groupBox7.Location = new System.Drawing.Point(296, 9);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(218, 58);
-            this.groupBox7.TabIndex = 23;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Executar";
-            // 
             // frmmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 428);
+            this.ClientSize = new System.Drawing.Size(1039, 408);
             this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -728,9 +693,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox6.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -790,10 +754,7 @@
         private System.Windows.Forms.Button btnfibonacciCLEAR;
         private System.Windows.Forms.Button btnhanoiCLEAR;
         private System.Windows.Forms.Button btnpesquisaCLEAR;
-        private System.Windows.Forms.Button btnrunVALS;
         private System.Windows.Forms.Button btnlimparREGISTRO;
-        private System.Windows.Forms.Button btnlimparTUDO;
-        private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox7;
     }
 }

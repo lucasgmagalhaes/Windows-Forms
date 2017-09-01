@@ -36,11 +36,30 @@ namespace AED
             log.Clear();
         }
         /// <summary>
+        /// Realinha os items do combobox
+        /// </summary>
+        /// <param name="cb"></param>
+        private void ComboAlign(ComboBox cb)
+        {
+            List<int> resize = new List<int>();
+            foreach (int i in cb.Items)
+            {
+                resize.Add(i);
+            }
+            resize.Sort();
+            cb.DropDownHeight = 106;
+            cb.Items.Clear();
+            foreach (int a in resize)
+            {
+                cb.Items.Add(a);
+            }
+        }
+        /// <summary>
         /// A variável de log consiste em: NOMEDACLASS:TIPO_DO_MÉTODO_DA_CLASSE->TEMPO_DE_EXECUÇÃO
         /// </summary>
         private static List<string> log = new List<string>();
         int timersleep = 50;
-       
+
         #endregion
 
         #region GENERAL METHODS
@@ -57,6 +76,35 @@ namespace AED
             else
             {
                 DisableAllRun();
+            }
+        }
+        private void EnableClearAll()
+        {
+            btnlimparREGISTRO.Enabled = true;
+        }
+        private void DisableClearAll()
+        {
+            btnlimparREGISTRO.Enabled = false;
+        }
+        private void CheckParcialCMB()
+        {
+            if (cmbfatorial.Items.Count > 0 || cmbfibonacci.Items.Count > 0 || cmbpesquisa.Items.Count > 0 || cmbhanoi.Items.Count > 0)
+            {
+                EnableClearAll();
+            }
+            else
+            {
+                DisableClearAll();
+            }
+        }
+        private void btnlimparREGISTRO_Click(object sender, EventArgs e)
+        {
+            foreach(Control cmb in this.Controls)
+            {
+                if(cmb is ComboBox)
+                {
+                     //Missing to do
+                }
             }
         }
         /// <summary>
@@ -77,6 +125,11 @@ namespace AED
         {
             btnresults.Enabled = false;
             btnrunREGISTRO.Enabled = false;
+        }
+        private void btnresults_Click(object sender, EventArgs e)
+        {
+            frmRelatorio op = new frmRelatorio(log);
+            op.ShowDialog();
         }
         private void btnallregister_Click(object sender, EventArgs e)
         {
@@ -122,15 +175,15 @@ namespace AED
             FatorialRunCMB();
             FibonacciRunCMB();
             PesquisaRunCMB();
+            _ALLCOUNT.Stop();
             List<string> solo = HanoiRunCMG();
-            foreach(string han in solo)
+            foreach (string han in solo)
             {
                 log.Add(han);
             }
             List<string> names = new List<string>() { "FATORIAL", "FIBONACCI", "PESQUISA", "HANOI" };
-            List<ComboBox> combos = new List<ComboBox>() { cmbfatorial, cmbfibonacci, cmbpesquisa, cmbhanoi};
+            List<ComboBox> combos = new List<ComboBox>() { cmbfatorial, cmbfibonacci, cmbpesquisa, cmbhanoi };
             frmRelatorio open = new frmRelatorio(log, names, combos);
-            _ALLCOUNT.Stop();
             open.ShowDialog();
         }
         #endregion
@@ -143,7 +196,7 @@ namespace AED
                 foreach (int val in cmbfatorial.Items)
                 {
                     FatorialRun(Convert.ToUInt64(val));
-                    Thread.Sleep(timersleep);
+                    //  Thread.Sleep(timersleep);
                 }
             }
         }
@@ -161,14 +214,25 @@ namespace AED
         }
         private void FatorialRun(ulong send)
         {
-            FatorialFirstRun();
             Contador.Start();
             Fatorial.FatorialIterativo(send);
             string re = Contador.Stop();
+            if (re == "00:00:00")
+            {
+                Contador.Start();
+                Fatorial.FatorialIterativo(send);
+                re = Contador.Stop();
+            }
             SavarNoLog("FATORIAL", "ITERATIVO", re);
             Contador.Start();
             Fatorial.FatorialRecursivo(send);
             re = Contador.Stop();
+            if (re == "00:00:00")
+            {
+                Contador.Start();
+                Fatorial.FatorialRecursivo(send);
+                re = Contador.Stop();
+            }
             SavarNoLog("FATORIAL", "RECURSIVO", re);
         }
         private void btnautofatorialAUTOREG_Click(object sender, EventArgs e)
@@ -192,9 +256,11 @@ namespace AED
                 {
                     send = Convert.ToUInt64(txtfatorialintvalor.Text);
                     _ALLCOUNT.Start();
+                    FatorialFirstRun();
                     FatorialRun(send);
                     frmRelatorio open = new frmRelatorio(log);
                     _ALLCOUNT.Stop();
+                    btnresults.Enabled = true;
                     open.ShowDialog();
                 }
                 catch
@@ -217,6 +283,7 @@ namespace AED
                     cmbfatorial.Text = num.ToString();
                     txtfatorialintvalor.Text = "";
                     txtfatorialintvalor.Focus();
+                    ComboAlign(cmbfatorial);
                     btnrunREGISTRO.Enabled = true;
                     CheckFullCMB();
                 }
@@ -243,9 +310,11 @@ namespace AED
             if (cmbfatorial.Items.Count > 0)
             {
                 _ALLCOUNT.Start();
+                FatorialFirstRun();
                 FatorialRunCMB();
-                frmRelatorio open = new frmRelatorio(log, "FATORIAL", cmbfatorial);
                 _ALLCOUNT.Stop();
+                frmRelatorio open = new frmRelatorio(log, "FATORIAL", cmbfatorial);
+                btnresults.Enabled = true;
                 open.ShowDialog();
             }
         }
@@ -267,14 +336,26 @@ namespace AED
         }
         private void FibonacciRun(long val)
         {
-            FibonacciFirstRun();
             Contador.Start();
             Fibonacci.FibonacciIterativo(val);
-            SavarNoLog("FIBONACCI", "ITERATIVO", Contador.Stop());
+            string re = Contador.Stop();
+            if (re == "00:00:00")
+            {
+                Contador.Start();
+                Fibonacci.FibonacciIterativo(val);
+                re = Contador.Stop();
+            }
+            SavarNoLog("FIBONACCI", "ITERATIVO", re);
             Contador.Start();
             Fibonacci.FibonacciRecursivo(val);
-            string timer = Contador.Stop();
-            SavarNoLog("FIBONACCI", "RECURSIVO", timer);
+            re = Contador.Stop();
+            if (re == "00:00:00")
+            {
+                Contador.Start();
+                Fibonacci.FibonacciRecursivo(val);
+                re = Contador.Stop();
+            }
+            SavarNoLog("FIBONACCI", "RECURSIVO", re);
         }
         private void FibonacciRunCMB()
         {
@@ -283,13 +364,15 @@ namespace AED
                 foreach (int val in cmbfibonacci.Items)
                 {
                     FibonacciRun(Convert.ToInt64(val));
-                    Thread.Sleep(timersleep);
                 }
             }
         }
         private void btnfibonacciRUNREGISTER_Click(object sender, EventArgs e)
         {
+            FibonacciFirstRun();
+            _ALLCOUNT.Start();
             FibonacciRunCMB();
+            _ALLCOUNT.Stop();
             frmRelatorio open = new frmRelatorio(log, "FIBONACCI", cmbfibonacci);
             open.ShowDialog();
         }
@@ -311,7 +394,10 @@ namespace AED
             {
                 try
                 {
+                    FibonacciFirstRun();
+                    _ALLCOUNT.Start();
                     FibonacciRun(Convert.ToInt64(txtfibonaccivalor.Text));
+                    _ALLCOUNT.Stop();
                     frmRelatorio open = new frmRelatorio(log);
                     open.ShowDialog();
                 }
@@ -319,7 +405,7 @@ namespace AED
                 {
                     MessageBox.Show("O valor informado no campo de registro de valor do Fatorial não é válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtfibonaccivalor.Text = "";
-                }              
+                }
             }
         }
 
@@ -333,6 +419,7 @@ namespace AED
                 cmbfibonacci.Text = num.ToString();
                 txtfibonaccivalor.Text = "";
                 txtfibonaccivalor.Focus();
+                ComboAlign(cmbfibonacci);
                 CheckFullCMB();
             }
             catch
@@ -376,10 +463,22 @@ namespace AED
             Contador.Start();
             Pesquisa.PesquisaBinaria(send, val, 0, send.Length - 1);
             string re = Contador.Stop();
-            frmmain.SavarNoLog("PESQUISA", "RECURSIVO", re);
+            if (re == "00:00:00")
+            {
+                Contador.Start();
+                Pesquisa.PesquisaBinaria(send, val, 0, send.Length - 1);
+                re = Contador.Stop();
+            }
+            SavarNoLog("PESQUISA", "RECURSIVO", re);
             Contador.Start();
             Pesquisa.PesquisaSequencial(send, val);
             re = Contador.Stop();
+            if (re == "00:00:00")
+            {
+                Contador.Start();
+                Pesquisa.PesquisaBinaria(send, val, 0, send.Length - 1);
+                re = Contador.Stop();
+            }
             SavarNoLog("PESQUISA", "SEQUENCIAL", re);
         }
         private void PesquisaRunCMB()
@@ -395,7 +494,9 @@ namespace AED
         }
         private void btnpesquisaRUNREGISTER_Click(object sender, EventArgs e)
         {
+            _ALLCOUNT.Start();
             PesquisaRunCMB();
+            _ALLCOUNT.Stop();
             frmRelatorio open = new frmRelatorio(log, "PESQUISA", cmbpesquisa);
             open.ShowDialog();
         }
@@ -416,7 +517,9 @@ namespace AED
                 try
                 {
                     long send = Convert.ToInt64(txtpesquisavetortamanho.Text);
+                    _ALLCOUNT.Start();
                     PesquisaRun(send);
+                    _ALLCOUNT.Stop();
                     frmRelatorio open = new frmRelatorio(log);
                     open.ShowDialog();
                 }
@@ -438,6 +541,7 @@ namespace AED
                 cmbpesquisa.Text = vectorsize.ToString();
                 txtpesquisavetortamanho.Text = "";
                 txtpesquisavetortamanho.Focus();
+                ComboAlign(cmbpesquisa);
                 CheckFullCMB();
             }
             catch
@@ -459,6 +563,17 @@ namespace AED
         #endregion
 
         #region HANOI
+        private void HanoiFirstRun()
+        {
+            Stack<int>[] all = new Stack<int>[3];
+            all[0] = new Stack<int>();
+            all[1] = new Stack<int>();
+            all[2] = new Stack<int>();
+            all[0].Push(1);
+            Contador.Start();
+            Hanoi.BuildHanoi(all, 0, 1, 2, 1);
+            Contador.Stop();
+        }
         private string HanoiRun(int blocks, string hanoilog = "")
         {
             Stack<int>[] all = new Stack<int>[3];
@@ -474,6 +589,14 @@ namespace AED
 
             int g = Hanoi.GetHesult();
             string re = Contador.Stop();
+            if (re == "00:00:00")
+            {
+                Contador.Start();
+                Hanoi.BuildHanoi(all, 0, 1, 2, blocks);
+
+                g = Hanoi.GetHesult();
+                re = Contador.Stop();
+            }
             return hanoilog = blocks + ";" + g + ";" + re;
         }
         private List<string> HanoiRunCMG()
@@ -482,6 +605,7 @@ namespace AED
             foreach (int val in cmbhanoi.Items)
             {
                 hanoilog.Add(HanoiRun(val));
+                // Thread.Sleep(timersleep);
             }
             return hanoilog;
         }
@@ -502,7 +626,10 @@ namespace AED
                 try
                 {
                     int blocks = Convert.ToInt32(txthanoivalor.Text);
+                    HanoiFirstRun();
+                    _ALLCOUNT.Start();
                     HanoiRun(blocks);
+                    _ALLCOUNT.Stop();
                     frmRelatorio open = new frmRelatorio(HanoiRun(blocks));
                     open.ShowDialog();
                 }
@@ -523,6 +650,7 @@ namespace AED
                 cmbhanoi.Text = num.ToString();
                 txthanoivalor.Text = "";
                 txthanoivalor.Focus();
+                ComboAlign(cmbhanoi);
                 CheckFullCMB();
             }
             catch
@@ -545,11 +673,15 @@ namespace AED
         {
             if (cmbhanoi.Items.Count > 0)
             {
+                _ALLCOUNT.Start();
+                HanoiFirstRun();
+                _ALLCOUNT.Stop();
                 List<string> getresult = HanoiRunCMG();
                 frmRelatorio open = new frmRelatorio(getresult, "HANOI", cmbhanoi);
                 open.ShowDialog();
             }
         }
+
         #endregion
     }
 }
