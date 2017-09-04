@@ -45,7 +45,7 @@ namespace AED
             }
             else
             {
-                return val *= FatorialRecursivo(val - 1);
+                return val * FatorialRecursivo(val - 1);
             }
         }
     }

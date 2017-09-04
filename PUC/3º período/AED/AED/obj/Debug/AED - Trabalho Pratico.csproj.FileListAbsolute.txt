@@ -9,7 +9,6 @@ C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED - Tr
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.exe
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.pdb
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmRelatorio.resources
-C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Debug\AED.frmLOAD.resources
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.exe.config
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.exe
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Debug\AED.pdb

@@ -79,9 +79,7 @@
             this.txtpesquisavetortamanho = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnresults = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnlimparREGISTRO = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -220,7 +218,7 @@
             // 
             // btnrunREGISTRO
             // 
-            this.btnrunREGISTRO.Location = new System.Drawing.Point(103, 19);
+            this.btnrunREGISTRO.Location = new System.Drawing.Point(6, 19);
             this.btnrunREGISTRO.Name = "btnrunREGISTRO";
             this.btnrunREGISTRO.Size = new System.Drawing.Size(91, 28);
             this.btnrunREGISTRO.TabIndex = 8;
@@ -613,44 +611,22 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "III) Pesquisa";
             // 
-            // btnresults
-            // 
-            this.btnresults.Location = new System.Drawing.Point(146, 19);
-            this.btnresults.Name = "btnresults";
-            this.btnresults.Size = new System.Drawing.Size(102, 28);
-            this.btnresults.TabIndex = 18;
-            this.btnresults.Text = "Exibir Resultados";
-            this.btnresults.UseVisualStyleBackColor = true;
-            this.btnresults.Click += new System.EventHandler(this.btnresults_Click);
-            // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.btnresults);
             this.groupBox4.Controls.Add(this.btnallregister);
             this.groupBox4.Location = new System.Drawing.Point(24, 9);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(266, 58);
+            this.groupBox4.Size = new System.Drawing.Size(150, 58);
             this.groupBox4.TabIndex = 19;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Geral";
             // 
-            // btnlimparREGISTRO
-            // 
-            this.btnlimparREGISTRO.Location = new System.Drawing.Point(6, 19);
-            this.btnlimparREGISTRO.Name = "btnlimparREGISTRO";
-            this.btnlimparREGISTRO.Size = new System.Drawing.Size(91, 28);
-            this.btnlimparREGISTRO.TabIndex = 20;
-            this.btnlimparREGISTRO.Text = "Limpar";
-            this.btnlimparREGISTRO.UseVisualStyleBackColor = true;
-            this.btnlimparREGISTRO.Click += new System.EventHandler(this.btnlimparREGISTRO_Click);
-            // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.btnlimparREGISTRO);
             this.groupBox7.Controls.Add(this.btnrunREGISTRO);
-            this.groupBox7.Location = new System.Drawing.Point(296, 9);
+            this.groupBox7.Location = new System.Drawing.Point(180, 9);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(202, 58);
+            this.groupBox7.Size = new System.Drawing.Size(107, 58);
             this.groupBox7.TabIndex = 23;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Registros";
@@ -748,13 +724,11 @@
         private System.Windows.Forms.Button btnfibonacciREMOVE;
         private System.Windows.Forms.Button btnpesquisaREMOVE;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnresults;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnfatorialCLEAR;
         private System.Windows.Forms.Button btnfibonacciCLEAR;
         private System.Windows.Forms.Button btnhanoiCLEAR;
         private System.Windows.Forms.Button btnpesquisaCLEAR;
-        private System.Windows.Forms.Button btnlimparREGISTRO;
         private System.Windows.Forms.GroupBox groupBox7;
     }
 }

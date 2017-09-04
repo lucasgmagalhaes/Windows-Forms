@@ -78,32 +78,13 @@ namespace AED
                 DisableAllRun();
             }
         }
-        private void EnableClearAll()
-        {
-            btnlimparREGISTRO.Enabled = true;
-        }
-        private void DisableClearAll()
-        {
-            btnlimparREGISTRO.Enabled = false;
-        }
-        private void CheckParcialCMB()
-        {
-            if (cmbfatorial.Items.Count > 0 || cmbfibonacci.Items.Count > 0 || cmbpesquisa.Items.Count > 0 || cmbhanoi.Items.Count > 0)
-            {
-                EnableClearAll();
-            }
-            else
-            {
-                DisableClearAll();
-            }
-        }
         private void btnlimparREGISTRO_Click(object sender, EventArgs e)
         {
-            foreach(Control cmb in this.Controls)
+            foreach (Control cmb in this.Controls)
             {
-                if(cmb is ComboBox)
+                if (cmb is ComboBox)
                 {
-                     //Missing to do
+                    //Missing to do
                 }
             }
         }
@@ -123,7 +104,6 @@ namespace AED
         }
         private void frmmain_Load(object sender, EventArgs e)
         {
-            btnresults.Enabled = false;
             btnrunREGISTRO.Enabled = false;
         }
         private void btnresults_Click(object sender, EventArgs e)
@@ -215,7 +195,7 @@ namespace AED
         private void FatorialRun(ulong send)
         {
             Contador.Start();
-            Fatorial.FatorialIterativo(send);
+            ulong val = Fatorial.FatorialIterativo(send);
             string re = Contador.Stop();
             if (re == "00:00:00")
             {
@@ -260,7 +240,6 @@ namespace AED
                     FatorialRun(send);
                     frmRelatorio open = new frmRelatorio(log);
                     _ALLCOUNT.Stop();
-                    btnresults.Enabled = true;
                     open.ShowDialog();
                 }
                 catch
@@ -314,7 +293,6 @@ namespace AED
                 FatorialRunCMB();
                 _ALLCOUNT.Stop();
                 frmRelatorio open = new frmRelatorio(log, "FATORIAL", cmbfatorial);
-                btnresults.Enabled = true;
                 open.ShowDialog();
             }
         }

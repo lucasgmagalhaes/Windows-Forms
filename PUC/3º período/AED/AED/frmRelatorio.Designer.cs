@@ -383,9 +383,9 @@
             this.lblfulltime.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblfulltime.Location = new System.Drawing.Point(14, 14);
             this.lblfulltime.Name = "lblfulltime";
-            this.lblfulltime.Size = new System.Drawing.Size(140, 16);
+            this.lblfulltime.Size = new System.Drawing.Size(251, 16);
             this.lblfulltime.TabIndex = 13;
-            this.lblfulltime.Text = "Tempo total  decorrido:";
+            this.lblfulltime.Text = "Tempo total  decorrido de processamento:";
             // 
             // frmRelatorio
             // 
