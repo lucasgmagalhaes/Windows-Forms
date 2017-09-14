@@ -401,7 +401,7 @@
             this.MaximizeBox = false;
             this.Name = "frmRelatorio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRelatorio";
+            this.Text = "Relatório de processamento";
             this.Load += new System.EventHandler(this.frmRelatorio_Load);
             this.groupfatorial.ResumeLayout(false);
             this.groupfatorial.PerformLayout();

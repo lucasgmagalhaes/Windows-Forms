@@ -565,14 +565,14 @@ namespace AED
             Contador.Start();
             Hanoi.BuildHanoi(all, 0, 1, 2, blocks);
 
-            int g = Hanoi.GetHesult();
+            double g = Hanoi.CalcMoves(blocks);
             string re = Contador.Stop();
             if (re == "00:00:00")
             {
                 Contador.Start();
                 Hanoi.BuildHanoi(all, 0, 1, 2, blocks);
 
-                g = Hanoi.GetHesult();
+                g = Hanoi.CalcMoves(blocks);
                 re = Contador.Stop();
             }
             return hanoilog = blocks + ";" + g + ";" + re;
@@ -659,7 +659,6 @@ namespace AED
                 open.ShowDialog();
             }
         }
-
         #endregion
     }
 }

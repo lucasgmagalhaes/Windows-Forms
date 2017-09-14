@@ -114,7 +114,7 @@
             this.groupBox1.Controls.Add(this.txtfatorialintvalor);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.lbfirsttest);
-            this.groupBox1.Location = new System.Drawing.Point(24, 71);
+            this.groupBox1.Location = new System.Drawing.Point(24, 102);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(496, 144);
             this.groupBox1.TabIndex = 1;
@@ -249,7 +249,7 @@
             this.groupBox5.Controls.Add(this.txthanoivalor);
             this.groupBox5.Controls.Add(this.label10);
             this.groupBox5.Controls.Add(this.label14);
-            this.groupBox5.Location = new System.Drawing.Point(526, 233);
+            this.groupBox5.Location = new System.Drawing.Point(526, 264);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(506, 162);
             this.groupBox5.TabIndex = 10;
@@ -374,7 +374,7 @@
             this.groupBox2.Controls.Add(this.txtfibonaccivalor);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(526, 71);
+            this.groupBox2.Location = new System.Drawing.Point(526, 102);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(506, 144);
             this.groupBox2.TabIndex = 9;
@@ -499,7 +499,7 @@
             this.groupBox3.Controls.Add(this.txtpesquisavetortamanho);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(24, 233);
+            this.groupBox3.Location = new System.Drawing.Point(24, 264);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(496, 162);
             this.groupBox3.TabIndex = 12;
@@ -614,7 +614,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnallregister);
-            this.groupBox4.Location = new System.Drawing.Point(24, 9);
+            this.groupBox4.Location = new System.Drawing.Point(24, 21);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(150, 58);
             this.groupBox4.TabIndex = 19;
@@ -624,7 +624,7 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.btnrunREGISTRO);
-            this.groupBox7.Location = new System.Drawing.Point(180, 9);
+            this.groupBox7.Location = new System.Drawing.Point(180, 21);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(107, 58);
             this.groupBox7.TabIndex = 23;
@@ -645,7 +645,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 408);
+            this.ClientSize = new System.Drawing.Size(1039, 467);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);

@@ -1,0 +1,10 @@
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Release\AED.exe.config
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Release\AED.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\bin\Release\AED.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Release\AED.frmmain.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Release\AED.frmRelatorio.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Release\AED.Properties.Resources.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Release\AED - Trabalho Pratico.csproj.GenerateResource.Cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Release\AED - Trabalho Pratico.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Release\AED.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\AED\obj\Release\AED.pdb

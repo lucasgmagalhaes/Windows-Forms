@@ -1,7 +1,0 @@
-C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
-C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\ConsoleApp1\bin\Debug\ConsoleApp1.exe
-C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
-C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
-C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
-C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\ConsoleApp1\obj\Debug\ConsoleApp1.exe
-C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\AED\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
