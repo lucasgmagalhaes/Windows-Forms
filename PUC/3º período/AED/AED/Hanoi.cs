@@ -17,7 +17,7 @@ namespace AED
         public static int[] AUTOVALS = new int[] { 2,4,8,16,24,32 };
 
         public static void BuildHanoi(Stack<int>[] all, int orig, int aux, int dest, int disk)
-        {
+            {
             if (disk == 1)
             {
                 all[dest].Push(all[orig].Pop());
@@ -28,7 +28,6 @@ namespace AED
                 all[dest].Push(all[orig].Pop());
                 BuildHanoi(all, aux, orig, dest, disk - 1);
             }
-
         }
         public static double CalcMoves(int discos)
         {

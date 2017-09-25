@@ -1,0 +1,6 @@
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\bin\Debug\Estruturas de dados.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\bin\Debug\Estruturas de dados.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.pdb

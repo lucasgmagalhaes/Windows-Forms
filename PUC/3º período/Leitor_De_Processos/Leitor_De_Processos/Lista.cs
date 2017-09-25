@@ -16,31 +16,8 @@ namespace Leitor_De_Processos
             this.ult = this.prim;
         }
 
-        internal Elemento Prim
-        {
-            get
-            {
-                return prim;
-            }
-
-            set
-            {
-                prim = value;
-            }
-        }
-
-        internal Elemento Ult
-        {
-            get
-            {
-                return ult;
-            }
-
-            set
-            {
-                ult = value;
-            }
-        }
+        internal Elemento Prim { get => prim; set => prim = value; }
+        internal Elemento Ult { get => ult; set => ult = value; }
 
         public void Inserir(Dados novo)
         {
@@ -57,9 +34,9 @@ namespace Leitor_De_Processos
             if (aux == null) return null;
             else return aux.GetDados();
         }
-        public void Retirar(Object obj)
+        public void Retirar(Dados obj)
         {
-            Elemento aux = this.prim;
+            Elemento aux = this.prim.Proximo;
             while ((aux != null) && (!aux.GetDados().Equals(obj)))
             {
                 aux = aux.Proximo;

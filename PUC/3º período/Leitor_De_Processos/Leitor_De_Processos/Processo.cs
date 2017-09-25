@@ -14,78 +14,14 @@ namespace Leitor_De_Processos
         private float tempo_por_ciclo;
         private int ciclo;
         private int ciclos_executados;
-        public int Pid
-        {
-            get
-            {
-                return pid;
-            }
 
-            set
-            {
-                pid = value;
-            }
-        }
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
+        public int Pid { get => pid; set => pid = value; }
+        public string Name { get => name; set => name = value; }
+        public int Prio { get => prio; set => prio = value; }
+        public float Tempo_por_ciclo { get => tempo_por_ciclo; set => tempo_por_ciclo = value; }
+        public int Ciclo { get => ciclo; set => ciclo = value; }
+        public int Ciclos_executados { get => ciclos_executados; set => ciclos_executados = value; }
 
-            set
-            {
-                name = value;
-            }
-        }
-        public int Prio
-        {
-            get
-            {
-                return prio;
-            }
-
-            set
-            {
-                prio = value;
-            }
-        }
-        public float Tempo_por_ciclo
-        {
-            get
-            {
-                return tempo_por_ciclo;
-            }
-
-            set
-            {
-                tempo_por_ciclo = value;
-            }
-        }
-        public int Ciclo
-        {
-            get
-            {
-                return ciclo;
-            }
-
-            set
-            {
-                ciclo = value;
-            }
-        }
-        public int Ciclos_executados
-        {
-            get
-            {
-                return ciclos_executados;
-            }
-
-            set
-            {
-                ciclos_executados = value;
-            }
-        }
         public Processo(int pid, string name, int prio, float tempoT, int cic)
         {
             this.pid = pid;
@@ -93,7 +29,7 @@ namespace Leitor_De_Processos
             this.prio = prio;
             this.tempo_por_ciclo = tempoT;
             this.ciclo = cic;
-            this.Ciclos_executados = 0;
+            this.ciclos_executados = 0;
         }
         public bool Equals(Dados obj) {
             Processo aux = (Processo)(obj);

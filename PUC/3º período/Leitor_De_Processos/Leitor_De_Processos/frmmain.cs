@@ -88,7 +88,11 @@ namespace Leitor_De_Processos
         private void frmmain_Load_1(object sender, EventArgs e)
         {
             Mylist = new Lista();
-
+            Mylist.Inserir(new Processo(1, "eu", 3, 1, 4));
+            Mylist.Inserir(new Processo(2, "eut1", 3, 1, 4));
+            Mylist.Inserir(new Processo(3, "eut2", 3, 1, 4));
+            Mylist.Inserir(new Processo(4, "eut3", 3, 1, 4));
+            Mylist.Retirar(new Processo(2, "eut1", 3, 1, 4));
             listProcessos.MultiSelect = false;
             listProcessos.FullRowSelect = true;
 

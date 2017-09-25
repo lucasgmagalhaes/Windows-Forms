@@ -13,7 +13,7 @@ namespace AED
         public string sequencial_resul;
 
         public static List<int> VAL = new List<int>();
-        public static int[] AUTOVALS = new int[] { 10000, 20000, 100000};
+        public static int[] AUTOVALS = new int[] { 10000, 20000, 100000, 1000000, 10000000, 20000000, 50000000 };
         /// <summary>
         /// Preenche um vetor ordenado
         /// </summary>
@@ -38,7 +38,7 @@ namespace AED
                     return i;
                 }
             }
-            return -1;
+            return -1; 
         }
         public static long PesquisaBinaria(long[] vetor, long achar, int inc, int fim)
         {

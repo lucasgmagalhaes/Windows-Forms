@@ -18,13 +18,9 @@ namespace AED
         public static ulong FatorialIterativo(ulong val)
         {
             ulong result = 1;
-            for (uint i = 0; i <= val; i++)
+            for (uint i = 1; i <= val; i++)
             {
-                if (i == 0 || i == 1)
-                {
-                    result = 1;
-                }
-                else
+                if (i > 1)
                 {
                     result *= i;
                 }
@@ -39,7 +35,7 @@ namespace AED
         /// <returns></returns>
         public static ulong FatorialRecursivo(ulong val)
         {
-            if (val == 0 || val == 1)
+            if (val == 0)
             {
                 return 1;
             }

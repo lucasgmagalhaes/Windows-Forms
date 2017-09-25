@@ -244,6 +244,7 @@ namespace AED
         private void frmRelatorio_Load(object sender, EventArgs e)
         {
             lblfulltime.Text += "  " + frmmain.ALLCOUNT.Elapsed;
+            frmmain.ALLCOUNT.Reset();
             if (cmbfatorial.Items.Count > 0 && cmbfibonacci.Items.Count > 0 && cmbpesquisa.Items.Count > 0 && cmbhanoi.Items.Count > 0)
             {
                 ListLog();

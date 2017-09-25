@@ -16,18 +16,7 @@ namespace Leitor_De_Processos
             this.dado = dad;
         }
 
-        internal Elemento Proximo
-        {
-            get
-            {
-                return proximo;
-            }
-
-            set
-            {
-                proximo = value;
-            }
-        }
+        internal Elemento Proximo { get => proximo; set => proximo = value; }
 
         public Dados GetDados()
         {

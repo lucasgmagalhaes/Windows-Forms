@@ -21,7 +21,7 @@ namespace AED
             long n1 = 0, n2 = 0, n3 = 0;
             for (int i = 0; i < val; i++)
             {
-                if (val == 0 || val == 1)
+                if (i == 1 || i == 0)
                 {
                     n1 = n2 = n3 = 1;
                 }

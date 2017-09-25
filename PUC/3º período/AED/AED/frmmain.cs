@@ -109,7 +109,7 @@ namespace AED
         private void btnresults_Click(object sender, EventArgs e)
         {
             frmRelatorio op = new frmRelatorio(log);
-            op.ShowDialog();
+            op.Show();
         }
         private void btnallregister_Click(object sender, EventArgs e)
         {
@@ -164,7 +164,7 @@ namespace AED
             List<string> names = new List<string>() { "FATORIAL", "FIBONACCI", "PESQUISA", "HANOI" };
             List<ComboBox> combos = new List<ComboBox>() { cmbfatorial, cmbfibonacci, cmbpesquisa, cmbhanoi };
             frmRelatorio open = new frmRelatorio(log, names, combos);
-            open.ShowDialog();
+            open.Show();
         }
         #endregion
 
@@ -240,7 +240,7 @@ namespace AED
                     FatorialRun(send);
                     frmRelatorio open = new frmRelatorio(log);
                     _ALLCOUNT.Stop();
-                    open.ShowDialog();
+                    open.Show();
                 }
                 catch
                 {
@@ -293,7 +293,7 @@ namespace AED
                 FatorialRunCMB();
                 _ALLCOUNT.Stop();
                 frmRelatorio open = new frmRelatorio(log, "FATORIAL", cmbfatorial);
-                open.ShowDialog();
+                open.Show();
             }
         }
         #endregion
@@ -352,7 +352,7 @@ namespace AED
             FibonacciRunCMB();
             _ALLCOUNT.Stop();
             frmRelatorio open = new frmRelatorio(log, "FIBONACCI", cmbfibonacci);
-            open.ShowDialog();
+            open.Show();
         }
         private void btnfibonacciAUTOREG_Click(object sender, EventArgs e)
         {
@@ -377,7 +377,7 @@ namespace AED
                     FibonacciRun(Convert.ToInt64(txtfibonaccivalor.Text));
                     _ALLCOUNT.Stop();
                     frmRelatorio open = new frmRelatorio(log);
-                    open.ShowDialog();
+                    open.Show();
                 }
                 catch
                 {
@@ -476,7 +476,7 @@ namespace AED
             PesquisaRunCMB();
             _ALLCOUNT.Stop();
             frmRelatorio open = new frmRelatorio(log, "PESQUISA", cmbpesquisa);
-            open.ShowDialog();
+            open.Show();
         }
         private void btnpesquisaAUTOREG_Click(object sender, EventArgs e)
         {
@@ -499,7 +499,7 @@ namespace AED
                     PesquisaRun(send);
                     _ALLCOUNT.Stop();
                     frmRelatorio open = new frmRelatorio(log);
-                    open.ShowDialog();
+                    open.Show();
                 }
                 catch
                 {
@@ -556,7 +556,9 @@ namespace AED
         {
             Stack<int>[] all = new Stack<int>[3];
 
-            all[0] = all[1] = all[2] = new Stack<int>(blocks);
+            all[0] = new Stack<int>(blocks);
+            all[1] = new Stack<int>(blocks);
+            all[2] = new Stack<int>(blocks);
             for (int i = blocks; i > 0; i--)
             {
                 all[0].Push(i);
@@ -609,7 +611,7 @@ namespace AED
                     HanoiRun(blocks);
                     _ALLCOUNT.Stop();
                     frmRelatorio open = new frmRelatorio(HanoiRun(blocks));
-                    open.ShowDialog();
+                    open.Show();
                 }
                 catch
                 {
@@ -656,7 +658,7 @@ namespace AED
                 _ALLCOUNT.Stop();
                 List<string> getresult = HanoiRunCMG();
                 frmRelatorio open = new frmRelatorio(getresult, "HANOI", cmbhanoi);
-                open.ShowDialog();
+                open.Show();
             }
         }
         #endregion
