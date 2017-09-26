@@ -26,7 +26,9 @@ namespace Estruturas_de_dados.Lista_Tipos
             {
                 if (aux.Prox.GetDados().Equals(obj))
                 {
+                    Elemento auxel = aux.Prox;
                     aux.Prox = aux.Prox.Prox;
+                    auxel = null;
                     break;
                 }
                 aux = aux.Prox;
