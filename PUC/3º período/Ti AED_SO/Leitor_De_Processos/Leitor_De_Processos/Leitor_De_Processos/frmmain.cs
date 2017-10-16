@@ -16,7 +16,6 @@ namespace Leitor_De_Processos
             lvwColumnSorter = new ListViewColumnSorter();
             this.listProcessos.ListViewItemSorter = lvwColumnSorter;
         }
-        //testelmm,m,m
         /// <summary>
         /// Pausa a execução do processo
         /// </summary>
