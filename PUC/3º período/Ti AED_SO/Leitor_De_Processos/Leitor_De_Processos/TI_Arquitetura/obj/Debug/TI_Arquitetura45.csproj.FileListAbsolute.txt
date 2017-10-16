@@ -56,3 +56,15 @@ C:\Users\Lucax\Desktop\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetu
 C:\Users\Lucax\Desktop\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.exe
 C:\Users\Lucax\Desktop\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.pdb
 C:\Users\Lucax\Desktop\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\bin\Debug\SourceSelects.txt
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\bin\Debug\app.manifest
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\bin\Debug\TI_Arquitetura45.exe.config
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\bin\Debug\TI_Arquitetura45.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\bin\Debug\TI_Arquitetura45.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura.frmmain.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.Properties.Resources.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.csproj.GenerateResource.Cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\TI_Arquitetura\obj\Debug\TI_Arquitetura45.pdb

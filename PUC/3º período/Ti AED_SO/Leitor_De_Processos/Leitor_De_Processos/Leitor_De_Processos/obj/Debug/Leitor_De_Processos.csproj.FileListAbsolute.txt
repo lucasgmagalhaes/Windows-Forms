@@ -117,3 +117,20 @@ C:\Users\Lucax\Desktop\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_
 C:\Users\Lucax\Desktop\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.csproj.GenerateResource.Cache
 C:\Users\Lucax\Desktop\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.csproj.CoreCompileInputs.cache
 C:\Users\Lucax\Desktop\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.frmmain.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\bin\Debug\SourceSelects.txt
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\bin\Debug\app.manifest
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\bin\Debug\Leitor_De_Processos.exe.config
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\bin\Debug\Leitor_De_Processos.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\bin\Debug\Leitor_De_Processos.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\bin\Debug\TI_Arquitetura45.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\bin\Debug\TI_Arquitetura45.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\bin\Debug\TI_Arquitetura45.exe.config
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.frmexer3_6.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.frmhelp.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.frmmain.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.Properties.Resources.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.csproj.GenerateResource.Cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Ti AED_SO\Leitor_De_Processos\Leitor_De_Processos\Leitor_De_Processos\obj\Debug\Leitor_De_Processos.pdb
