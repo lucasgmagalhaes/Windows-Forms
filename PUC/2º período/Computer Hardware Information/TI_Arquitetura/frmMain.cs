@@ -19,8 +19,6 @@ namespace TI_Arquitetura
 
     public partial class frmmain : Form
     {
-
-
         public frmmain()
         {
             InitializeComponent();
@@ -176,7 +174,7 @@ namespace TI_Arquitetura
                 ShowGeneralWin32(ToFileSize(freespace), "HD Free Space");
                 ShowGeneralWin32(ToFileSize(size), "HD Total Space");
                 progressBar1.Maximum = 100;
-                int percent = Convert.ToInt32( 100 - ((freespace * 100) / size));
+                int percent = Convert.ToInt32(100 - ((freespace * 100) / size));
                 progressBar1.Value = percent;
                 label11.Text = percent + "%";
                 #endregion
@@ -241,11 +239,51 @@ namespace TI_Arquitetura
                 }
             }
             #endregion
+
+            #region Processes
+
+            listProcessosRunning.Columns.Add("ID", "ID", 150);
+            listProcessosRunning.Columns.Add("Threads", "Threads", 150);
+            listProcessosRunning.Columns.Add("TPT", "TPT", 150);
+            listProcessosRunning.Columns.Add("UPT", "UPT", 150);
+            listProcessosRunning.Columns.Add("MV", "Memória virtual", 150);
+            listProcessosRunning.Columns.Add("R", "RAM", 150);
+
+            Process[] proc = Process.GetProcesses();
+            foreach (Process pro in proc)
+            {
+                try
+                {
+                    ListViewItem item = new ListViewItem();
+                    item.Text = pro.Id.ToString();
+                    item.SubItems.Add(pro.ProcessName);
+                    item.SubItems.Add(pro.Threads.ToString());
+                    item.SubItems.Add(pro.TotalProcessorTime.ToString());
+                    item.SubItems.Add(pro.UserProcessorTime.ToString());
+                    item.SubItems.Add(pro.VirtualMemorySize64.ToString());
+                    item.SubItems.Add(pro.WorkingSet64.ToString());
+                    listProcessosRunning.Items.Add(item);
+                }
+                catch
+                {
+                    listProcessosRunning.Columns.RemoveByKey("TPT");
+                    listProcessosRunning.Columns.RemoveByKey("UPT");
+                    ListViewItem item = new ListViewItem();
+                    item.Text = pro.Id.ToString();
+                    item.SubItems.Add(pro.ProcessName);
+                    item.SubItems.Add(pro.Threads.ToString());
+                    item.SubItems.Add(pro.VirtualMemorySize64.ToString());
+                    item.SubItems.Add(pro.WorkingSet64.ToString());
+                    listProcessosRunning.Items.Add(item);
+                }
+            }
+
+            #endregion
         }
 
         private void timer_performance_Tick(object sender, EventArgs e)
         {
-            Int64 phav = PerformanceInfo .GetPhysicalAvailableMemoryInMiB();
+            Int64 phav = PerformanceInfo.GetPhysicalAvailableMemoryInMiB();
             Int64 tot = PerformanceInfo.GetTotalMemoryInMiB();
             decimal percentFree = ((decimal)phav / (decimal)tot) * 100;
             decimal percentOccupied = 100 - percentFree;

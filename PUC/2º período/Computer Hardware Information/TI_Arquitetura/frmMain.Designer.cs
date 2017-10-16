@@ -67,6 +67,8 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.listProcessosRunning = new System.Windows.Forms.ListView();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tab3.SuspendLayout();
@@ -74,6 +76,7 @@
             this.tabPage4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage2
@@ -148,6 +151,7 @@
             this.tab3.Controls.Add(this.tabPage1);
             this.tab3.Controls.Add(this.tabPage4);
             this.tab3.Controls.Add(this.tabPage2);
+            this.tab3.Controls.Add(this.tabPage5);
             this.tab3.Location = new System.Drawing.Point(3, 165);
             this.tab3.Name = "tab3";
             this.tab3.SelectedIndex = 0;
@@ -317,9 +321,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(173, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 20);
+            this.label1.Size = new System.Drawing.Size(172, 20);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Trabalho prático de AC";
+            this.label1.Text = "Trabalho prático de SO";
             // 
             // label5
             // 
@@ -337,9 +341,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(182, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 16);
+            this.label6.Size = new System.Drawing.Size(85, 16);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Arthur Vinícius";
+            this.label6.Text = "Ítalo Fabrício";
             // 
             // label7
             // 
@@ -347,9 +351,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(181, 43);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 16);
+            this.label7.Size = new System.Drawing.Size(105, 16);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Jefferson Camelo";
+            this.label7.Text = "Henrique Kiskch";
             // 
             // label8
             // 
@@ -357,9 +361,9 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(182, 76);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 16);
+            this.label8.Size = new System.Drawing.Size(103, 16);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Thais Munhoz";
+            this.label8.Text = "Pedro Henrique";
             // 
             // pictureBox1
             // 
@@ -408,6 +412,25 @@
             this.label11.TabIndex = 16;
             this.label11.Text = "0%";
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.listProcessosRunning);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(452, 358);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Processos ";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // listProcessosRunning
+            // 
+            this.listProcessosRunning.Location = new System.Drawing.Point(6, 5);
+            this.listProcessosRunning.Name = "listProcessosRunning";
+            this.listProcessosRunning.Size = new System.Drawing.Size(440, 349);
+            this.listProcessosRunning.TabIndex = 2;
+            this.listProcessosRunning.UseCompatibleStateImageBehavior = false;
+            this.listProcessosRunning.View = System.Windows.Forms.View.Details;
+            // 
             // frmmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -440,6 +463,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,6 +508,8 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.ListView listProcessosRunning;
     }
 }
 

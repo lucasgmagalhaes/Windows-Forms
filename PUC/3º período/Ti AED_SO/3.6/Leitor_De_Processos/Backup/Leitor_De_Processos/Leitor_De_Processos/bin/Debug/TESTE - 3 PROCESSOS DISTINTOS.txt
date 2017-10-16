@@ -1,0 +1,3 @@
+35;/usr/lib/evolution/evolution-addressbook-factory;4;0,65;7
+62;/usr/lib/at-spi2-core/at-spi2-registryd;2;0,57;12
+63;scsi_tmf_2;3;0,62;4

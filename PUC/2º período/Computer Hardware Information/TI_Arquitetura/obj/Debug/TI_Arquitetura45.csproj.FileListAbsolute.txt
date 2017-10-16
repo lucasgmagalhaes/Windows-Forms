@@ -20,3 +20,15 @@ D:\GoogleDrive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura4
 D:\GoogleDrive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura45.csproj.GenerateResource.Cache
 D:\GoogleDrive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura45.exe
 D:\GoogleDrive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura45.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\bin\Debug\SourceSelects.txt
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\bin\Debug\app.manifest
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\bin\Debug\TI_Arquitetura45.exe.config
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\bin\Debug\TI_Arquitetura45.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\bin\Debug\TI_Arquitetura45.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\obj\Debug\TI_Arquitetura45.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\obj\Debug\TI_Arquitetura.frmmain.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\obj\Debug\TI_Arquitetura45.Properties.Resources.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\obj\Debug\TI_Arquitetura45.csproj.GenerateResource.Cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\obj\Debug\TI_Arquitetura45.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\obj\Debug\TI_Arquitetura45.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\2º período\Computer Hardware Information\TI_Arquitetura\obj\Debug\TI_Arquitetura45.pdb

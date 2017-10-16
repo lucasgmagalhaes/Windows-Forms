@@ -1,0 +1,9 @@
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\bin\Debug\Leitor_Base_TI.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\bin\Debug\Leitor_Base_TI.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\obj\Debug\Leitor_Base_TI.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\obj\Debug\Leitor_Base_TI.Form1.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\obj\Debug\Leitor_Base_TI.Properties.Resources.resources
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\obj\Debug\Leitor_Base_TI.csproj.GenerateResource.Cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\obj\Debug\Leitor_Base_TI.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\obj\Debug\Leitor_Base_TI.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Leitor_Base_TI\Leitor_Base_TI\obj\Debug\Leitor_Base_TI.pdb

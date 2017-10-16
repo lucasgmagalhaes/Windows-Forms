@@ -10,6 +10,8 @@ namespace Estruturas_de_dados
     {
         static void Main(string[] args)
         {
+            int i = 1;
+            Console.Write("as" + i+1 + "asd");
             //Testando Lista Encadeada.
             Lista simples = new Encadeada();
             simples.Add(new Generico("teste1"));
@@ -26,7 +28,7 @@ namespace Estruturas_de_dados
             simples.Add(new Generico("teste3"));
             simples.Add(new Generico("teste4"));
             Dados rem2 = new Generico("teste4");
-            simples.Remover(rem);
+            circular.Remover(rem);
 
             //Testando Lista duplamente encadeada
             Lista dupla = new Duplamente_Encadeada();

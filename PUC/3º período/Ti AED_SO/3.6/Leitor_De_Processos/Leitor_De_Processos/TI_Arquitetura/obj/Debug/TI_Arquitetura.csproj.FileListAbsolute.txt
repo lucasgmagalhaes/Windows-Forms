@@ -1,0 +1,22 @@
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\bin\Debug\TI_Arquitetura.exe.config
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\bin\Debug\TI_Arquitetura.exe
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\bin\Debug\TI_Arquitetura.pdb
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\obj\Debug\TI_Arquitetura.Properties.Resources.resources
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\obj\Debug\TI_Arquitetura.csproj.GenerateResource.Cache
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\obj\Debug\TI_Arquitetura.exe
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\obj\Debug\TI_Arquitetura.pdb
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\obj\Debug\TI_Arquitetura.frmmain.resources
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\bin\Debug\app.manifest
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\bin\Debug\SourceSelects.txt
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\TI_Arquitetura\obj\Debug\TI_Arquitetura.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\bin\Debug\SourceSelects.txt
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\bin\Debug\app.manifest
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura.csprojResolveAssemblyReference.cache
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura.frmmain.resources
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura.csproj.GenerateResource.Cache
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura45.Properties.Resources.resources
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\bin\Debug\TI_Arquitetura45.exe.config
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\bin\Debug\TI_Arquitetura45.exe
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\bin\Debug\TI_Arquitetura45.pdb
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura45.exe
+C:\Users\Lucas - Teste\Google Drive\TI_Arquitetura\Parte III\TI_Arquitetura\obj\Debug\TI_Arquitetura45.pdb
