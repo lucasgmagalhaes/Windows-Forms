@@ -16,6 +16,7 @@ namespace Leitor_De_Processos
             lvwColumnSorter = new ListViewColumnSorter();
             this.listProcessos.ListViewItemSorter = lvwColumnSorter;
         }
+        private ListViewItem selecteditem;
         /// <summary>
         /// Pausa a execução do processo
         /// </summary>
@@ -77,9 +78,9 @@ namespace Leitor_De_Processos
         /// <param name="aux"></param>
         private void UpdateInExecutionProcess(Processo aux)
         {
-            try
-            {
-                item_to_execute = GetProcessInListView(aux);
+            item_to_execute = GetProcessInListView(aux);
+            if (aux != null && item_to_execute != null)  
+            {    
                 lblid.Text = "ID:  " + aux.Pid;
                 lblnome.Text = "Nome:  " + aux.Name;
                 if (FollowProcess == true)
@@ -93,8 +94,7 @@ namespace Leitor_De_Processos
                     listProcessos.Select();
                     item_to_execute.Selected = true;
                 }
-            }
-            catch { }
+            }  
         }
         /// <summary>
         /// Retorna o processo da fila no listview
@@ -143,6 +143,9 @@ namespace Leitor_De_Processos
                 else if (item.SubItems[2].Text == "1") for (int i = 2; i < item.SubItems.Count; i++) item.SubItems[i].BackColor = panelcolor1.BackColor;
             }
         }
+        /// <summary>
+        /// Define se a execução dos processos vai continuar ou parar
+        /// </summary>
         private void SetPauseResume()
         {
             if (ProcessRunning)
@@ -161,6 +164,9 @@ namespace Leitor_De_Processos
                 }
             }
         }
+        /// <summary>
+        /// Limpa as telas e restaura os processos a sua forma original
+        /// </summary>
         private void RestoreProcess()
         {
             listProcessos.Items.Clear();
@@ -215,6 +221,67 @@ namespace Leitor_De_Processos
             listProcessos.Items.Add(item);
             return item;
         }
+        /// <summary>
+        /// Atualiza os labels que informam a quantidade de processos que ainda restam em cada categoria
+        /// </summary>
+        private void UpdateCounters()
+        {
+            lblc5.Text = "C5 " + motor.Listas_categoria[4].Count();
+            lblc4.Text = "C4 " + motor.Listas_categoria[3].Count();
+            lblc3.Text = "C3 " + motor.Listas_categoria[2].Count();
+            lblc2.Text = "C2 " + motor.Listas_categoria[1].Count();
+            lblc1.Text = "C1 " + motor.Listas_categoria[0].Count();
+        }
+        /// <summary>
+        /// Marca o ultimo processo finalizado
+        /// </summary>
+        private void SelectLastFinished()
+        {
+            ListFinalizados.Select();
+            ListFinalizados.Items[ListFinalizados.Items.Count - 1].Selected = true;
+            listProcessos.EnsureVisible(ListFinalizados.Items.Count - 1);
+        }
+        /// <summary>
+        /// Abre o FileDialog para selecionar o arquivo que contem os processos separa-os em suas respectivas listas
+        /// </summary>
+        private void SetFile()
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Multiselect = false;
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                if (listProcessos.Items.Count > 0)
+                {
+                    DialogResult result = MessageBox.Show("Já existe processos na lista. Deseja substitui-los ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        listProcessos.Items.Clear();
+                        motor = new ProcessManager();
+                    }
+                }
+                else motor = new ProcessManager();
+                if (open.FileName.EndsWith("txt"))
+                {
+                    using (StreamReader read = new StreamReader(open.FileName))
+                    {
+                        string line;
+                        while ((line = read.ReadLine()) != null)
+                        {
+                            string[] splt = line.Split(';');
+                            Processo toadd = new Processo(int.Parse(splt[0]), splt[1], int.Parse(splt[2]), float.Parse(splt[3]), int.Parse(splt[4]));
+                            motor.SetProcessToRightLine(toadd);
+                            if (ListColors) SetRowColor(AddProcessToListView(toadd));
+                            else AddProcessToListView(toadd);
+                            lbllist.Text = "Processo listados " + motor.TPLIST++;
+                            UpdateCounters();
+                        }
+                        btnfinish.Enabled = true;
+                        read.Close();
+                        motor.ClearAuxs();
+                    }
+                }
+            }
+        }
         #region Events
         /// <summary>
         /// Executa um processo e informa o processo dele
@@ -244,57 +311,55 @@ namespace Leitor_De_Processos
         /// <param name="e"></param>
         private void Cicle_Run_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            UpdateInExecutionProcess(motor.To_run);
-
-            while (motor.Escalonamento_log.Count() > 0)
+            try
             {
-                ProcessLog get = (ProcessLog)(motor.Escalonamento_log.Remover());
-                listlog.Items.Add("Processo de ID " + get.Processo.Pid + " foi removido da prioridade " + get.Operation_from + " e inserido na prioridade " + get.Operation_to);
-                item_to_execute.SubItems[2].Text = get.Operation_to.ToString();
+                UpdateInExecutionProcess(motor.To_run);
 
-                listProcessos.Select();
-                item_to_execute.Selected = true;
-                item_to_execute.BackColor = Color.Yellow;
-                listProcessos.EnsureVisible(item_to_execute.Index);
-
-                if (motor.ToUP != null)
+                while (motor.Escalonamento_log.Count() > 0)
                 {
-                    ListViewItem item = GetProcessInListView(motor.ToUP);
-                    item.SubItems[2].Text = get.Operation_to.ToString();
-                    motor.ToUP = null;
+                    ProcessLog get = (ProcessLog)(motor.Escalonamento_log.Remover());
+                    listlog.Items.Add("Processo de ID " + get.Processo.Pid + " foi removido da prioridade " + get.Operation_from + " e inserido na prioridade " + get.Operation_to);
+                    item_to_execute.SubItems[2].Text = get.Operation_to.ToString();
+
+                    listProcessos.Select();
+                    item_to_execute.Selected = true;
+                    item_to_execute.BackColor = Color.Yellow;
+                    listProcessos.EnsureVisible(item_to_execute.Index);
+
+                    if (motor.ToUP != null)
+                    {
+                        ListViewItem item = GetProcessInListView(motor.ToUP);
+                        item.SubItems[2].Text = get.Operation_to.ToString();
+                        motor.ToUP = null;
+                    }
+                }
+                if (item_to_execute != null && motor.To_run != null)
+                {
+                    item_to_execute.SubItems[item_to_execute.SubItems.Count - 2].Text = "Em execução";
+                    item_to_execute.SubItems[item_to_execute.SubItems.Count - 3].Text = motor.To_run.Ciclos_executados.ToString();
+                    item_to_execute.SubItems[item_to_execute.SubItems.Count - 1].Text = CalcPercentage(motor.To_run.Ciclo, motor.To_run.Ciclos_executados).ToString() + "%";
+                    if (motor.To_run.Ciclos_executados == motor.To_run.Ciclo)
+                    {
+                        item_to_execute.SubItems[item_to_execute.SubItems.Count - 2].Text = "Finalizado";
+                        listProcessos.Items[item_to_execute.Index].Remove();
+                        ListViewItem item_finalizado = new ListViewItem();
+
+                        item_finalizado.Text = item_to_execute.Text;
+                        item_finalizado.SubItems.Add(item_to_execute.SubItems[1]);
+                        item_finalizado.SubItems.Add(item_to_execute.SubItems[2]);
+                        item_finalizado.SubItems.Add(item_to_execute.SubItems[3]);
+                        item_finalizado.SubItems.Add(item_to_execute.SubItems[4]);
+                        ListFinalizados.Items.Add(item_finalizado);
+                        SelectLastFinished();
+                        lblfinalizados.Text = "Processos finalizados: " + motor.TPF++;
+                        UpdateCounters();
+                    }
+                    else item_to_execute.SubItems[item_to_execute.SubItems.Count - 2].Text = "Em espera";
                 }
             }
-            if (item_to_execute != null && motor.To_run != null)
-            {
-                item_to_execute.SubItems[item_to_execute.SubItems.Count - 2].Text = "Em execução";
-                item_to_execute.SubItems[item_to_execute.SubItems.Count - 3].Text = motor.To_run.Ciclos_executados.ToString();
-                item_to_execute.SubItems[item_to_execute.SubItems.Count - 1].Text = CalcPercentage(motor.To_run.Ciclo, motor.To_run.Ciclos_executados).ToString() + "%";
-                if (motor.To_run.Ciclos_executados == motor.To_run.Ciclo)
-                {
-                    item_to_execute.SubItems[item_to_execute.SubItems.Count - 2].Text = "Finalizado";
-                    listProcessos.Items[item_to_execute.Index].Remove();
-                    ListViewItem item_finalizado = new ListViewItem();
+            catch { }
+        }
 
-                    item_finalizado.Text = item_to_execute.Text;
-                    item_finalizado.SubItems.Add(item_to_execute.SubItems[1]);
-                    item_finalizado.SubItems.Add(item_to_execute.SubItems[2]);
-                    item_finalizado.SubItems.Add(item_to_execute.SubItems[3]);
-                    item_finalizado.SubItems.Add(item_to_execute.SubItems[4]);
-                    ListFinalizados.Items.Add(item_finalizado);
-                    lblfinalizados.Text = "Processos finalizados: " + motor.TPF++;
-                    UpdateCounters();
-                }
-                else item_to_execute.SubItems[item_to_execute.SubItems.Count - 2].Text = "Em espera";
-            }
-        }
-        private void UpdateCounters()
-        {
-            lblc5.Text = "C5 " + motor.Listas_categoria[4].Count();
-            lblc4.Text = "C4 " + motor.Listas_categoria[3].Count();
-            lblc3.Text = "C3 " + motor.Listas_categoria[2].Count();
-            lblc2.Text = "C2 " + motor.Listas_categoria[1].Count();
-            lblc1.Text = "C1 " + motor.Listas_categoria[0].Count();
-        }
         /// <summary>
         /// Verifica se há mais processos para serem executados
         /// </summary>
@@ -349,44 +414,6 @@ namespace Leitor_De_Processos
             ListFinalizados.Columns.Add("colciclo", "Ciclos", 165);
             btnfinish.Enabled = false;
         }
-        private void SetFile()
-        {
-            OpenFileDialog open = new OpenFileDialog();
-            open.Multiselect = false;
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                if (listProcessos.Items.Count > 0)
-                {
-                    DialogResult result = MessageBox.Show("Já existe processos na lista. Deseja substitui-los ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (result == DialogResult.Yes)
-                    {
-                        listProcessos.Items.Clear();
-                        motor = new ProcessManager();
-                    }
-                }
-                else motor = new ProcessManager();
-                if (open.FileName.EndsWith("txt"))
-                {
-                    using (StreamReader read = new StreamReader(open.FileName))
-                    {
-                        string line;
-                        while ((line = read.ReadLine()) != null)
-                        {
-                            string[] splt = line.Split(';');
-                            Processo toadd = new Processo(int.Parse(splt[0]), splt[1], int.Parse(splt[2]), float.Parse(splt[3]), int.Parse(splt[4]));
-                            motor.SetProcessToRightLine(toadd);
-                            if (ListColors) SetRowColor(AddProcessToListView(toadd));
-                            else AddProcessToListView(toadd);
-                            lbllist.Text = "Processo listados " + motor.TPLIST++;
-                            UpdateCounters();
-                        }
-                        btnfinish.Enabled = true;
-                        read.Close();
-                        motor.ClearAuxs();
-                    }
-                }
-            }
-        }
         /// <summary>
         /// Carrega um arquivo com um bloco de processos para lista interna e o ListView
         /// </summary>
@@ -403,6 +430,9 @@ namespace Leitor_De_Processos
         /// <param name="e"></param>
         private void btnfinish_Click(object sender, EventArgs e)
         {
+            listProcessos.Items.RemoveAt(selecteditem.Index);
+            motor.KillProcess(Convert.ToInt32(selecteditem.SubItems[0].Text));
+
         }
         /// <summary>
         /// Executa todos os processos da lista
@@ -435,16 +465,36 @@ namespace Leitor_De_Processos
         /// <param name="e"></param>
         private void listProcessos_ColumnClick(object sender, ColumnClickEventArgs e)
         {
+            string aux = listProcessos.Columns[e.Column].Text;
+
+            foreach (ColumnHeader pt in listProcessos.Columns)
+            {
+                if (pt.Text != listProcessos.Columns[e.Column].Text)
+                {
+                    if (pt.Text.Substring(pt.Text.Length - 2, 2) == " ▼" || pt.Text.Substring(pt.Text.Length - 2, 2) == " ▲") pt.Text = pt.Text.Substring(0, pt.Text.Length - 2);
+                }
+            }
+ 
+            if (aux.Substring(aux.Length - 2, 2) == " ▼" || aux.Substring(aux.Length - 2, 2) == " ▲") aux = aux.Substring(0, aux.Length - 2);
+            else aux = aux.Substring(0, aux.Length);
             if (e.Column == lvwColumnSorter.SortColumn)
             {
-                if (lvwColumnSorter.Order == SortOrder.Ascending) lvwColumnSorter.Order = SortOrder.Descending;
-                else lvwColumnSorter.Order = SortOrder.Ascending;
-                listProcessos.Columns[e.Column].Text += " ▲";
+                if (lvwColumnSorter.Order == SortOrder.Ascending)
+                {
+                    lvwColumnSorter.Order = SortOrder.Descending;
+                    listProcessos.Columns[e.Column].Text = aux + " ▼";
+                }
+                else
+                {
+                    lvwColumnSorter.Order = SortOrder.Ascending;
+                    listProcessos.Columns[e.Column].Text = aux + " ▲";
+                }
             }
             else
             {
                 lvwColumnSorter.SortColumn = e.Column;
                 lvwColumnSorter.Order = SortOrder.Ascending;
+                listProcessos.Columns[e.Column].Text = aux + " ▲";
             }
             this.listProcessos.Sort();
         }
@@ -486,16 +536,27 @@ namespace Leitor_De_Processos
             }
             else this.Close();
         }
+        //Exibe informações explicativas sobre a execução dos processos
         private void ImgQuestion_MouseHover(object sender, EventArgs e)
         {
             ToolTip tt = new ToolTip();
             // tt.SetToolTip(this.ImgQuestion, "O processo em execução é retirado da lista de processos(Ação interna do programa). Visualmente, nada é modificado");
         }
+        /// <summary>
+        /// Exibe o form de ajuda
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmhelp open = new frmhelp();
             open.ShowDialog();
         }
+        /// <summary>
+        /// Marca o atual processo que está sendo executado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void marcarProcessoEmExecuçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (marcarProcessoEmExecuçãoToolStripMenuItem.Checked == true)
@@ -509,6 +570,11 @@ namespace Leitor_De_Processos
                 CheckInExecution = true;
             }
         }
+        /// <summary>
+        /// Define se os processos vão ou não ser separados por cores relativas as suas categorias
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void separarPrioridadesPorCoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (separarPrioridadesPorCoresToolStripMenuItem.Checked == true)
@@ -525,13 +591,21 @@ namespace Leitor_De_Processos
             }
         }
         #endregion
-
+        /// <summary>
+        /// Timer para contar o tempo em que os processos estão sendo executados
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Timer_Processing_Tick(object sender, EventArgs e)
         {
             TimeSpan ts = motor.Count_Time.Elapsed;
             lbltimercount.Text = "Tempo em execução  " + ts.Hours.ToString("00") + ":" + ts.Minutes.ToString("00") + ":" + ts.Seconds.ToString("00");
         }
-
+        /// <summary>
+        /// Define a velocidade de processamento como 10x 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ToolSpeed1_Click(object sender, EventArgs e)
         {
             if (ToolSpeed1.Checked != true)
@@ -543,7 +617,11 @@ namespace Leitor_De_Processos
                 lblspeed.Text = "Velocidade de processamento: 10x";
             }
         }
-
+        /// <summary>
+        /// Define a velocidade de processamento como 100x mais lenta
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ToolSpeed2_Click(object sender, EventArgs e)
         {
             if (ToolSpeed2.Checked != true)
@@ -555,7 +633,11 @@ namespace Leitor_De_Processos
                 lblspeed.Text = "Velocidade de processamento:  100x";
             }
         }
-
+        /// <summary>
+        /// Define a velocidade do processamento como 1000x mais lenta
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ToolSpeed3_Click(object sender, EventArgs e)
         {
             if (ToolSpeed3.Checked != true)
@@ -567,15 +649,31 @@ namespace Leitor_De_Processos
                 lblspeed.Text = "Velocidade de processamento: 1000x";
             }
         }
+        /// <summary>
+        /// Abre as informações do sistema.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void informaçõesDoSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TI_Arquitetura.frmmain open = new TI_Arquitetura.frmmain();
             open.Show();
         }
+        /// <summary>
+        /// Evento para pausar/resumir a execução dos processos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pararExecuçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SetPauseResume();
         }
+        /// <summary>
+        /// Evento para interromper a execução dos processos. Restaurando o backup da forma que os processors eram antes de serem
+        /// executados
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pararToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Cicle_Run.WorkerSupportsCancellation = true;
@@ -583,11 +681,19 @@ namespace Leitor_De_Processos
             Cicle_Run.CancelAsync();
             RestoreProcess();
         }
-
+        /// <summary>
+        /// Opção no MenuStrip que abre o exercício 3.6
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             frmexer3_6 open = new frmexer3_6();
             open.Show();
+        }
+        private void listProcessos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(listProcessos.SelectedItems.Count > 0) selecteditem = listProcessos.SelectedItems[0];
         }
     }
 }

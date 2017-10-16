@@ -96,6 +96,28 @@ namespace Leitor_De_Processos.Main
             }
             return -1;
         }
+        public void KillProcess(int PID)
+        {
+            Processo proc = FindProcessByPID(PID);
+            listas_categoria[proc.Prio - 1].Remover(proc);
+            finished.Add(proc);
+            if(proc == to_run)
+            {
+                to_run = null;
+            }
+        }
+        private Processo FindProcessByPID(int PID)
+        {
+            foreach(Lista list in listas_categoria)
+            {
+              Dados dad = list.Find(PID);
+              if(dad != null)
+                {
+                    return (Processo)dad;
+                } 
+            }
+            return null;
+        }
         /// <summary>
         /// Insere o processo na lista correta
         /// </summary>

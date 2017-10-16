@@ -125,13 +125,14 @@
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolTipCarregar});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            this.arquivoToolStripMenuItem.ShortcutKeyDisplayString = "d";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
             // ToolTipCarregar
             // 
             this.ToolTipCarregar.Name = "ToolTipCarregar";
-            this.ToolTipCarregar.Size = new System.Drawing.Size(143, 22);
+            this.ToolTipCarregar.Size = new System.Drawing.Size(152, 22);
             this.ToolTipCarregar.Text = "Carregar lista";
             this.ToolTipCarregar.Click += new System.EventHandler(this.ToolTipCarregar_Click);
             // 
@@ -148,7 +149,7 @@
             // processamentoSequencialToolStripMenuItem
             // 
             this.processamentoSequencialToolStripMenuItem.Name = "processamentoSequencialToolStripMenuItem";
-            this.processamentoSequencialToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.processamentoSequencialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.processamentoSequencialToolStripMenuItem.Text = "Iniciar";
             this.processamentoSequencialToolStripMenuItem.ToolTipText = "Executa todos os processos com base na sua prioridade";
             this.processamentoSequencialToolStripMenuItem.Click += new System.EventHandler(this.processamentoSequencialToolStripMenuItem_Click);
@@ -156,7 +157,7 @@
             // pararExecuçãoToolStripMenuItem
             // 
             this.pararExecuçãoToolStripMenuItem.Name = "pararExecuçãoToolStripMenuItem";
-            this.pararExecuçãoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.pararExecuçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pararExecuçãoToolStripMenuItem.Text = "Pausar";
             this.pararExecuçãoToolStripMenuItem.ToolTipText = "Pausa o processo de execução";
             this.pararExecuçãoToolStripMenuItem.Click += new System.EventHandler(this.pararExecuçãoToolStripMenuItem_Click);
@@ -164,7 +165,7 @@
             // pararToolStripMenuItem
             // 
             this.pararToolStripMenuItem.Name = "pararToolStripMenuItem";
-            this.pararToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.pararToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pararToolStripMenuItem.Text = "Parar";
             this.pararToolStripMenuItem.ToolTipText = "Interrompe a execução do(s) processo(s)";
             this.pararToolStripMenuItem.Click += new System.EventHandler(this.pararToolStripMenuItem_Click);
@@ -282,12 +283,12 @@
             // 
             this.btnfinish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnfinish.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnfinish.Location = new System.Drawing.Point(726, 3);
+            this.btnfinish.Location = new System.Drawing.Point(712, 3);
             this.btnfinish.Name = "btnfinish";
-            this.btnfinish.Size = new System.Drawing.Size(106, 30);
+            this.btnfinish.Size = new System.Drawing.Size(120, 30);
             this.btnfinish.TabIndex = 0;
             this.btnfinish.Tag = "";
-            this.btnfinish.Text = "Finalizar tarefa";
+            this.btnfinish.Text = "Finalizar Processo";
             this.btnfinish.UseVisualStyleBackColor = true;
             this.btnfinish.Click += new System.EventHandler(this.btnfinish_Click);
             // 
@@ -301,12 +302,13 @@
             this.listProcessos.UseCompatibleStateImageBehavior = false;
             this.listProcessos.View = System.Windows.Forms.View.Details;
             this.listProcessos.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listProcessos_ColumnClick);
+            this.listProcessos.SelectedIndexChanged += new System.EventHandler(this.listProcessos_SelectedIndexChanged);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.83334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel2.Controls.Add(this.btnfinish, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 563);

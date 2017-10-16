@@ -68,6 +68,16 @@ namespace Leitor_De_Processos
             else return false;
         }
         /// <summary>
+        /// Informa se os processo possuem o mesmo ID
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public bool Equals(int PID)
+        {
+            if (this.Pid == PID) return true;
+            else return false;
+        }
+        /// <summary>
         /// Informa se os processos em comparação possuem a mesma prioridade
         /// </summary>
         /// <param name="obj"></param>

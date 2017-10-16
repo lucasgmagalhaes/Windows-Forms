@@ -117,6 +117,20 @@
             }
             return null;
         }
+        public Dados Find(int PID)
+        {
+            Elemento aux = this.prim.Prox;
+            while (aux != null)
+            {
+                Processo auxpro = (Processo)aux.GetDados();
+                if (auxpro.Equals(PID))
+                {
+                    return aux.GetDados();
+                }
+                aux = aux.Prox;
+            }
+            return null;
+        }
         public void Clear()
         {
             Elemento aux = this.prim.Prox;

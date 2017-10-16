@@ -117,6 +117,5 @@ namespace Leitor_De_Processos
             this.Prim = aux3;
             this.Ult = Prim;
         }
-
     }
 }
