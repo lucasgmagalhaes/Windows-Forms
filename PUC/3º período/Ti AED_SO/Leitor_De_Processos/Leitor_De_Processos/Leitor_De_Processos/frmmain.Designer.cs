@@ -50,9 +50,8 @@
             this.informaçõesDoSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exercíciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnfinish = new System.Windows.Forms.Button();
+            this.developerPromptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listProcessos = new System.Windows.Forms.ListView();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -90,7 +89,6 @@
             this.Cicle_Run = new System.ComponentModel.BackgroundWorker();
             this.Timer_Processing = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -149,7 +147,7 @@
             // processamentoSequencialToolStripMenuItem
             // 
             this.processamentoSequencialToolStripMenuItem.Name = "processamentoSequencialToolStripMenuItem";
-            this.processamentoSequencialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.processamentoSequencialToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.processamentoSequencialToolStripMenuItem.Text = "Iniciar";
             this.processamentoSequencialToolStripMenuItem.ToolTipText = "Executa todos os processos com base na sua prioridade";
             this.processamentoSequencialToolStripMenuItem.Click += new System.EventHandler(this.processamentoSequencialToolStripMenuItem_Click);
@@ -157,7 +155,7 @@
             // pararExecuçãoToolStripMenuItem
             // 
             this.pararExecuçãoToolStripMenuItem.Name = "pararExecuçãoToolStripMenuItem";
-            this.pararExecuçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pararExecuçãoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.pararExecuçãoToolStripMenuItem.Text = "Pausar";
             this.pararExecuçãoToolStripMenuItem.ToolTipText = "Pausa o processo de execução";
             this.pararExecuçãoToolStripMenuItem.Click += new System.EventHandler(this.pararExecuçãoToolStripMenuItem_Click);
@@ -165,7 +163,7 @@
             // pararToolStripMenuItem
             // 
             this.pararToolStripMenuItem.Name = "pararToolStripMenuItem";
-            this.pararToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pararToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.pararToolStripMenuItem.Text = "Parar";
             this.pararToolStripMenuItem.ToolTipText = "Interrompe a execução do(s) processo(s)";
             this.pararToolStripMenuItem.Click += new System.EventHandler(this.pararToolStripMenuItem_Click);
@@ -267,7 +265,8 @@
             // exercíciosToolStripMenuItem
             // 
             this.exercíciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3});
+            this.toolStripMenuItem3,
+            this.developerPromptToolStripMenuItem});
             this.exercíciosToolStripMenuItem.Name = "exercíciosToolStripMenuItem";
             this.exercíciosToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.exercíciosToolStripMenuItem.Text = "Exercícios";
@@ -275,48 +274,28 @@
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(89, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(170, 22);
             this.toolStripMenuItem3.Text = "3.6";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
-            // btnfinish
+            // developerPromptToolStripMenuItem
             // 
-            this.btnfinish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnfinish.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnfinish.Location = new System.Drawing.Point(712, 3);
-            this.btnfinish.Name = "btnfinish";
-            this.btnfinish.Size = new System.Drawing.Size(120, 30);
-            this.btnfinish.TabIndex = 0;
-            this.btnfinish.Tag = "";
-            this.btnfinish.Text = "Finalizar Processo";
-            this.btnfinish.UseVisualStyleBackColor = true;
-            this.btnfinish.Click += new System.EventHandler(this.btnfinish_Click);
+            this.developerPromptToolStripMenuItem.Name = "developerPromptToolStripMenuItem";
+            this.developerPromptToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.developerPromptToolStripMenuItem.Text = "Developer Prompt";
+            this.developerPromptToolStripMenuItem.Click += new System.EventHandler(this.developerPromptToolStripMenuItem_Click);
             // 
             // listProcessos
             // 
             this.listProcessos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listProcessos.Location = new System.Drawing.Point(3, 3);
             this.listProcessos.Name = "listProcessos";
-            this.listProcessos.Size = new System.Drawing.Size(821, 440);
+            this.listProcessos.Size = new System.Drawing.Size(821, 484);
             this.listProcessos.TabIndex = 7;
             this.listProcessos.UseCompatibleStateImageBehavior = false;
             this.listProcessos.View = System.Windows.Forms.View.Details;
             this.listProcessos.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listProcessos_ColumnClick);
             this.listProcessos.SelectedIndexChanged += new System.EventHandler(this.listProcessos_SelectedIndexChanged);
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.83334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel2.Controls.Add(this.btnfinish, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 563);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(835, 44);
-            this.tableLayoutPanel2.TabIndex = 8;
             // 
             // tabControl1
             // 
@@ -327,7 +306,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 89);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(835, 474);
+            this.tabControl1.Size = new System.Drawing.Size(835, 518);
             this.tabControl1.TabIndex = 9;
             // 
             // tabPage1
@@ -336,7 +315,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(827, 446);
+            this.tabPage1.Size = new System.Drawing.Size(827, 490);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Processos Execução";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -367,7 +346,7 @@
             this.tabPage3.Controls.Add(this.panel7);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(827, 446);
+            this.tabPage3.Size = new System.Drawing.Size(827, 490);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Informações";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -378,7 +357,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(827, 446);
+            this.panel7.Size = new System.Drawing.Size(827, 490);
             this.panel7.TabIndex = 10;
             // 
             // tableLayoutPanel3
@@ -394,7 +373,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 226F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 292F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(827, 446);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(827, 490);
             this.tableLayoutPanel3.TabIndex = 24;
             // 
             // listlog
@@ -686,7 +665,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(835, 607);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -699,7 +677,6 @@
             this.Load += new System.EventHandler(this.frmmain_Load_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -724,11 +701,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolTipCarregar;
-        private System.Windows.Forms.Button btnfinish;
         private System.Windows.Forms.ToolStripMenuItem execuçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem processamentoSequencialToolStripMenuItem;
         private System.Windows.Forms.ListView listProcessos;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -780,6 +755,7 @@
         private System.Windows.Forms.ToolStripMenuItem informaçõesDoSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exercíciosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem developerPromptToolStripMenuItem;
     }
 }
 

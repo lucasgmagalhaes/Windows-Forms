@@ -49,6 +49,14 @@
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.listProcessosRunning = new System.Windows.Forms.ListView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.listspecific = new System.Windows.Forms.ListView();
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.listservices = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblcpu = new System.Windows.Forms.Label();
@@ -62,12 +70,6 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.listspecific = new System.Windows.Forms.ListView();
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,18 +77,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.listservices = new System.Windows.Forms.ListView();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tab3.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage7.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage2
@@ -265,6 +265,79 @@
             this.listProcessosRunning.UseCompatibleStateImageBehavior = false;
             this.listProcessosRunning.View = System.Windows.Forms.View.Details;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.listspecific);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(533, 409);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Programas Específicos";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // listspecific
+            // 
+            this.listspecific.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.listspecific.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
+            this.listspecific.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listspecific.FullRowSelect = true;
+            this.listspecific.HoverSelection = true;
+            this.listspecific.Location = new System.Drawing.Point(0, 0);
+            this.listspecific.MultiSelect = false;
+            this.listspecific.Name = "listspecific";
+            this.listspecific.Size = new System.Drawing.Size(533, 409);
+            this.listspecific.TabIndex = 2;
+            this.listspecific.UseCompatibleStateImageBehavior = false;
+            this.listspecific.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Nome";
+            this.columnHeader12.Width = 130;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "CPU";
+            this.columnHeader13.Width = 80;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "RAM";
+            this.columnHeader14.Width = 90;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Paginação";
+            this.columnHeader15.Width = 80;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.listservices);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(533, 409);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Serviços";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // listservices
+            // 
+            this.listservices.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.listservices.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listservices.FullRowSelect = true;
+            this.listservices.HoverSelection = true;
+            this.listservices.Location = new System.Drawing.Point(0, 0);
+            this.listservices.MultiSelect = false;
+            this.listservices.Name = "listservices";
+            this.listservices.Size = new System.Drawing.Size(533, 409);
+            this.listservices.TabIndex = 3;
+            this.listservices.UseCompatibleStateImageBehavior = false;
+            this.listservices.View = System.Windows.Forms.View.Details;
+            // 
             // columnHeader3
             // 
             this.columnHeader3.DisplayIndex = 0;
@@ -353,8 +426,9 @@
             // 
             // timer_performance
             // 
+            this.timer_performance.Enabled = true;
             this.timer_performance.Interval = 1300;
-            this.timer_performance.Tick += new System.EventHandler(this.timer_performance_Tick);
+            this.timer_performance.Tick += new System.EventHandler(this.timer_performance_Tick_1);
             // 
             // progressBar1
             // 
@@ -384,55 +458,6 @@
             this.label11.Size = new System.Drawing.Size(27, 16);
             this.label11.TabIndex = 16;
             this.label11.Text = "0%";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.listspecific);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(533, 409);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Programas Específicos";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // listspecific
-            // 
-            this.listspecific.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listspecific.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15});
-            this.listspecific.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listspecific.FullRowSelect = true;
-            this.listspecific.HoverSelection = true;
-            this.listspecific.Location = new System.Drawing.Point(0, 0);
-            this.listspecific.MultiSelect = false;
-            this.listspecific.Name = "listspecific";
-            this.listspecific.Size = new System.Drawing.Size(533, 409);
-            this.listspecific.TabIndex = 2;
-            this.listspecific.UseCompatibleStateImageBehavior = false;
-            this.listspecific.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Nome";
-            this.columnHeader12.Width = 130;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "CPU";
-            this.columnHeader13.Width = 80;
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "RAM";
-            this.columnHeader14.Width = 90;
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Paginação";
-            this.columnHeader15.Width = 80;
             // 
             // label9
             // 
@@ -504,30 +529,6 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.listservices);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(533, 409);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Serviços";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // listservices
-            // 
-            this.listservices.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listservices.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listservices.FullRowSelect = true;
-            this.listservices.HoverSelection = true;
-            this.listservices.Location = new System.Drawing.Point(0, 0);
-            this.listservices.MultiSelect = false;
-            this.listservices.Name = "listservices";
-            this.listservices.Size = new System.Drawing.Size(533, 409);
-            this.listservices.TabIndex = 3;
-            this.listservices.UseCompatibleStateImageBehavior = false;
-            this.listservices.View = System.Windows.Forms.View.Details;
-            // 
             // frmmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -558,11 +559,11 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -5,6 +5,7 @@ using System.IO;
 using System.Threading;
 using System.Drawing;
 using Leitor_De_Processos.Main;
+using System.Diagnostics;
 
 namespace Leitor_De_Processos
 {
@@ -79,8 +80,8 @@ namespace Leitor_De_Processos
         private void UpdateInExecutionProcess(Processo aux)
         {
             item_to_execute = GetProcessInListView(aux);
-            if (aux != null && item_to_execute != null)  
-            {    
+            if (aux != null && item_to_execute != null)
+            {
                 lblid.Text = "ID:  " + aux.Pid;
                 lblnome.Text = "Nome:  " + aux.Name;
                 if (FollowProcess == true)
@@ -94,7 +95,7 @@ namespace Leitor_De_Processos
                     listProcessos.Select();
                     item_to_execute.Selected = true;
                 }
-            }  
+            }
         }
         /// <summary>
         /// Retorna o processo da fila no listview
@@ -199,7 +200,6 @@ namespace Leitor_De_Processos
                 motor.SetProcessToRightLine(procretore);
                 if (ListColors) SetRowColor(AddProcessToListView(procretore));
                 else AddProcessToListView(procretore);
-                lbllist.Text = "Processo listados " + motor.TPLIST++;
                 UpdateCounters();
             }
         }
@@ -231,6 +231,7 @@ namespace Leitor_De_Processos
             lblc3.Text = "C3 " + motor.Listas_categoria[2].Count();
             lblc2.Text = "C2 " + motor.Listas_categoria[1].Count();
             lblc1.Text = "C1 " + motor.Listas_categoria[0].Count();
+            lblfinalizados.Text = "Processos finalizados: " + motor.TPF;
         }
         /// <summary>
         /// Marca o ultimo processo finalizado
@@ -268,16 +269,23 @@ namespace Leitor_De_Processos
                         while ((line = read.ReadLine()) != null)
                         {
                             string[] splt = line.Split(';');
-                            Processo toadd = new Processo(int.Parse(splt[0]), splt[1], int.Parse(splt[2]), float.Parse(splt[3]), int.Parse(splt[4]));
-                            motor.SetProcessToRightLine(toadd);
-                            if (ListColors) SetRowColor(AddProcessToListView(toadd));
-                            else AddProcessToListView(toadd);
-                            lbllist.Text = "Processo listados " + motor.TPLIST++;
-                            UpdateCounters();
+                            try
+                            {
+                                Processo toadd = new Processo(int.Parse(splt[0]), splt[1], int.Parse(splt[2]), float.Parse(splt[3]), int.Parse(splt[4]));
+                                motor.SetProcessToRightLine(toadd);
+                                if (ListColors) SetRowColor(AddProcessToListView(toadd));
+                                else AddProcessToListView(toadd);
+                                UpdateCounters();
+                            }
+                            catch
+                            {
+                                MessageBox.Show("O arquivo informado não está no formato correto para leitura", "Format fail", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                break;
+                            }
                         }
-                        btnfinish.Enabled = true;
                         read.Close();
                         motor.ClearAuxs();
+                        lbllist.Text = "Processo listados " + motor.TotalCount();
                     }
                 }
             }
@@ -311,6 +319,7 @@ namespace Leitor_De_Processos
         /// <param name="e"></param>
         private void Cicle_Run_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
+            UpdateCounters();
             try
             {
                 UpdateInExecutionProcess(motor.To_run);
@@ -351,15 +360,12 @@ namespace Leitor_De_Processos
                         item_finalizado.SubItems.Add(item_to_execute.SubItems[4]);
                         ListFinalizados.Items.Add(item_finalizado);
                         SelectLastFinished();
-                        lblfinalizados.Text = "Processos finalizados: " + motor.TPF++;
-                        UpdateCounters();
                     }
                     else item_to_execute.SubItems[item_to_execute.SubItems.Count - 2].Text = "Em espera";
                 }
             }
             catch { }
         }
-
         /// <summary>
         /// Verifica se há mais processos para serem executados
         /// </summary>
@@ -367,6 +373,7 @@ namespace Leitor_De_Processos
         /// <param name="e"></param>
         private void Cicle_Run_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
+            UpdateCounters();
             if (motor.To_run != null)
             {
                 if (motor.To_run.Ciclos_executados != motor.To_run.Ciclo) RunList(motor.WhatShouldIRun());
@@ -412,7 +419,6 @@ namespace Leitor_De_Processos
             ListFinalizados.Columns.Add("colprio", "Prioridade", 100);
             ListFinalizados.Columns.Add("coltempciclo", "Tempo por ciclo", 165);
             ListFinalizados.Columns.Add("colciclo", "Ciclos", 165);
-            btnfinish.Enabled = false;
         }
         /// <summary>
         /// Carrega um arquivo com um bloco de processos para lista interna e o ListView
@@ -422,17 +428,6 @@ namespace Leitor_De_Processos
         private void ToolTipCarregar_Click(object sender, EventArgs e)
         {
             SetFile();
-        }
-        /// <summary>
-        /// Roda uma ação em um processo com base no estado atual dele
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnfinish_Click(object sender, EventArgs e)
-        {
-            listProcessos.Items.RemoveAt(selecteditem.Index);
-            motor.KillProcess(Convert.ToInt32(selecteditem.SubItems[0].Text));
-
         }
         /// <summary>
         /// Executa todos os processos da lista
@@ -474,7 +469,7 @@ namespace Leitor_De_Processos
                     if (pt.Text.Substring(pt.Text.Length - 2, 2) == " ▼" || pt.Text.Substring(pt.Text.Length - 2, 2) == " ▲") pt.Text = pt.Text.Substring(0, pt.Text.Length - 2);
                 }
             }
- 
+
             if (aux.Substring(aux.Length - 2, 2) == " ▼" || aux.Substring(aux.Length - 2, 2) == " ▲") aux = aux.Substring(0, aux.Length - 2);
             else aux = aux.Substring(0, aux.Length);
             if (e.Column == lvwColumnSorter.SortColumn)
@@ -656,8 +651,10 @@ namespace Leitor_De_Processos
         /// <param name="e"></param>
         private void informaçõesDoSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             TI_Arquitetura.frmmain open = new TI_Arquitetura.frmmain();
             open.Show();
+            Cursor.Current = Cursors.Default;
         }
         /// <summary>
         /// Evento para pausar/resumir a execução dos processos
@@ -693,7 +690,18 @@ namespace Leitor_De_Processos
         }
         private void listProcessos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(listProcessos.SelectedItems.Count > 0) selecteditem = listProcessos.SelectedItems[0];
+            if (listProcessos.SelectedItems.Count > 0) selecteditem = listProcessos.SelectedItems[0];
+        }
+        private void developerPromptToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(@"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools\Developer Command Prompt for VS 2017", @"csc.exe C:\oibb.cs");
+            }
+            catch
+            {
+
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.VisualBasic.Devices;
 using System.Diagnostics;
 using TI_Arquitetura45;
 using System.Drawing;
+using System.Threading;
 
 /// <summary>
 /// Main do programa. Parte principal com todos os componentes
@@ -31,6 +32,8 @@ namespace TI_Arquitetura
         private ManagementObjectSearcher CatcherHD = new ManagementObjectSearcher("SELECT * FROM Win32_LogicalDisk "); // Pesquisa no Win32 sobre todas as informações nesse quesito sobre o Disco Rígido
         private ManagementObjectSearcher Cache = new ManagementObjectSearcher("SELECT * FROM Win32_CacheMemory");
         private ListViewItem item;
+        private Process[] proc;
+        private List<ListViewItem> processosadd = new List<ListViewItem>();
         #endregion
 
         #region SYSTEM METHODS AND IMPLEMENTATION
@@ -341,7 +344,6 @@ namespace TI_Arquitetura
                 it.Text = pro.ProcessName;
                 it.SubItems.Add(pro.Id.ToString());
                 it.SubItems.Add(pro.Threads.Count.ToString());
-                item.Text = pro.ProcessName;
                 it.SubItems.Add((((double)counterRAM.NextValue() / 1024) / 1000) + " MB");
                 it.SubItems.Add(cpuUseage + "%");
                 listProcessosRunning.Items.Add(it);
@@ -409,8 +411,7 @@ namespace TI_Arquitetura
             }
             #endregion
         }
-
-        private void timer_performance_Tick(object sender, EventArgs e)
+        private void timer_performance_Tick_1(object sender, EventArgs e)
         {
             Int64 phav = PerformanceInfo.GetPhysicalAvailableMemoryInMiB();
             Int64 tot = PerformanceInfo.GetTotalMemoryInMiB();
