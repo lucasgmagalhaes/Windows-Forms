@@ -1,0 +1,12 @@
+C:\Users\Lucax\Google Drive\Ti AED\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Google Drive\Ti AED\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Google Drive\Ti AED\Expressions_Console\Expressions_Console\bin\Debug\Expressions_Console.exe
+C:\Users\Lucax\Google Drive\Ti AED\Expressions_Console\Expressions_Console\bin\Debug\Expressions_Console.pdb
+C:\Users\Lucax\Google Drive\Ti AED\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.exe
+C:\Users\Lucax\Google Drive\Ti AED\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\bin\Debug\Expressions_Console.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\bin\Debug\Expressions_Console.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.exe
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.pdb
