@@ -26,3 +26,4 @@ C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\MauMau\MauMau\obj\Debug\Ma
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\MauMau\MauMau\obj\Debug\MauMau.csproj.CoreCompileInputs.cache
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\MauMau\MauMau\obj\Debug\MauMau.exe
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\MauMau\MauMau\obj\Debug\MauMau.pdb
+C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\MauMau\MauMau\obj\Debug\MauMau.csprojResolveAssemblyReference.cache
