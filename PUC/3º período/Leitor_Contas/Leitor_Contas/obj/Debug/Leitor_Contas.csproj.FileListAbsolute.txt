@@ -1,0 +1,14 @@
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\bin\Debug\Leitor_Contas.exe.config
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\bin\Debug\Leitor_Contas.exe
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\bin\Debug\Leitor_Contas.pdb
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\Leitor_Contas.csprojResolveAssemblyReference.cache
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\MainWindow.g.cs
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\App.g.cs
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\Leitor_Contas_MarkupCompile.cache
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\Leitor_Contas_MarkupCompile.lref
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\MainWindow.baml
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\Leitor_Contas.g.resources
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\Leitor_Contas.Properties.Resources.resources
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\Leitor_Contas.csproj.GenerateResource.Cache
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\Leitor_Contas.exe
+C:\Users\1047825\Desktop\Leitor_Contas\Leitor_Contas\obj\Debug\Leitor_Contas.pdb
