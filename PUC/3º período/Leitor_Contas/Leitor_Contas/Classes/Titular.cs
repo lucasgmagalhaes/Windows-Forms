@@ -5,13 +5,13 @@ namespace Leitor_Contas.Classes
 {
     class Titular : IDados
     {
-        private int cpf;
+        private long cpf;
         private List<Conta> contas;
 
         public Titular(string cpf)
         {
-            this.cpf = Convert.ToInt32(cpf.Replace(".", "").Replace("-", ""));
-            this.contas = null;
+            this.cpf = Convert.ToInt64(cpf.Replace(".", "").Replace("-", ""));
+            this.contas = new List<Conta>();
         }
         public void AddConta(Conta cont)
         {

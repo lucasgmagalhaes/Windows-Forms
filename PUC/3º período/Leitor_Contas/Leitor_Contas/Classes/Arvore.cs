@@ -21,8 +21,8 @@ namespace Leitor_Contas.Classes
             else
             {
                 int get = this.raiz.CompareTo(dado);
-                if (get == -1) this.raiz.Esq = new Nodo(Inserir(dado, raiz.Esq));
-                else if (get == 1) this.raiz.Dir = new Nodo(Inserir(dado, raiz.Dir));
+                if (get == 1) this.raiz.Esq = new Nodo(Inserir(dado, raiz.Esq));
+                else if (get == -1) this.raiz.Dir = new Nodo(Inserir(dado, raiz.Dir));
             }
         }
         private IDados Inserir(IDados dado, Nodo onde)
@@ -30,11 +30,11 @@ namespace Leitor_Contas.Classes
             if (onde == null) return dado;
             else
             {
-                if (onde.CompareTo(dado) == -1)
+                if (onde.CompareTo(dado) == 1)
                 {
                    onde.Esq =  new Nodo(Inserir(dado, onde.Esq));
                 }
-                else if (onde.CompareTo(dado) == 1)
+                else if (onde.CompareTo(dado) == -1)
                 {
                    onde.Dir = new Nodo(Inserir(dado, onde.Dir));
                 }

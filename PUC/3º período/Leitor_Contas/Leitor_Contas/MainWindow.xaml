@@ -6,33 +6,44 @@
         xmlns:local="clr-namespace:Leitor_Contas"
         mc:Ignorable="d"
         ResizeMode="CanMinimize"
-        Title="MainWindow" Height="397.425" Width="639.77">
+        Title="MainWindow" Height="490.425" Width="804.77">
     <Grid>
-        <Button x:Name="btnopenfile" Click="btnopenfile_OnClick" Content="Button" HorizontalAlignment="Left" Margin="199,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184">
-            <TextBox.Style>
-                <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
-                    <Style.Resources>
-                        <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
-                            <VisualBrush.Visual>
-                                <Label Content="Selecionar arquivo de contas" Foreground="LightGray" />
-                            </VisualBrush.Visual>
-                        </VisualBrush>
-                    </Style.Resources>
-                    <Style.Triggers>
-                        <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
-                            <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
-                        </Trigger>
-                        <Trigger Property="Text" Value="{x:Null}">
-                            <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
-                        </Trigger>
-                        <Trigger Property="IsKeyboardFocused" Value="True">
-                            <Setter Property="Background" Value="White" />
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </TextBox.Style>
-        </TextBox>
+        <TabControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="txtnamefile" HorizontalAlignment="Left" Height="23" Margin="117,12,0,0" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top" Width="280"/>
+                    <Button  x:Name="btnload" Content="Abrir" Click="btnopenfile_OnClick" HorizontalAlignment="Left" Margin="402,13,0,0" VerticalAlignment="Top" Width="75"/>
+                    <DataGrid x:Name="dataBills" IsReadOnly="True" AutoGenerateColumns="True" CanUserAddRows="True" HorizontalAlignment="Left" Height="374" Margin="9,49,0,0" VerticalAlignment="Top" Width="775" SelectionUnit="Cell">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn  Header="ID" Width="120"/>
+                            <DataGridTextColumn  Header="CPF" Width="140"/>
+                            <DataGridTextColumn  Header="Conta Tipo" Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
 
+                    <Label Content="Selecionar arquivo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <ComboBox HorizontalAlignment="Left" Margin="71,10,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="204,12,0,0" VerticalAlignment="Top" Width="75"/>
+                    <DataGrid HorizontalAlignment="Left" Height="100" Margin="142,81,0,0" VerticalAlignment="Top" Width="100"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <ComboBox HorizontalAlignment="Left" Margin="71,10,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="204,12,0,0" VerticalAlignment="Top" Width="75"/>
+                    <DataGrid HorizontalAlignment="Left" Height="100" Margin="142,81,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Tab">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

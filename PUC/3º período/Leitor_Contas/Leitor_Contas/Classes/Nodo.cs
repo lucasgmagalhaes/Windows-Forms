@@ -11,7 +11,7 @@ namespace Leitor_Contas.Classes
         private Nodo dir, esq;
         private IDados dad;
         public Nodo Dir { get { return this.dir; } set { this.dir = value; }}
-        public Nodo Esq { get { return this.dir; } set { this.dir = value; }}
+        public Nodo Esq { get { return this.esq; } set { this.esq = value; }}
         public IDados Dado { get { return this.dad; }}
         public Nodo(IDados dad)
         {
