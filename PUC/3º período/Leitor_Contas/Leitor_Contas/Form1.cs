@@ -62,16 +62,15 @@ namespace Leitor_Contas
                     }
                     catch(Exception ee)
                     {
-                        MessageBox.Show(ee.Message);
-                        
+                        MessageBox.Show(ee.Message);               
                     }
                 }
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
+            int val = int.Parse(txtpesquisar.Text);
+            if(pessoas.Procurar()
         }
     }
 }

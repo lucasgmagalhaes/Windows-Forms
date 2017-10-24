@@ -30,22 +30,22 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnabrir = new System.Windows.Forms.Button();
-            this.listpeople = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.listcontas = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.listpeople = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnabrir = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnsearch = new System.Windows.Forms.Button();
+            this.txtpesquisar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listresult = new System.Windows.Forms.ListView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -79,67 +79,23 @@
             this.tabPage1.Text = "Dados";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // label3
             // 
-            this.tabPage2.Controls.Add(this.listView1);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(624, 457);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Pesquisa";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(311, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Contas";
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Arquivo selecionado";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(8, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // btnabrir
-            // 
-            this.btnabrir.Location = new System.Drawing.Point(314, 35);
-            this.btnabrir.Name = "btnabrir";
-            this.btnabrir.Size = new System.Drawing.Size(75, 23);
-            this.btnabrir.TabIndex = 2;
-            this.btnabrir.Text = "Abrir";
-            this.btnabrir.UseVisualStyleBackColor = true;
-            this.btnabrir.Click += new System.EventHandler(this.btnabrir_Click);
-            // 
-            // listpeople
-            // 
-            this.listpeople.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            this.listpeople.Location = new System.Drawing.Point(8, 85);
-            this.listpeople.Name = "listpeople";
-            this.listpeople.Size = new System.Drawing.Size(297, 364);
-            this.listpeople.TabIndex = 3;
-            this.listpeople.UseCompatibleStateImageBehavior = false;
-            this.listpeople.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "CPF";
-            this.columnHeader1.Width = 159;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Número de contas";
-            this.columnHeader2.Width = 130;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Pessoas";
             // 
             // listcontas
             // 
@@ -163,40 +119,84 @@
             this.columnHeader4.Text = "Tipo de Conta";
             this.columnHeader4.Width = 130;
             // 
-            // label2
+            // listpeople
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Pessoas";
+            this.listpeople.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listpeople.Location = new System.Drawing.Point(8, 85);
+            this.listpeople.Name = "listpeople";
+            this.listpeople.Size = new System.Drawing.Size(297, 364);
+            this.listpeople.TabIndex = 3;
+            this.listpeople.UseCompatibleStateImageBehavior = false;
+            this.listpeople.View = System.Windows.Forms.View.Details;
             // 
-            // label3
+            // columnHeader1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(311, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Contas";
+            this.columnHeader1.Text = "CPF";
+            this.columnHeader1.Width = 159;
             // 
-            // button1
+            // columnHeader2
             // 
-            this.button1.Location = new System.Drawing.Point(408, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Procurar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.columnHeader2.Text = "Número de contas";
+            this.columnHeader2.Width = 130;
             // 
-            // textBox2
+            // btnabrir
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 20);
-            this.textBox2.TabIndex = 4;
+            this.btnabrir.Location = new System.Drawing.Point(314, 35);
+            this.btnabrir.Name = "btnabrir";
+            this.btnabrir.Size = new System.Drawing.Size(75, 23);
+            this.btnabrir.TabIndex = 2;
+            this.btnabrir.Text = "Abrir";
+            this.btnabrir.UseVisualStyleBackColor = true;
+            this.btnabrir.Click += new System.EventHandler(this.btnabrir_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(8, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(300, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Arquivo selecionado";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.listresult);
+            this.tabPage2.Controls.Add(this.btnsearch);
+            this.tabPage2.Controls.Add(this.txtpesquisar);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(624, 457);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Pesquisa";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnsearch
+            // 
+            this.btnsearch.Location = new System.Drawing.Point(408, 44);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 5;
+            this.btnsearch.Text = "Procurar";
+            this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtpesquisar
+            // 
+            this.txtpesquisar.Location = new System.Drawing.Point(102, 44);
+            this.txtpesquisar.Name = "txtpesquisar";
+            this.txtpesquisar.Size = new System.Drawing.Size(300, 20);
+            this.txtpesquisar.TabIndex = 4;
             // 
             // label4
             // 
@@ -207,13 +207,14 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Encontre um cpf ou conta";
             // 
-            // listView1
+            // listresult
             // 
-            this.listView1.Location = new System.Drawing.Point(102, 95);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(381, 97);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listresult.Location = new System.Drawing.Point(107, 73);
+            this.listresult.Name = "listresult";
+            this.listresult.Size = new System.Drawing.Size(376, 256);
+            this.listresult.TabIndex = 6;
+            this.listresult.UseCompatibleStateImageBehavior = false;
+            this.listresult.View = System.Windows.Forms.View.List;
             // 
             // Form1
             // 
@@ -250,10 +251,10 @@
         private System.Windows.Forms.ListView listcontas;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnsearch;
+        private System.Windows.Forms.TextBox txtpesquisar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listresult;
     }
 }
 
