@@ -5,7 +5,7 @@ namespace Leitor_Contas.Classes
 {
     class Titular : IDados
     {
-        private long cpf;
+        public long cpf;
         private List<Conta> contas;
 
         public Titular(string cpf)
@@ -17,14 +17,12 @@ namespace Leitor_Contas.Classes
         {
             contas.Add(cont);
         }
-
         public bool Equals(IDados d)
         {
             Titular aux = (Titular)d;
             if (aux.cpf == this.cpf) return true;
             else return false;
         }
-
         public int CompareTo(IDados other)
         {
             Titular aux = (Titular)other;

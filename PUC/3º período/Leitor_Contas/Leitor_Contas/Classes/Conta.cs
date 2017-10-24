@@ -12,13 +12,15 @@ namespace Leitor_Contas.Classes
         protected int mes;
         protected double leitura_anterior;
         protected double leitura_atual;
+        protected Titular pessoa;
 
-        public Conta(int id, int mes, double leitura_anterior, double leitura_atual)
+        public Conta(int id, int mes, double leitura_anterior, double leitura_atual, Titular pessoa)
         {
             this.id = id;
             this.mes = mes;
             this.leitura_anterior = leitura_anterior;
             this.leitura_atual = leitura_atual;
+            this.pessoa = pessoa;
         }
 
         public bool Equals(IDados d)

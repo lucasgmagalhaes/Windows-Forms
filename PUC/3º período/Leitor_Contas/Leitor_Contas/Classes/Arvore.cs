@@ -17,29 +17,44 @@ namespace Leitor_Contas.Classes
 
         public void Inserir(IDados dado)
         {
-            if (this.raiz == null) this.raiz = new Nodo(dado);
-            else
-            {
-                int get = this.raiz.CompareTo(dado);
-                if (get == 1) this.raiz.Esq = new Nodo(Inserir(dado, raiz.Esq));
-                else if (get == -1) this.raiz.Dir = new Nodo(Inserir(dado, raiz.Dir));
-            }
+            Nodo aux = new Nodo(dado);
+           this.raiz =  Inserir(new Nodo(dado), this.raiz);
         }
-        private IDados Inserir(IDados dado, Nodo onde)
+        private Nodo Inserir(Nodo novo, Nodo onde)
         {
-            if (onde == null) return dado;
+            if (onde == null) return novo;
             else
             {
-                if (onde.CompareTo(dado) == 1)
+                if (onde.Dado.CompareTo(novo.Dado) == 1)
                 {
-                   onde.Esq =  new Nodo(Inserir(dado, onde.Esq));
+                    onde.Esq = Inserir(novo, onde.Esq);
                 }
-                else if (onde.CompareTo(dado) == -1)
+                else if (onde.Dado.CompareTo(novo.Dado) == -1)
                 {
-                   onde.Dir = new Nodo(Inserir(dado, onde.Dir));
+                    onde.Dir = Inserir(novo, onde.Dir);
                 }
             }
             return onde;
+        }
+        public IDados Procurar(IDados dad)
+        {
+            return Procurar(new Nodo(dad), this.raiz).Dado;
+        }
+        private Nodo Procurar(Nodo procura, Nodo atual)
+        {
+            if (atual == null) return atual;
+            else
+            {
+                if (atual.Dado.CompareTo(procura.Dado) == 1)
+                {
+                    atual.Esq = Procurar(procura, atual.Esq);
+                }
+                else if (atual.Dado.CompareTo(procura.Dado) == -1)
+                {
+                    atual.Dir = Procurar(procura, atual.Dir);
+                }
+            }
+            return atual;
         }
     }
 }

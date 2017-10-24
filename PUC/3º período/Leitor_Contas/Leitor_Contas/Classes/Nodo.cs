@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Leitor_Contas.Classes
 {
-    class Nodo : IDados                                           
+    class Nodo                                          
     {
         private Nodo dir, esq;
         private IDados dad;
