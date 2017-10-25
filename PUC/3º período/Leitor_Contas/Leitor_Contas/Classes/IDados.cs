@@ -10,5 +10,6 @@ namespace Leitor_Contas.Classes
     {
         bool Equals(IDados d);
         int CompareTo(long d);
+        int CompareTo(string d);
     }
 }

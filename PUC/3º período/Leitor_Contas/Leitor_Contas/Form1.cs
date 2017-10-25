@@ -26,6 +26,7 @@ namespace Leitor_Contas
             {
                 if (Path.GetExtension(open.FileName) == ".TXT")
                 {
+                    txtfile.Text = open.FileName;
                     try
                     {
                         using (StreamReader read = new StreamReader(open.FileName))
@@ -48,11 +49,15 @@ namespace Leitor_Contas
                                     conta = new Agua(int.Parse(spt[0]), 0, 0, 0, pessoa);
                                     item1.SubItems.Add("Agua");
                                 }
-                                pessoa.AddConta(conta);
+                                Titular aux = (Titular)pessoas.Procurar(pessoa);
+                                if (aux == null)
+                                {
+                                    pessoa.AddConta(conta);
+                                    pessoas.Inserir(pessoa);
+                                }
+                                else aux.AddConta(conta);
                                 contas.Inserir(conta);
                                 listcontas.Items.Add(item1);
-                                pessoas.Inserir(pessoa);
-
                                 ListViewItem item = new ListViewItem();
                                 item.Text = spt[1];
                                 item.SubItems.Add(spt[2]);
@@ -69,37 +74,46 @@ namespace Leitor_Contas
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            long val = long.Parse(txtpesquisar.Text);
-            Titular get = (Titular)pessoas.Procurar(val);
-            ListViewItem item = new ListViewItem();
-            if (get != null)
+            if (pessoas.Count > 1)
             {
-                item.Text = get.CPF.ToString();
-                listresultp.Items.Add(item);
-
-                foreach (Conta cont in get.Contas)
+                string val = txtpesquisar.Text;
+                Titular get = (Titular)pessoas.Procurar(val);
+                ListViewItem item = new ListViewItem();
+                if (get != null)
                 {
-                    item = new ListViewItem();
-                    item.Text = cont.Id.ToString();
-                    item.SubItems.Add(cont.Mes.ToString());
-                    item.SubItems.Add(cont.Leitura_anterior.ToString());
-                    item.SubItems.Add(cont.Leitura_atual.ToString());
-                    listresultc.Items.Add(item);
+                    lbltitular.Text = "Titular: " + get.CPF.ToString();
+
+                    foreach (Conta cont in get.Contas)
+                    {
+                        item = new ListViewItem();
+                        item.Text = cont.Id.ToString();
+                        if (cont.GetTipo() == 1) item.SubItems.Add("Energia");
+                        else item.SubItems.Add("Água");
+                        item.SubItems.Add(cont.Mes.ToString());
+                        item.SubItems.Add(cont.Leitura_anterior.ToString());
+                        item.SubItems.Add(cont.Leitura_atual.ToString());
+                        listresultp.Items.Add(item);
+                    }
+                }
+                else
+                {
+                    Conta aux = (Conta)contas.Procurar(Convert.ToInt32(val));
+                    if (aux != null)
+                    {
+                        lbltitular.Text = "Titular: " + aux.Pessoa.CPF.ToString();
+
+                        item = new ListViewItem();
+                        item.Text = aux.Id.ToString();
+                        if (aux.GetTipo() == 1) item.SubItems.Add("Energia");
+                        else item.SubItems.Add("Água");
+                        item.SubItems.Add(aux.Mes.ToString());
+                        item.SubItems.Add(aux.Leitura_anterior.ToString());
+                        item.SubItems.Add(aux.Leitura_atual.ToString());
+                        listresultp.Items.Add(item);
+                    }
                 }
             }
-            else
-            {
-                Conta aux = (Conta)contas.Procurar(val);
-                item.Text = aux.Pessoa.CPF.ToString();
-                listresultp.Items.Add(item);
-
-                item = new ListViewItem();
-                item.Text = aux.Id.ToString();
-                item.SubItems.Add(aux.Mes.ToString());
-                item.SubItems.Add(aux.Leitura_anterior.ToString());
-                item.SubItems.Add(aux.Leitura_atual.ToString());
-                listresultc.Items.Add(item);
-            }
+            else txtpesquisar.Text = "";
         }
     }
 }

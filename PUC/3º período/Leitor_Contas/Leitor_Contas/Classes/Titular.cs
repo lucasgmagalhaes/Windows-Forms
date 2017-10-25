@@ -5,14 +5,14 @@ namespace Leitor_Contas.Classes
 {
     class Titular : IDados
     {
-        private long cpf;
+        private string cpf;
         private List<Conta> contas;
 
-        public long CPF { get { return this.cpf; } }
+        public string CPF { get { return this.cpf; } }
         public List<Conta> Contas { get { return this.contas; } }
         public Titular(string cpf)
         {
-            this.cpf = Convert.ToInt64(cpf.Replace(".", "").Replace("-", ""));
+            this.cpf = cpf;
             this.contas = new List<Conta>();
         }
         public void AddConta(Conta cont)
@@ -28,16 +28,32 @@ namespace Leitor_Contas.Classes
         public int CompareTo(IDados other)
         {
             Titular aux = (Titular)other;
-            if (this.cpf > aux.cpf) return 1;
-            else if (this.cpf == aux.cpf) return 0;
+            long cpfthis = Convert.ToInt64(this.cpf.Replace(".", "").Replace("-", ""));
+            long cpfother = Convert.ToInt64(aux.cpf.Replace(".", "").Replace("-", ""));
+            if (cpfthis > cpfother) return 1;
+            else if (cpfthis == cpfother) return 0;
             else return -1;
         }
 
         public int CompareTo(long d)
         {
-            if (this.cpf > d) return 1;
-            else if (this.cpf == d) return 0;
+            long cpfthis = Convert.ToInt64(this.cpf.Replace(".", "").Replace("-", ""));
+            if (cpfthis > d) return 1;
+            else if (cpfthis == d) return 0;
             else return -1;
+        }
+
+        public int CompareTo(string d)
+        {
+            try
+            {
+                long cpfthis = Convert.ToInt64(this.cpf.Replace(".", "").Replace("-", ""));
+                long cpfother = Convert.ToInt64(d.Replace(".", "").Replace("-", ""));
+                if (cpfthis > cpfother) return 1;
+                else if (cpfthis == cpfother) return 0;
+                else return -1;
+            }
+            catch { return -10; }
         }
     }
 }

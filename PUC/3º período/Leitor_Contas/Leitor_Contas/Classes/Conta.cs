@@ -15,7 +15,7 @@ namespace Leitor_Contas.Classes
         protected Titular pessoa;
 
         public int Id { get { return this.id; } }
-        public int Mes { get { return this.Mes; } }
+        public int Mes { get { return this.mes; } }
         public double Leitura_anterior { get { return this.leitura_anterior; } }
         public double Leitura_atual { get { return this.leitura_atual; } }
         public Titular Pessoa { get { return this.pessoa; } }
@@ -51,6 +51,13 @@ namespace Leitor_Contas.Classes
         }
 
         public int CompareTo(long d)
+        {
+            if (this.id > d) return 1;
+            else if (this.id == d) return 0;
+            else return -1;
+        }
+
+        public int CompareTo(string d)
         {
             throw new NotImplementedException();
         }
