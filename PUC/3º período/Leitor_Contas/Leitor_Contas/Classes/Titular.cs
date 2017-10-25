@@ -5,9 +5,11 @@ namespace Leitor_Contas.Classes
 {
     class Titular : IDados
     {
-        public long cpf;
+        private long cpf;
         private List<Conta> contas;
 
+        public long CPF { get { return this.cpf; } }
+        public List<Conta> Contas { get { return this.contas; } }
         public Titular(string cpf)
         {
             this.cpf = Convert.ToInt64(cpf.Replace(".", "").Replace("-", ""));
@@ -28,6 +30,13 @@ namespace Leitor_Contas.Classes
             Titular aux = (Titular)other;
             if (this.cpf > aux.cpf) return 1;
             else if (this.cpf == aux.cpf) return 0;
+            else return -1;
+        }
+
+        public int CompareTo(long d)
+        {
+            if (this.cpf > d) return 1;
+            else if (this.cpf == d) return 0;
             else return -1;
         }
     }

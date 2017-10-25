@@ -22,16 +22,16 @@ namespace Leitor_Contas
         private void btnabrir_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
-            if(open.ShowDialog() == DialogResult.OK)
+            if (open.ShowDialog() == DialogResult.OK)
             {
-                if(Path.GetExtension(open.FileName) == ".TXT")
+                if (Path.GetExtension(open.FileName) == ".TXT")
                 {
                     try
                     {
-                        using(StreamReader read = new StreamReader(open.FileName))
+                        using (StreamReader read = new StreamReader(open.FileName))
                         {
                             string line;
-                            while((line = read.ReadLine()) != null)
+                            while ((line = read.ReadLine()) != null)
                             {
                                 string[] spt = line.Split(';');
                                 Titular pessoa = new Titular(spt[1]);
@@ -60,17 +60,46 @@ namespace Leitor_Contas
                             }
                         }
                     }
-                    catch(Exception ee)
+                    catch (Exception ee)
                     {
-                        MessageBox.Show(ee.Message);               
+                        MessageBox.Show(ee.Message);
                     }
                 }
             }
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            int val = int.Parse(txtpesquisar.Text);
-            if(pessoas.Procurar()
+            long val = long.Parse(txtpesquisar.Text);
+            Titular get = (Titular)pessoas.Procurar(val);
+            ListViewItem item = new ListViewItem();
+            if (get != null)
+            {
+                item.Text = get.CPF.ToString();
+                listresultp.Items.Add(item);
+
+                foreach (Conta cont in get.Contas)
+                {
+                    item = new ListViewItem();
+                    item.Text = cont.Id.ToString();
+                    item.SubItems.Add(cont.Mes.ToString());
+                    item.SubItems.Add(cont.Leitura_anterior.ToString());
+                    item.SubItems.Add(cont.Leitura_atual.ToString());
+                    listresultc.Items.Add(item);
+                }
+            }
+            else
+            {
+                Conta aux = (Conta)contas.Procurar(val);
+                item.Text = aux.Pessoa.CPF.ToString();
+                listresultp.Items.Add(item);
+
+                item = new ListViewItem();
+                item.Text = aux.Id.ToString();
+                item.SubItems.Add(aux.Mes.ToString());
+                item.SubItems.Add(aux.Leitura_anterior.ToString());
+                item.SubItems.Add(aux.Leitura_atual.ToString());
+                listresultc.Items.Add(item);
+            }
         }
     }
 }

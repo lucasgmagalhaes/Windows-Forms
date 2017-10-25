@@ -36,25 +36,33 @@ namespace Leitor_Contas.Classes
             }
             return onde;
         }
-        public IDados Procurar(IDados dad)
+        public IDados Procurar(int dad)
         {
-            return Procurar(new Nodo(dad), this.raiz).Dado;
+            return Procurar(dad, this.raiz).Dado;
         }
-        private Nodo Procurar(Nodo procura, Nodo atual)
+        public IDados Procurar(long dad)
+        {
+            return Procurar(dad, this.raiz).Dado;
+        }
+        private Nodo Procurar(int procura, Nodo atual)
         {
             if (atual == null) return atual;
             else
             {
-                if (atual.Dado.CompareTo(procura.Dado) == 1)
-                {
-                    atual.Esq = Procurar(procura, atual.Esq);
-                }
-                else if (atual.Dado.CompareTo(procura.Dado) == -1)
-                {
-                    atual.Dir = Procurar(procura, atual.Dir);
-                }
+                if (atual.Dado.CompareTo(procura) == 1) return Procurar(procura, atual.Esq);
+                else if (atual.Dado.CompareTo(procura) == -1) return Procurar(procura, atual.Dir);
+                else return atual;
             }
-            return atual;
+        }
+        private Nodo Procurar(long procura, Nodo atual)
+        {
+            if (atual == null) return atual;
+            else
+            {
+                if (atual.Dado.CompareTo(procura) == 1) return Procurar(procura, atual.Esq);
+                else if (atual.Dado.CompareTo(procura) == -1) return Procurar(procura, atual.Dir);
+                else return atual;
+            }
         }
     }
 }

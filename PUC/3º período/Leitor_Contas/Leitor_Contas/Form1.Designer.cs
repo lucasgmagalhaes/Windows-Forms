@@ -42,10 +42,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.listresultp = new System.Windows.Forms.ListView();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtpesquisar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.listresult = new System.Windows.Forms.ListView();
+            this.listresultc = new System.Windows.Forms.ListView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -169,7 +170,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.listresult);
+            this.tabPage2.Controls.Add(this.listresultc);
+            this.tabPage2.Controls.Add(this.listresultp);
             this.tabPage2.Controls.Add(this.btnsearch);
             this.tabPage2.Controls.Add(this.txtpesquisar);
             this.tabPage2.Controls.Add(this.label4);
@@ -180,6 +182,15 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pesquisa";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // listresultp
+            // 
+            this.listresultp.Location = new System.Drawing.Point(107, 73);
+            this.listresultp.Name = "listresultp";
+            this.listresultp.Size = new System.Drawing.Size(376, 106);
+            this.listresultp.TabIndex = 6;
+            this.listresultp.UseCompatibleStateImageBehavior = false;
+            this.listresultp.View = System.Windows.Forms.View.List;
             // 
             // btnsearch
             // 
@@ -207,14 +218,14 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Encontre um cpf ou conta";
             // 
-            // listresult
+            // listresultc
             // 
-            this.listresult.Location = new System.Drawing.Point(107, 73);
-            this.listresult.Name = "listresult";
-            this.listresult.Size = new System.Drawing.Size(376, 256);
-            this.listresult.TabIndex = 6;
-            this.listresult.UseCompatibleStateImageBehavior = false;
-            this.listresult.View = System.Windows.Forms.View.List;
+            this.listresultc.Location = new System.Drawing.Point(107, 178);
+            this.listresultc.Name = "listresultc";
+            this.listresultc.Size = new System.Drawing.Size(376, 106);
+            this.listresultc.TabIndex = 7;
+            this.listresultc.UseCompatibleStateImageBehavior = false;
+            this.listresultc.View = System.Windows.Forms.View.List;
             // 
             // Form1
             // 
@@ -254,7 +265,8 @@
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.TextBox txtpesquisar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListView listresult;
+        private System.Windows.Forms.ListView listresultp;
+        private System.Windows.Forms.ListView listresultc;
     }
 }
 
