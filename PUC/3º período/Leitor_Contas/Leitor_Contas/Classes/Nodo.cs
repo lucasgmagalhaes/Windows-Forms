@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Leitor_Contas.Classes
 {
-    class Nodo : IDados                                           
+    class Nodo                                          
     {
         private Nodo dir, esq;
         private IDados dad;
@@ -17,17 +17,6 @@ namespace Leitor_Contas.Classes
         {
             this.dad = dad;
             this.dir = this.esq = null;
-        }
-
-        public bool Equals(IDados d)
-        {
-            if (d == this.dad) return true;
-            else return false;
-        }
-
-        public int CompareTo(IDados other)
-        {
-            return dad.CompareTo(other);
         }
     }
 }

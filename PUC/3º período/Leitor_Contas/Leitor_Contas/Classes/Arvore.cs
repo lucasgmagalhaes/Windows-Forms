@@ -9,7 +9,8 @@ namespace Leitor_Contas.Classes
     class Arvore
     {
         private Nodo raiz;
-
+        private int count;
+        public int Count { get { return this.count; } }
         public Arvore()
         {
             this.raiz = null;
@@ -17,29 +18,81 @@ namespace Leitor_Contas.Classes
 
         public void Inserir(IDados dado)
         {
-            if (this.raiz == null) this.raiz = new Nodo(dado);
-            else
-            {
-                int get = this.raiz.CompareTo(dado);
-                if (get == 1) this.raiz.Esq = new Nodo(Inserir(dado, raiz.Esq));
-                else if (get == -1) this.raiz.Dir = new Nodo(Inserir(dado, raiz.Dir));
-            }
+            Nodo aux = new Nodo(dado);
+            this.raiz = Inserir(new Nodo(dado), this.raiz);
+            this.count++;
         }
-        private IDados Inserir(IDados dado, Nodo onde)
+        private Nodo Inserir(Nodo novo, Nodo onde)
         {
-            if (onde == null) return dado;
+            if (onde == null) return novo;
             else
             {
-                if (onde.CompareTo(dado) == 1)
+                if (onde.Dado.CompareTo(novo.Dado) == 1)
                 {
-                   onde.Esq =  new Nodo(Inserir(dado, onde.Esq));
+                    onde.Esq = Inserir(novo, onde.Esq);
                 }
-                else if (onde.CompareTo(dado) == -1)
+                else if (onde.Dado.CompareTo(novo.Dado) == -1)
                 {
-                   onde.Dir = new Nodo(Inserir(dado, onde.Dir));
+                    onde.Dir = Inserir(novo, onde.Dir);
                 }
             }
             return onde;
+        }
+        public IDados Procurar(int dad)
+        {
+            return Procurar(dad, this.raiz);
+        }
+        public IDados Procurar(IDados dad)
+        {
+            return Procurar(dad, this.raiz);
+        }
+        public IDados Procurar(string dad)
+        {
+            return Procurar(dad, this.raiz);
+        }
+        public IDados Procurar(long dad)
+        {
+            return Procurar(dad, this.raiz);
+        }
+        private IDados Procurar(int procura, Nodo atual)
+        {
+            if (atual == null) return null;
+            else
+            {
+                if (atual.Dado.CompareTo(procura) == 1) return Procurar(procura, atual.Esq);
+                else if (atual.Dado.CompareTo(procura) == -1) return Procurar(procura, atual.Dir);
+                else return atual.Dado;
+            }
+        }
+        private IDados Procurar(string procura, Nodo atual)
+        {
+            if (atual == null) return null;
+            else
+            {
+                if (atual.Dado.CompareTo(procura) == 1) return Procurar(procura, atual.Esq);
+                else if (atual.Dado.CompareTo(procura) == -1) return Procurar(procura, atual.Dir);
+                else return atual.Dado;
+            }
+        }
+        private IDados Procurar(long procura, Nodo atual)
+        {
+            if (atual == null) return null;
+            else
+            {
+                if (atual.Dado.CompareTo(procura) == 1) return Procurar(procura, atual.Esq);
+                else if (atual.Dado.CompareTo(procura) == -1) return Procurar(procura, atual.Dir);
+                else return atual.Dado;
+            }
+        }
+        private IDados Procurar(IDados procura, Nodo atual)
+        {
+            if (atual == null) return null;
+            else
+            {
+                if (atual.Dado.CompareTo(procura) == 1) return Procurar(procura, atual.Esq);
+                else if (atual.Dado.CompareTo(procura) == -1) return Procurar(procura, atual.Dir);
+                else return atual.Dado;
+            }
         }
     }
 }
