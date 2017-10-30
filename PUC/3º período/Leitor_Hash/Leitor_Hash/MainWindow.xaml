@@ -1,0 +1,30 @@
+﻿<Window x:Class="Leitor_Hash.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Leitor_Hash"
+        mc:Ignorable="d"
+        Title="Reserva de passageiros" Height="716.195" Width="555.727">
+    <Grid>
+        <ListView x:Name="listpassageiros" HorizontalAlignment="Left" Height="567" Margin="9,110,0,0" VerticalAlignment="Top" Width="527">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Código" DisplayMemberBinding="{Binding Codigo}" Width="60"/>
+                    <GridViewColumn Header="Nome" DisplayMemberBinding="{Binding Nome}" Width="150"/>
+                    <GridViewColumn Header="Reservas" Width="170">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox ItemsSource="{Binding Reservas}" Width="150" Height="20"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="lblarquivo" Content="Selecione o arquivo de texto" HorizontalAlignment="Left" Margin="7,9,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtfile" HorizontalAlignment="Left" Height="23" Margin="12,34,0,0" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top" Width="264"/>
+        <Button x:Name="btnopen" Content="Abrir" HorizontalAlignment="Left" Margin="279,34,0,0" VerticalAlignment="Top" Width="87" Click="btnopen_OnClick" />
+        <Label x:Name="lblarquivo_Copy" Content="Pessoas" HorizontalAlignment="Left" Margin="12,76,0,0" VerticalAlignment="Top" Width="64" Height="34"/>
+    </Grid>
+</Window>
