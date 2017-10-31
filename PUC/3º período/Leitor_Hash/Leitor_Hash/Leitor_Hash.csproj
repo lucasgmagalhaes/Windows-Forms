@@ -63,8 +63,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classes\Hash.cs" />
+    <Compile Include="Classes\TabelaHash.cs" />
     <Compile Include="Classes\Passageiro.cs" />
+    <Compile Include="Classes\TesteFormula.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

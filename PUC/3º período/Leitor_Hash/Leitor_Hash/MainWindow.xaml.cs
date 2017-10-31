@@ -45,7 +45,7 @@ namespace Leitor_Hash
                         aux.Reservas = new List<string>();
                         passageiros.Add(aux);
                     }
-                    listpassageiros.ItemsSource = passageiros;
+                    listpassageiros.ItemsSource = passageiros;               
                 }
             }
         }
