@@ -18,19 +18,6 @@ using System.IO;
 
 namespace Leitor_Hash
 {
-    class Valores
-    {
-        private int Valbase { get;}
-        private int Multi { get;  }
-        private int Rest { get; }
-
-        public Valores(int val, int m, int r)
-        {
-            this.Valbase = val;
-            this.Multi = m;
-            this.Rest = r;
-        }
-    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -38,16 +25,22 @@ namespace Leitor_Hash
     {
         private List<Passageiro> passageiros = new List<Passageiro>();
         List<Valores> val = new List<Valores>();
+        StreamWriter write = new StreamWriter("infos.txt", false);
+        List<int> vals = new List<int>();
         public MainWindow()
         {
             InitializeComponent();
         }
-
+        private void Saveinfos(int val)
+        {
+            vals.Add(val);
+        }
         private void btnopen_OnClick(object sender, RoutedEventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
             if (open.ShowDialog() == true)
             {
+                TabelaHash table = new TabelaHash(1600);
                 using (StreamReader read = new StreamReader(open.FileName))
                 {
                     string line;
@@ -56,15 +49,18 @@ namespace Leitor_Hash
                         string[] spt = line.Split(';');
                         Passageiro aux = new Passageiro(spt[0], spt[1]);
                         passageiros.Add(aux);
+                        int get = table.GetPosition(spt[0]);
+                        Saveinfos(get);
                     }
-                    listpassageiros.ItemsSource = passageiros;               
+                    listpassageiros.ItemsSource = passageiros;
+                    vals.Sort();
+                    foreach (int val in vals) write.WriteLine(val);
                 }
             }
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
-        {           
-            for (int i = 2000; i <= 3000; i++) val.Add(new Valores(9999,i,9999%i));
-            listpassageiros_Copy.ItemsSource = val;
+        {
+            int i = 21320 % 2100;
         }
     }
 }
