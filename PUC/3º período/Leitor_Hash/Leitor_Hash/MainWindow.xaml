@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Leitor_Hash"
         mc:Ignorable="d"
-        Title="Reserva de passageiros" Height="716.195" Width="555.727">
+        Title="Reserva de passageiros" Height="716.195" Width="555.727" Loaded="Window_Loaded">
     <Grid>
-        <ListView x:Name="listpassageiros" HorizontalAlignment="Left" Height="567" Margin="9,110,0,0" VerticalAlignment="Top" Width="527">
+        <ListView x:Name="listpassageiros" HorizontalAlignment="Left" Height="236" Margin="9,110,0,0" VerticalAlignment="Top" Width="527">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Código" DisplayMemberBinding="{Binding Codigo}" Width="60"/>
@@ -26,5 +26,14 @@
         <TextBox x:Name="txtfile" HorizontalAlignment="Left" Height="23" Margin="12,34,0,0" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top" Width="264"/>
         <Button x:Name="btnopen" Content="Abrir" HorizontalAlignment="Left" Margin="279,34,0,0" VerticalAlignment="Top" Width="87" Click="btnopen_OnClick" />
         <Label x:Name="lblarquivo_Copy" Content="Pessoas" HorizontalAlignment="Left" Margin="12,76,0,0" VerticalAlignment="Top" Width="64" Height="34"/>
+        <ListView x:Name="listpassageiros_Copy" HorizontalAlignment="Left" Height="236" Margin="12,351,0,0" VerticalAlignment="Top" Width="527">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Valbase" DisplayMemberBinding="{Binding Valbase}" Width="60"/>
+                    <GridViewColumn Header="Multi" DisplayMemberBinding="{Binding Multi}" Width="150"/>
+                    <GridViewColumn Header="Rest" Width="170" DisplayMemberBinding="{Binding Rest}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

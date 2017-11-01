@@ -15,10 +15,11 @@ namespace Leitor_Hash.Classes
             this.dados = new List<Passageiro>(tamanho);
         }
 
-        private int GetPosition(int val)
+        private int GetPosition(string val)
         {
-            TesteFormula<Passageiro> pass = new TesteFormula<Passageiro>();
-            return pass.YourMethod(GetPosition);
+            string[] spt = val.Split('.');
+            int val1 = Convert.ToInt32(spt[0]), val2 = Convert.ToInt32(spt[3]);
+            return 1;
         }
         public void Inserir(Passageiro dado)
         {

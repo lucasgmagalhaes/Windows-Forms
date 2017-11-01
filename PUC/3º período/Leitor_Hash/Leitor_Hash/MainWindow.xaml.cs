@@ -18,13 +18,26 @@ using System.IO;
 
 namespace Leitor_Hash
 {
+    class Valores
+    {
+        private int Valbase { get;}
+        private int Multi { get;  }
+        private int Rest { get; }
+
+        public Valores(int val, int m, int r)
+        {
+            this.Valbase = val;
+            this.Multi = m;
+            this.Rest = r;
+        }
+    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         private List<Passageiro> passageiros = new List<Passageiro>();
-
+        List<Valores> val = new List<Valores>();
         public MainWindow()
         {
             InitializeComponent();
@@ -42,12 +55,16 @@ namespace Leitor_Hash
                     {
                         string[] spt = line.Split(';');
                         Passageiro aux = new Passageiro(spt[0], spt[1]);
-                        aux.Reservas = new List<string>();
                         passageiros.Add(aux);
                     }
                     listpassageiros.ItemsSource = passageiros;               
                 }
             }
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {           
+            for (int i = 2000; i <= 3000; i++) val.Add(new Valores(9999,i,9999%i));
+            listpassageiros_Copy.ItemsSource = val;
         }
     }
 }

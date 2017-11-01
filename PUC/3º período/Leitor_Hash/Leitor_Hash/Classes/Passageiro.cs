@@ -12,9 +12,9 @@ namespace Leitor_Hash.Classes
         private string nome;
         private List<string> reservas;
 
-        public int Codigo { get { return this.codigo; } set { this.codigo = value; } }
-        public string Nome { get { return this.nome; } set { this.nome = value; } }
-        public List<string> Reservas { get { return this.reservas; } set { this.reservas = value; } }
+        public int Codigo { get { return this.codigo; }  }
+        public string Nome { get { return this.nome; }  }
+        public List<string> Reservas { get { return this.reservas; }}
 
         public Passageiro(string codigo, string nome)
         {

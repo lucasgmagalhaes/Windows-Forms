@@ -17,14 +17,15 @@ namespace Leitor_Hash.Classes
             if (CheckColision(info)) colisoes++;
             else sucessos++;
         }
-        public bool CheckColision(T info)
+        private bool CheckColision(T info)
         {
             foreach (T inf in dado) if (info.Equals(inf)) return true;
             return false;
         }
 
-        public int YourMethod(Func<int,int> function)
+        public int YourMethod(Func<int, int> function)
         {
+            function(1);
             return 1;
         }
     }
