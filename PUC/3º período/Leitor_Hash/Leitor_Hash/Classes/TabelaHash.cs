@@ -8,44 +8,48 @@ namespace Leitor_Hash.Classes
 {
     class TabelaHash
     {
-        private List<Passageiro> dados;
-        public List<Passageiro> Dados { get { return this.dados; } }
+        private Passageiro[] dados;
+        public Passageiro[] Dados { get { return this.dados; } }
         public TabelaHash(int tamanho)
         {
-            this.dados = new List<Passageiro>(tamanho);
-            for (int i = 0; i <= tamanho; i++) this.dados.Add(null);
+            this.dados = new Passageiro[tamanho];
         }
 
-        public int GetPosition(string val)
+        public int GetPosition(string val, Passageiro pass)
         {
             string[] spt = val.Split('.');
-            int endcount = 0;
-            if (Convert.ToInt32(spt[0]) < 160)
-            {
-                endcount = Convert.ToInt32(spt[1].Substring(0, 1)) + Convert.ToInt32(spt[1].Substring(1, 1)) + Convert.ToInt32(spt[1].Substring(2, 1)) % 10;
-                return Convert.ToInt32(spt[0] + endcount);
-            }
-            else if (Convert.ToInt32(spt[0]) < 210)
-            {
-                endcount = Convert.ToInt32(spt[1].Substring(0, 1)) + Convert.ToInt32(spt[1].Substring(1, 1)) + Convert.ToInt32(spt[1].Substring(2, 1));
-                return Convert.ToInt32(spt[0]) + endcount;
-            }
-            else
-            {
-                endcount = Convert.ToInt32(spt[1].Substring(0, 1)) + Convert.ToInt32(spt[1].Substring(1, 1)) + Convert.ToInt32(spt[1].Substring(2, 1));
-                int aux = Convert.ToInt32(spt[0] + endcount) % 2100;
-                //if(dados[aux] != null)
-                //{
-                //   aux = aux - Convert.ToInt32(spt[1].Substring(0, 1)) + Convert.ToInt32(spt[1].Substring(1, 1));
-                //    if (aux < 0) aux *= -1;
-                //    return aux;
-                //}
-                return aux;
-            }
+            int get;
+
+            get = (Convert.ToInt32(spt[0] + spt[1]) % 701) +1;
+            while(dados[get] != null) get++;
+            dados[get] = pass;
+            return get;
         }
         public void Inserir(Passageiro dado)
         {
-        }
+            string[] spt = dado.Codigo.Split('.');
+            int get;
 
+            get = (Convert.ToInt32(spt[0] + spt[1]) % 701) + 1;
+            while (dados[get] != null)
+            {
+                get++;
+                if (get > dados.Count() - 1) get = 0;
+            }
+            dados[get] = dado;
+        }
+        public Passageiro Buscar(string dado)
+        {
+            string[] spt = dado.Split('.');
+            int get;
+
+            get = (Convert.ToInt32(spt[0] + spt[1]) % 701) + 1;
+            while (dados[get].Codigo != dado)
+            {
+                get++;
+                if (get > dados.Count() - 1) return null;
+            }
+            return dados[get];
+        }
     }
 }

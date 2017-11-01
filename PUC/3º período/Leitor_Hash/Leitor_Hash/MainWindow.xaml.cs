@@ -24,43 +24,60 @@ namespace Leitor_Hash
     public partial class MainWindow : Window
     {
         private List<Passageiro> passageiros = new List<Passageiro>();
-        List<Valores> val = new List<Valores>();
-        StreamWriter write = new StreamWriter("infos.txt", false);
-        List<int> vals = new List<int>();
+        private TabelaHash table;
         public MainWindow()
         {
             InitializeComponent();
-        }
-        private void Saveinfos(int val)
-        {
-            vals.Add(val);
         }
         private void btnopen_OnClick(object sender, RoutedEventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
             if (open.ShowDialog() == true)
             {
-                TabelaHash table = new TabelaHash(1600);
-                using (StreamReader read = new StreamReader(open.FileName))
+                txtfile.Text = open.FileName;
+                if (System.IO.Path.GetFileNameWithoutExtension(open.FileName).ToUpper() == "PASSAGEIROS")
                 {
-                    string line;
-                    while ((line = read.ReadLine()) != null)
+                    table = new TabelaHash(1600);
+                    using (StreamReader read = new StreamReader(open.FileName))
                     {
-                        string[] spt = line.Split(';');
-                        Passageiro aux = new Passageiro(spt[0], spt[1]);
-                        passageiros.Add(aux);
-                        int get = table.GetPosition(spt[0]);
-                        Saveinfos(get);
+                        string line;
+                        while ((line = read.ReadLine()) != null)
+                        {
+                            string[] spt = line.Split(';');
+                            Passageiro aux = new Passageiro(spt[0], spt[1]);
+                            passageiros.Add(aux);
+                            table.Inserir(aux);
+                        }
+                        listpassageiros.ItemsSource = passageiros;
                     }
-                    listpassageiros.ItemsSource = passageiros;
-                    vals.Sort();
-                    foreach (int val in vals) write.WriteLine(val);
+                }
+                else if (System.IO.Path.GetFileNameWithoutExtension(open.FileName).ToUpper() == "RESERVAS")
+                {
+                    using (StreamReader read = new StreamReader(open.FileName))
+                    {
+                        string line;
+                        while ((line = read.ReadLine()) != null)
+                        {
+                            string[] spt = line.Split(';');
+                            Passageiro aux = table.Buscar(spt[0]);
+                            if(aux != null)
+                            {
+                                aux.Reservas.Add(spt[1]);
+                            }
+                        }
+                        listpassageiros.ItemsSource = passageiros;
+                    }
                 }
             }
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            int i = 21320 % 2100;
+        }
+
+        private void txtsearch_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            expander.ExpandDirection = ExpandDirection.Down;
+            expander.IsExpanded = true;
         }
     }
 }

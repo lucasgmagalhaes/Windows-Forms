@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Leitor_Hash"
         mc:Ignorable="d"
-        Title="Reserva de passageiros" Height="716.195" Width="555.727" Loaded="Window_Loaded">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Title="Reserva de passageiros" Height="524.195" Width="620.227" Loaded="Window_Loaded">
     <Grid>
-        <ListView x:Name="listpassageiros" HorizontalAlignment="Left" Height="565" Margin="9,110,0,0" VerticalAlignment="Top" Width="527">
+        <ListView x:Name="listpassageiros" HorizontalAlignment="Left" Height="376" Margin="9,110,0,0" VerticalAlignment="Top" Width="527">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Código" DisplayMemberBinding="{Binding Codigo}" Width="60"/>
+                    <GridViewColumn Header="Código" DisplayMemberBinding="{Binding Codigo}" Width="80"/>
                     <GridViewColumn Header="Nome" DisplayMemberBinding="{Binding Nome}" Width="150"/>
                     <GridViewColumn Header="Reservas" Width="170">
                         <GridViewColumn.CellTemplate>
@@ -26,7 +28,11 @@
         <TextBox x:Name="txtfile" HorizontalAlignment="Left" Height="23" Margin="12,34,0,0" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top" Width="264"/>
         <Button x:Name="btnopen" Content="Abrir" HorizontalAlignment="Left" Margin="279,34,0,0" VerticalAlignment="Top" Width="87" Click="btnopen_OnClick" />
         <Label x:Name="lblarquivo_Copy" Content="Pessoas" HorizontalAlignment="Left" Margin="12,76,0,0" VerticalAlignment="Top" Width="64" Height="34"/>
-        <Label x:Name="lblarquivo_Copy1" Content="Conflitos: " HorizontalAlignment="Left" Margin="225,76,0,0" VerticalAlignment="Top" Width="64" Height="34"/>
-        <Label x:Name="lblarquivo_Copy2" Content="Elementos listados:" HorizontalAlignment="Left" Margin="328,76,0,0" VerticalAlignment="Top" Width="124" Height="34"/>
+        <Expander x:Name="expander" Header="Pesquisar" HorizontalAlignment="Left" Margin="371,33,0,0" VerticalAlignment="Top" Width="225" Height="72">
+            <StackPanel Margin="10,4,0,0">
+                <TextBox x:Name="txtsearch" MouseLeftButtonDown="txtsearch_MouseLeftButtonDown" HorizontalAlignment="Left" Height="23" Text="" VerticalAlignment="Top" Width="152"/>
+                <Button x:Name="btnopen_Copy" Content="Abrir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="152" Click="btnopen_OnClick" />
+            </StackPanel>
+        </Expander>
     </Grid>
 </Window>
