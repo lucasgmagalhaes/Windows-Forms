@@ -1,0 +1,14 @@
+C:\Users\1047825\Desktop\Ordenador\Ordenador\bin\Debug\Ordenador.exe.config
+C:\Users\1047825\Desktop\Ordenador\Ordenador\bin\Debug\Ordenador.exe
+C:\Users\1047825\Desktop\Ordenador\Ordenador\bin\Debug\Ordenador.pdb
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\Ordenador.csprojResolveAssemblyReference.cache
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\MainWindow.g.cs
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\App.g.cs
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\Ordenador_MarkupCompile.cache
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\Ordenador_MarkupCompile.lref
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\MainWindow.baml
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\Ordenador.g.resources
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\Ordenador.Properties.Resources.resources
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\Ordenador.csproj.GenerateResource.Cache
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\Ordenador.exe
+C:\Users\1047825\Desktop\Ordenador\Ordenador\obj\Debug\Ordenador.pdb
