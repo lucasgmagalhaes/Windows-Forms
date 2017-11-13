@@ -10,3 +10,5 @@ C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.csproj.CoreCompileInputs.cache
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.exe
 C:\Users\Lucax\Dropbox\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.pdb
+C:\Users\1047825\Documents\GitHub\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.exe
+C:\Users\1047825\Documents\GitHub\Windows-Forms\PUC\3º período\Calculadora de expressões\Expressions_Console\Expressions_Console\obj\Debug\Expressions_Console.pdb

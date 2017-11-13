@@ -10,3 +10,5 @@ C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dado
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.csproj.CoreCompileInputs.cache
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.exe
 C:\Users\Lucas - Mafra\Dropbox\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.pdb
+C:\Users\1047825\Documents\GitHub\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.exe
+C:\Users\1047825\Documents\GitHub\Windows-Forms\PUC\3º período\Estruturas de dados\Estruturas de dados\obj\Debug\Estruturas de dados.pdb
