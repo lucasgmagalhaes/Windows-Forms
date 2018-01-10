@@ -1,0 +1,9 @@
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\bin\Debug\Calculadora de expressoes.exe
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\bin\Debug\Calculadora de expressoes.pdb
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\obj\Debug\Calculadora de expressoes.csprojResolveAssemblyReference.cache
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\obj\Debug\Calculadora_de_expressoes.Form1.resources
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\obj\Debug\Calculadora_de_expressoes.Properties.Resources.resources
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\obj\Debug\Calculadora de expressoes.csproj.GenerateResource.Cache
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\obj\Debug\Calculadora de expressoes.csproj.CoreCompileInputs.cache
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\obj\Debug\Calculadora de expressoes.exe
+C:\Users\Lucax\Google Drive\Ti AED\Calculadora de expressoes\Calculadora de expressoes\obj\Debug\Calculadora de expressoes.pdb
