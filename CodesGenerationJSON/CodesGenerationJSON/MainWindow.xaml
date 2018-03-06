@@ -1,0 +1,21 @@
+﻿<Window x:Class="CodesGenerationJSON.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodesGenerationJSON"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400.271" Width="293.564">
+    <Grid>
+        <Button Content="Button" Name="btnbuttonsearch" HorizontalAlignment="Left" Margin="69,38,0,0" VerticalAlignment="Top" Width="149" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Name="txtfilename" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="266"/>
+        <RichTextBox HorizontalAlignment="Left" Name="richOutputJSON" Height="268" Margin="10,91,0,0" VerticalAlignment="Top" Width="266">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
